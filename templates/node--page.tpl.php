@@ -131,11 +131,8 @@
 <?php
 	if (!empty($content['field_image'][0])):
 	?>
-	<div class="imgrt grid_3 omega <?php if (empty($content['field_caption'][0])) { print 'noborder'; }?>">
-			<?php print render($content['field_image'][0]); ?>
-			<?php if (!empty($content['field_caption'][0])): ?>
-				<?php print render($content['field_caption']); ?>
-			<?php endif; ?>
+	<div class="imgrt grid_3 omega">
+			<?php print render($content['field_image']); ?>
 	</div>
 	<?php
 	endif;

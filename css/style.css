@@ -1472,7 +1472,8 @@ background-color:rgba(0,0,0,0.15)
 
 /* --------------- System Tabs  --------------- */
 .tabs {
-font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+margin-bottom:10px
 }
 
 .tabs ul.primary {
@@ -2251,4 +2252,10 @@ background-color:#666
 
 #footer-wrapper .poll .bar .foreground {
 background-color:#ddd
+}
+
+/* Overridding IMCE styles */
+#preview-wrapper {
+height: auto !important;
+overflow: auto;
 }

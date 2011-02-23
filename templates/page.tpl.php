@@ -154,6 +154,11 @@
 					<?php endif; ?>
 				<?php print render($title_suffix); ?>
 			<?php endif; ?>
+			<?php if ($tabs): ?>
+				<div class="tabs">
+					<?php print render($tabs); ?>
+				</div>
+			<?php endif; ?>
 			<div id="bottomrow" class="clearfix">
 				<div class="grid_6 alpha">
 					<?php if ($page['highlighted']): ?>
@@ -163,11 +168,6 @@
 						<?php if ($page['home_announcements']): ?>
 								<?php print render($page['home_announcements']); ?>
 						<?php endif; ?>
-					<?php endif; ?>
-					<?php if ($tabs): ?>
-						<div class="tabs">
-							<?php print render($tabs); ?>
-						</div>
 					<?php endif; ?>
 					<?php print render($page['help']); ?>
 					<?php if ($action_links): ?>
