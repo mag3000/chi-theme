@@ -620,8 +620,8 @@ h1#page-title {
 color:#7f3735;
 letter-spacing:1px;
 font-size:32px;
-font-family:"proxima-nova-1","proxima-nova-2",helvetica,sans-serif;
-font-weight:400;
+font-family:helvetica,arial,sans-serif;
+font-weight:normal;
 height:32px;
 margin:0 0 6px;
 height:auto;
@@ -894,18 +894,16 @@ margin:0 0 .5em
 
 #block-views-announcements-blockview {
 border-top:5px solid #3E7C97;
-padding:6px 10px;
+padding:10px;
 margin-bottom:16px;
 background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x
 }
 
 #block-views-announcements-blockview h2 {
 display:block;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
 color:#155F83;
-font-size:1.5em;
-letter-spacing:1px;
-margin:0 0 8px;
+font-size:1.6em;
+margin:0 0 16px;
 text-transform:uppercase;
 padding:0
 }
@@ -989,9 +987,8 @@ line-height:1em;
 letter-spacing:-.2px;
 position:absolute;
 width:354px;
-font-size:16px;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
-font-weight:400
+font-size:14px
+/*To prevent IE8 js SIFR error*/
 }
 
 #mainfeature p {
@@ -1009,13 +1006,12 @@ height:200px
 }
 
 .smallfeature {
-border-top:5px solid #266178;
-padding-bottom:0
+border-top:5px solid #266178
 }
 
 .smallfeature h3 {
 color:#155F83;
-font-family:"proxima-nova-1","proxima-nova-2",helvetica,sans-serif;
+font-family:helvetica,arial,sans-serif;
 font-size:17px;
 letter-spacing:1px;
 margin:8px 0
@@ -1033,21 +1029,16 @@ margin:0
 
 #block-events {
 border-top:5px solid #8f3931;
-/* padding:10px 10px 0; */
+padding:10px 10px 0;
 margin-bottom:24px;
 background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x;
+float:left
 }
 
 #block-events h2 {
 margin:0 0 5px;
-letter-spacing:1px;
-color:#800000 !important;
-font-size:1.5em !important;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
-font-weight:400 !important;
-padding:6px 10px;
-text-transform:uppercase;
-background:none
+color:#800000;
+text-transform:uppercase
 }
 
 #block-events dl {
@@ -1074,10 +1065,6 @@ float:left;
 width:60px;
 margin-top:27px;
 margin-left:0
-}
-
-#block-events dd.date span, #block-events a {
-font-weight:bold
 }
 
 #block-events dt.firstevent {
@@ -1221,11 +1208,9 @@ background:none
 
 .sidebar h2 {
 background-color:#3E7C97;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
-font-weight:600;
 color:#fff!important;
 display:block;
-font-size:1em!important;
+font-size:.9em!important;
 margin:0 0 6px!important;
 padding:5px 10px;
 letter-spacing:1px;

@@ -151,5 +151,3 @@ function uchicago_field__taxonomy_term_reference($variables) {
 
   return $output;
 }
-
-drupal_add_js('http://use.typekit.com/nfj1avq.js', 'external');
