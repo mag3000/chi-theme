@@ -26,14 +26,15 @@ body.overlay {
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0779bf), to(#48a9e4));
 }
 a {
-  color: #0071B3;
+  color: #155f83;
 }
 a:hover,
 a:focus {
-  color: #018fe2;
+  color: #20364c;
+  text-decoration: underline;
 }
 a:active {
-  color: #23aeff;
+  color: #20664c;
 }
 #footer-wrapper {
   background: #292929;
