@@ -141,3 +141,28 @@ Licensed under GPL and MIT.
 .container_12 .pull_9{left:-702px}
 .container_12 .pull_10{left:-780px}
 .container_12 .pull_11{left:-858px}
+
+
+.grid_1, 
+.grid_2, 
+.grid_3, 
+.grid_4, 
+.grid_5, 
+.grid_6, 
+.grid_7, 
+.grid_8, 
+.grid_9, 
+.grid_10, 
+.grid_11, 
+.grid_12{display:inline; float:left; position:relative; margin-left:8px; margin-right:8px}
+
+.multicolumn{display:inline; float:left; position:relative; margin-left:8px; margin-right:8px}
+.numcolumns-3 .multicolumn{width:218px}
+.numcolumns-2 .multicolumn{width:335px}
+
+/* Grid >>Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha{margin-left:0}
+.omega{margin-right:0}
+
+
