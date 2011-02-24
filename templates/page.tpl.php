@@ -178,7 +178,7 @@
 				</div>
 				
 				<?php if(!$is_front || $toggle_simplehomepage): ?>
-					<?php if (!empty($node) && $node->type == 'page'): ?>
+					<?php if (!empty($node) && ($node->type == 'page' || $node->type == 'multi_column_basic_page')): ?>
 						<?php print render($page['content']); ?>
 					<?php else: ?>
 						<div class="grid_6 alpha">
@@ -188,9 +188,11 @@
 					<?php endif; ?>
 				<?php endif; ?>
 				
-				<div id="sidebar-second" class="column sidebar grid_3 omega"><div class="section">
-					<?php print render($page['sidebar_second']); ?>
-				</div></div> <!-- /.section, /#sidebar-second -->
+				<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')): ?>
+					<div id="sidebar-second" class="column sidebar grid_3 omega"><div class="section">
+						<?php print render($page['sidebar_second']); ?>
+					</div></div> <!-- /.section, /#sidebar-second -->
+				<?php endif; ?>
 				
 			</div> <!-- bottomrow -->
 
