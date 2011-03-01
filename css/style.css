@@ -620,8 +620,8 @@ h1#page-title {
 color:#7f3735;
 letter-spacing:1px;
 font-size:32px;
-font-family:"proxima-nova-1","proxima-nova-2",helvetica,sans-serif;
-font-weight:400;
+font-family:"myriad-pro-1","myriad-pro-2",helvetica,sans-serif;
+font-weight:300;
 height:32px;
 margin:0 0 6px;
 height:auto;
@@ -643,12 +643,7 @@ line-height:1.4
 
 .imgrt {
 float:right;
-margin:0 0 16px;
-border-bottom:1px solid #d7d7cf
-}
-
-.noborder { /* for right column images with no caption */
-border-bottom:none
+margin:0 0 16px
 }
 
 .imglt {
@@ -664,13 +659,17 @@ margin:0 0 9px;
 color:#65655e
 }
 
-.imgrt img {
-width:198px
-}
-
 .imgrt img,.imglt img {
 border-top:5px solid #8f3931;
 margin:0
+}
+
+.imgrt .caption {
+border-bottom:1px solid #D7D7CF;
+padding-bottom:9px;
+color: #65655E;
+font-size: 1em;
+line-height: 1.65em;
 }
 
 /*
@@ -678,11 +677,11 @@ margin:0
   font-size: 1.1em;
 }
 */
-.node .content h1+h2 {
+.region-content h1+h2 {
 margin-top:0
 }
 
-.node .content h2 {
+.region-content h2 {
 color:#740000;
 font-size:1.4em;
 line-height:1.142em;
@@ -690,7 +689,7 @@ margin:0 0 .5em
 /* getting rid of excess spacing */
 }
 
-.node .content h3 {
+.region-content h3 {
 color:#3d3d2f;
 font-weight:700;
 font-size:1.1em;
@@ -701,7 +700,7 @@ letter-spacing:1px;
 text-transform:uppercase
 }
 
-.node .content h4 {
+.region-content h4 {
 color:#5b5b4f;
 font-weight:700;
 font-size:1.1em;
@@ -719,18 +718,18 @@ height:1px;
 margin:0 0 16px
 }
 
-.node .content ul li,.node .content ol li {
+.region-content ul li,.region-content ol li {
 font-size:1.1em;
 line-height:1.5em;
 margin:0 0 .7em
 }
 
-.node .content ul li {
+.region-content ul li {
 list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
 margin-left:24px
 }
 
-.node .content ul li ul li {
+.region-content ul li ul li {
 font-size:1em
 }
 
@@ -823,7 +822,7 @@ text-align:right
 }
 
 .field-type-image img,.user-picture img {
-margin:0 0 1em
+margin:0 0 0.8em
 }
 
 ul.links {
@@ -846,11 +845,10 @@ border-right:1px solid #fff4f4
 margin-right:-156px
 }
 
-#homeimage div.field-item {
+#homeimage div.field-item { /* To get rid of some weird extra pixels added to bottom of image */
 line-height:0
-}
+} 
 
-/* To get rid of some weird extra pixels added to bottom of image */
 body.front .sidebar .section {
 padding-top:0
 }
@@ -892,16 +890,16 @@ line-height:1.142em;
 margin:0 0 .5em
 }
 
-#block-views-announcements-blockview {
+#block-views-news-fullnewsblock {
 border-top:5px solid #3E7C97;
 padding:6px 10px;
 margin-bottom:16px;
 background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x
 }
 
-#block-views-announcements-blockview h2 {
+#block-views-news-fullnewsblock h2 {
 display:block;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
+font-family:"myriad-pro-1","myriad-pro-2",verdana,sans-serif;
 color:#155F83;
 font-size:1.5em;
 letter-spacing:1px;
@@ -910,14 +908,14 @@ text-transform:uppercase;
 padding:0
 }
 
-#block-views-announcements-blockview p {
+#block-views-news-fullnewsblock p {
 margin:0;
 padding:0;
 display:inline;
 width:auto
 }
 
-#block-views-announcements-blockview h4 {
+#block-views-news-fullnewsblock h4 {
 margin:0;
 padding:0;
 display:block;
@@ -930,12 +928,12 @@ text-transform:none;
 padding:0
 }
 
-#block-views-announcements-blockview h4 a {
+#block-views-news-fullnewsblock h4 a {
 font-weight:700;
 margin:0
 }
 
-#block-views-announcements-blockview img {
+#block-views-news-fullnewsblock img {
 float:left;
 height:68px;
 width:58px;
@@ -943,18 +941,18 @@ padding-bottom:5px;
 margin-right:16px
 }
 
-#block-views-announcements-blockview hr {
+#block-views-news-fullnewsblock hr {
 border:1px solid #d0cbc4;
 height:1px;
 margin:16px 0;
 border-style:solid none none
 }
 
-#block-views-announcements-blockview .views-row-last hr {
+#block-views-news-fullnewsblock .views-row-last hr {
 display:none
 }
 
-#block-views-announcements-blockview ul li {
+#block-views-news-fullnewsblock ul li {
 list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
 margin-left:24px
 }
@@ -990,7 +988,7 @@ letter-spacing:-.2px;
 position:absolute;
 width:354px;
 font-size:16px;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
+font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
 font-weight:400
 }
 
@@ -1010,15 +1008,15 @@ height:200px
 
 .smallfeature {
 border-top:5px solid #266178;
-padding-bottom:0
+padding-bottom:0;
+margin-bottom:-25px /*Because sidebar blocks have padding (for the background image) and margin but smallfeature doesn't need the extra padding */
 }
 
 .smallfeature h3 {
 color:#155F83;
-font-family:"proxima-nova-1","proxima-nova-2",helvetica,sans-serif;
+font-family:"myriad-pro-1","myriad-pro-2",helvetica,sans-serif;
 font-size:17px;
-letter-spacing:1px;
-margin:8px 0
+margin:8px 0 4px
 }
 
 .smallfeature p {
@@ -1027,8 +1025,12 @@ line-height:1.6em;
 margin:0 4px .6em
 }
 
+.smallfeature .field-type-image .field-item {
+line-height:0 /* To get rid of extra 2px padding */
+}
+
 .smallfeature img {
-margin:0
+margin: 0
 }
 
 #block-events {
@@ -1043,7 +1045,7 @@ margin:0 0 5px;
 letter-spacing:1px;
 color:#800000 !important;
 font-size:1.5em !important;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
+font-family:"myriad-pro-1","myriad-pro-2",verdana,sans-serif;
 font-weight:400 !important;
 padding:6px 10px;
 text-transform:uppercase;
@@ -1221,7 +1223,7 @@ background:none
 
 .sidebar h2 {
 background-color:#3E7C97;
-font-family:"proxima-nova-1","proxima-nova-2",verdana,sans-serif;
+font-family:"myriad-pro-1","myriad-pro-2",verdana,sans-serif;
 font-weight:600;
 color:#fff!important;
 display:block;
