@@ -111,7 +111,7 @@
 		<?php $numcolumns = render($content['field_numcolumns'][0]); ?>
 		<div class="numcolumns-<?php print $numcolumns; ?>">
 			<div class="multicolumn alpha">
-				<?php print render($content['field_column']); ?>
+				<?php print render($content['field_column1']); ?>
 			</div>
 			<?php if ($numcolumns > 1): ?>
 				<div class="multicolumn <?php if ($numcolumns == '2') { print 'omega'; } ?>">

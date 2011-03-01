@@ -6,3 +6,5 @@ jQuery(document).ready(function () {
 	}
 });
 
+// Load typekit
+try{Typekit.load();}catch(e){}
