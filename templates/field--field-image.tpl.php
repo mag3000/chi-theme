@@ -43,22 +43,24 @@
  * @see theme_field()
  */
 ?>
-<!--
-THIS FILE IS NOT USED AND IS HERE AS A STARTING POINT FOR CUSTOMIZATION ONLY.
-See http://api.drupal.org/api/function/theme_field/7 for details.
-After copying this file to your theme's folder and customizing it, remove this
-HTML comment.
--->
-<div class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> clearfix <?php if (count($items)>1) { print 'slideshow'; } ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden) : ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
-      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print render($item); ?></div>
-			<?php if ($item['#item']['title']): ?>
-			<div class="caption">Caption: <?php print($item['#item']['title']); ?></div>
-			<?php endif; ?>
+      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+      	<?php print render($item); ?>
+				<?php if ($item['#item']['title']): ?>
+				<div class="caption"><?php print($item['#item']['title']); ?></div>
+				<?php endif; ?>
+      </div>
 		<?php endforeach; ?>
   </div>
+  <?php if (count($items)>1): ?>
+		<div id="controls">
+			<a href="#" id="slide-next">Next</a>
+			<a href="#" id="slide-previous">Previous</a>
+		</div>
+	<?php endif; ?>
 </div>

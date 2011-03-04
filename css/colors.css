@@ -33,8 +33,8 @@ a:focus {
   color: #20364c;
   text-decoration: underline;
 }
-a:active {
-  color: #20664c;
+a:active, .block li a.active {
+  color: #155f83;
 }
 #footer-wrapper {
   background: #292929;

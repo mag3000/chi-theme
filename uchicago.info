@@ -8,8 +8,8 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/colors.css
 stylesheets[print][] = css/print.css
 
-regions[home_gallery] = Homepage gallery
-regions[home_announcements] = Homepage welcome and announcements
+regions[home_features] = Homepage features
+regions[home_center] = Homepage center column
 
 regions[header] = Header
 regions[help] = Help
@@ -22,24 +22,20 @@ regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
-regions[triptych_first] = Triptych first
-regions[triptych_middle] = Triptych middle
-regions[triptych_last] = Triptych last
-
 regions[footer_firstcolumn] = Footer first column
 regions[footer_secondcolumn] = Footer second column
 regions[footer_thirdcolumn] = Footer third column
 regions[footer_fourthcolumn] = Footer fourth column
 regions[footer] = Footer
 
-scripts[] = scripts/jquery.cycle/jquery.cycle.min.js
-scripts[] = scripts/homepage.js
+scripts[] = scripts/jquery.cycle/jquery.cycle.all.min.js
+scripts[] = scripts/global.js
 
 ; features[] = logo
 features[] = name
 ; features[] = slogan
-features[] = node_user_picture
-features[] = comment_user_picture
+; features[] = node_user_picture
+; features[] = comment_user_picture
 features[] = comment_user_verification
 features[] = favicon
 features[] = main_menu

@@ -1,5 +1,4 @@
 <?php
-// $Id: node.tpl.php,v 1.2 2010/12/01 00:18:15 webchick Exp $
 
 /**
  * @file
@@ -79,7 +78,7 @@
  * @see template_process()
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if ($page) { print 'grid_6 alpha'; } ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
@@ -89,40 +88,51 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
-  <?php if ($display_submitted): ?>
+  <?php if (($display_submitted) && ($page)): ?>
     <div class="meta submitted">
       <?php print $user_picture; ?>
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
 
-  <div class="content clearfix"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      if ($is_front):
-      	hide($content['field_image']);
-      endif;
-      print render($content);
-    ?>
-  </div>
+	<div class="content clearfix"<?php print $content_attributes; ?>>
+		<?php
+			// We hide the comments and links now so that we can render them later.
+			hide($content['comments']);
+			hide($content['links']);
+			hide($content['field_image']);
+			hide($content['field_caption']);			
 
-  <?php
-    // Remove the "Add new comment" link on the teaser page or if the comment
-    // form is being displayed on the same page.
-    if ($teaser || !empty($content['comments']['comment_form'])) {
-      unset($content['links']['comment']['#links']['comment-add']);
-    }
-    // Only display the wrapper div if there are links.
-    $links = render($content['links']);
-    if ($links):
-  ?>
-    <div class="link-wrapper">
-      <?php print $links; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php print render($content['comments']); ?>
+			print render($content);
+		?>
+		
+		<?php
+			// Remove the "Add new comment" link on the teaser page or if the comment
+			// form is being displayed on the same page.
+			if ($teaser || !empty($content['comments']['comment_form'])) {
+				unset($content['links']['comment']['#links']['comment-add']);
+			}
+			// Only display the wrapper div if there are links.
+			$links = render($content['links']);
+			if ($links):
+		?>
+			<div class="link-wrapper">
+				<?php print $links; ?>
+			</div>
+		<?php endif; ?>
+	
+		<?php print render($content['comments']); ?>
+		
+	</div>
 
 </div>
+
+<?php
+	if (!empty($content['field_image'][0])):
+	?>
+	<div class="imgrt grid_3 omega">
+			<?php print render($content['field_image']); ?>
+	</div>
+	<?php
+	endif;
+?>

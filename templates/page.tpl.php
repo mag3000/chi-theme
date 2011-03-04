@@ -114,11 +114,7 @@
 
   </div></div> <!-- /.section, /#header -->
 
-  <?php if ($messages): ?>
-    <div id="messages"><div class="section clearfix container_12">
-      <?php print $messages; ?>
-    </div></div> <!-- /.section, /#messages -->
-  <?php endif; ?>
+
 
   <?php if ($page['featured']): ?>
     <div id="featured"><div class="section clearfix container_12">
@@ -127,7 +123,11 @@
   <?php endif; ?>
 
 	<div id="main-wrapper" class="clearfix"><div id="main" class="clearfix container_12">
-
+		<?php if ($messages): ?>
+			<div id="messages"><div class="section clearfix container_12">
+				<?php print $messages; ?>
+			</div></div> <!-- /.section, /#messages -->
+		<?php endif; ?>
 		<div id="sidebar-first" class="column sidebar grid_3"><div class="section"> 
 			 
 			<?php if($page['sidebar_first']): ?>
@@ -139,9 +139,9 @@
     <div id="content" class="column grid_9 <?php if ($toggle_simplehomepage) { print 'notfancy'; } ?>"><div class="section">
       <a id="main-content"></a>
 			<?php if (!$toggle_simplehomepage): ?>
-				<?php if ($page['home_gallery']): ?>
+				<?php if ($page['home_features']): ?>
 					<div id="mainfeature" class="clearfix">    
-							<?php print render($page['home_gallery']); ?>
+							<?php print render($page['home_features']); ?>
 					</div>
 				<?php endif; ?>
 			<?php endif; ?>
@@ -165,8 +165,8 @@
 						<?php print render($page['highlighted']); ?>
 					<?php endif; ?>
 					<?php if (!$toggle_simplehomepage): ?>
-						<?php if ($page['home_announcements']): ?>
-								<?php print render($page['home_announcements']); ?>
+						<?php if ($page['home_center']): ?>
+								<?php print render($page['home_center']); ?>
 						<?php endif; ?>
 					<?php endif; ?>
 					<?php print render($page['help']); ?>
@@ -178,7 +178,7 @@
 				</div>
 				
 				<?php if(!$is_front || $toggle_simplehomepage): ?>
-					<?php if (!empty($node) && ($node->type == 'page' || $node->type == 'multi_column_basic_page')): ?>
+					<?php if (!empty($node)): ?>
 						<?php print render($page['content']); ?>
 					<?php else: ?>
 						<div class="grid_6 alpha">
