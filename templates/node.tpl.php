@@ -101,8 +101,6 @@
 			hide($content['comments']);
 			hide($content['links']);
 			hide($content['field_image']);
-			hide($content['field_caption']);			
-
 			print render($content);
 		?>
 		
