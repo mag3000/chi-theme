@@ -23,7 +23,8 @@ body.overlay {
 #header {
 	background:#770000;
 	background-image:-moz-linear-gradient(center top , #800000, #770000 88px, #9f2425 88px, #9f2425 89px, #971e21 89px, #971e21 96px); /* FF3.6 */
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0779bf), to(#48a9e4));
+  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(0.92, #770000), color-stop(0.92, #9f2425), color-stop(0.93, #9f2425), color-stop(0.93, #971e21), color-stop(1.0, #971e21));
+  background-image:gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(0.92, #770000), color-stop(0.92, #9f2425), color-stop(0.93, #9f2425), color-stop(0.93, #971e21), color-stop(1.0, #971e21));
 }
 a {
   color: #155f83;

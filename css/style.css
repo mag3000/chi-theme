@@ -134,11 +134,6 @@ blockquote :first-child {
 display:inline
 }
 
-a.feed-icon {
-display:inline-block;
-padding:15px 0 0
-}
-
 /* ------------------ Table Styles ------------------ */
 table {
 border:0;
@@ -247,14 +242,14 @@ padding:0
 
 /* ------------------ Header ------------------ */
 #wordmark {
-background:transparent url(http://www.uchicago.edu/i/template_sites/uc_wordmark.gif) top right no-repeat;
+/* background:transparent url(http://www.uchicago.edu/i/template_sites/uc_wordmark.gif) top right no-repeat; */
 display:block;
 height:53px;
 text-decoration:none
 }
 
 #dept-title {
-background:url(../images/masthead.gif) no-repeat scroll 0 0 transparent;
+/* background:url(../images/masthead.gif) no-repeat scroll 0 0 transparent; */
 display:block;
 height:53px;
 text-decoration:none
@@ -792,9 +787,9 @@ margin-left:24px
 }
 
 #block-views-homepage-feed-block div.feed-icon {
-position:absolute;
-top:-40px;
-right:0px;
+float:right;
+position:relative;
+top:-25px
 }
 
 #mainfeature {
