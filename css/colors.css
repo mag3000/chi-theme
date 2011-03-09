@@ -10,8 +10,8 @@ body.overlay {
 .comment .comment-arrow {
   border-color: #ffffff;
 }
-#main-wrapper {
-	background:#eae9e1 url(/sites/all/themes/uchicago/images/maincontentbg.gif) top center no-repeat; padding:0 9px;
+#page-wrapper {
+	background:#eae9e1 url(/sites/all/themes/uchicago/images/maincontentbg.gif) top center no-repeat;
 }
 .tabs ul.primary li a.active {
   background-color: #ffffff;
@@ -36,9 +36,6 @@ a:focus {
 }
 a:active, .block li a.active {
   color: #155f83;
-}
-#footer-wrapper {
-  background: #292929;
 }
 .region-header,
 .region-header a,

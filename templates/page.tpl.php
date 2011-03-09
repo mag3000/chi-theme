@@ -199,32 +199,16 @@
     </div></div> <!-- /.section, /#content -->
 		
   </div></div> <!-- /#main, /#main-wrapper -->
+<div id="clearfoot">&nbsp;</div>
+</div></div> <!-- /#page, /#page-wrapper -->
 
   <div id="footer-wrapper"><div class="section container_12">
-
-    <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-      <div id="footer-columns" class="clearfix">
+      <div id="footer" class="clearfix">
       	<div class="grid_3">
-	        <?php print render($page['footer_firstcolumn']); ?>
+	        <p>&copy; 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br><a href="/"><?php print $site_name; ?></a></p>
 	      </div>
       	<div class="grid_3">
-	        <?php print render($page['footer_secondcolumn']); ?>
-	      </div>
-      	<div class="grid_3">
-	        <?php print render($page['footer_thirdcolumn']); ?>
-	      </div>
-      	<div class="grid_3">
-	        <?php print render($page['footer_fourthcolumn']); ?>
+	        <p>6045 S. Kenwood Ave.<br>Chicago, IL 60637</p>
 	      </div>
       </div> <!-- /#footer-columns -->
-    <?php endif; ?>
-
-    <?php if ($page['footer']): ?>
-      <div id="footer" class="clearfix">
-        <?php print render($page['footer']); ?>
-      </div> <!-- /#footer -->
-    <?php endif; ?>
-
   </div></div> <!-- /.section, /#footer-wrapper -->
-
-</div></div> <!-- /#page, /#page-wrapper -->

@@ -7,6 +7,7 @@ body,
 }
 #page-wrapper {
   min-height: 100%;
+  background-color:#5a5952
 }
 .region-header {
   float: right; /* LTR */
@@ -18,36 +19,12 @@ body,
 .without-secondary-menu .region-header {
   margin-top: 15px;
 }
-/*
-.one-sidebar #content {
-  width: 720px;
-}
-.two-sidebars #content {
-  width: 480px;
-}
-.no-sidebars #content {
-  width: 960px;
-  float: none;
-}
-*/
 #header {
 	height:96px
 }
 #main-wrapper {
   min-height: 300px;
 }
-#breadcrumb {
-  margin: 0 15px;
-}
-.region-triptych-first,
-.region-triptych-middle,
-.region-triptych-last {
-  margin: 20px 20px 30px;
-}
-#footer-wrapper {
-  padding: 35px 5px 30px;
-}
-
 /*
 Variable Grid System.
 Learn more ~ http://www.spry-soft.com/grids/
