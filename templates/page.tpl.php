@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Bartik's theme implementation to display a single Drupal page.

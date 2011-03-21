@@ -100,7 +100,7 @@
 			// We hide the comments and links now so that we can render them later.
 			hide($content['comments']);
 			hide($content['links']);
-			hide($content['field_image']);
+			hide($content['field_rightimage']);
 			print render($content);
 		?>
 		
@@ -126,10 +126,10 @@
 </div>
 
 <?php
-	if (!empty($content['field_image'][0])):
+	if (!empty($content['field_rightimage'][0])):
 	?>
 	<div class="imgrt grid_3 omega">
-			<?php print render($content['field_image']); ?>
+			<?php print render($content['field_rightimage']); ?>
 	</div>
 	<?php
 	endif;
