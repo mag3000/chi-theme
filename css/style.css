@@ -101,7 +101,6 @@ white-space:pre-wrap
 /* ------------------ Reset Styles ------------------ */
 caption {
 text-align:left;
-/* LTR */
 font-weight:normal
 }
 
@@ -138,16 +137,12 @@ display:inline
 table {
 border:0;
 border-spacing:0;
-font-size:.857em;
+font-size:1em;
 margin:10px 0;
 width:100%
 }
 
 table table {
-font-size:1em
-}
-
-#footer-wrapper table {
 font-size:1em
 }
 
@@ -170,12 +165,6 @@ tr td,tr th {
 padding:4px 9px;
 border:1px solid #fff;
 text-align:left
-/* LTR */
-}
-
-#footer-wrapper tr td,#footer-wrapper tr th {
-border-color:#555;
-border-color:rgba(255,255,255,0.18)
 }
 
 tr.odd {
@@ -202,7 +191,6 @@ padding:0 1em 0 0
 ul {
 margin:0;
 padding:0
-/* LTR */
 }
 
 .contextual-links-wrapper {
@@ -224,7 +212,6 @@ margin:0
 .item-list ul li {
 margin:0;
 padding:.2em .5em 0 0
-/* LTR */
 }
 
 .item-list .pager li {
@@ -233,7 +220,6 @@ margin:0;
 
 ul.tips {
 padding:0 0 0 1.25em
-/* LTR */
 }
 
 li.leaf {
@@ -242,14 +228,14 @@ padding:0
 
 /* ------------------ Header ------------------ */
 #wordmark {
-/* background:transparent url(http://www.uchicago.edu/i/template_sites/uc_wordmark.gif) top right no-repeat; */
+background:transparent url(http://www.uchicago.edu/i/template_sites/uc_wordmark.gif) top right no-repeat;
 display:block;
 height:53px;
 text-decoration:none
 }
 
 #dept-title {
-/* background:url(../images/masthead.gif) no-repeat scroll 0 0 transparent; */
+background:url(../images/masthead.gif) no-repeat scroll 0 0 transparent;
 display:block;
 height:53px;
 text-decoration:none
@@ -332,8 +318,11 @@ font-size:1.1em;
 font-weight:400;
 line-height:1.4em;
 padding:4px 8px 4px 22px;
-width:188px;
 margin-bottom:0!important
+}
+
+#block-system-main-menu .content ul li ul li ul li {
+padding-bottom:0
 }
 
 #block-system-main-menu .content ul li ul li a {
@@ -427,7 +416,7 @@ h1#page-title {
 color:#7f3735;
 letter-spacing:1px;
 font-size:32px;
-font-family:"myriad-pro-1","myriad-pro-2",helvetica,sans-serif;
+font-family:"MuseoSans100",helvetica,sans-serif;
 font-weight:300;
 height:32px;
 margin:0 0 6px;
@@ -501,7 +490,7 @@ margin-right:10px
 
 hr {
 border:none 0;
-border-top:1px solid #eaeae2;
+border-top:1px solid #D7D7CF;
 background:#f7f6ee;
 width:100%;
 clear:both;
@@ -566,14 +555,6 @@ margin-bottom:5px;
 text-transform:uppercase
 }
 
-.submitted .user-picture img {
-float:left;
-/* LTR */
-height:20px;
-margin:1px 5px 0 0
-/* LTR */
-}
-
 .field-type-taxonomy-term-reference {
 margin:0 0 1.2em
 }
@@ -635,7 +616,7 @@ border-right:1px solid #fff4f4
 margin-top:0
 }
 
-div#controls {
+#controls {
 height: 16px;
 width:100%;
 float:right;
@@ -643,7 +624,7 @@ border-bottom:1px solid #D7D7CF;
 padding-bottom:9px
 }
 
-div#controls a#slide-previous, div#controls a#slide-next {
+#controls #slide-previous, #controls #slide-next, #cboxNext, #cboxPrevious {
 background-color: transparent;
 background-image: url(../images/slidecontrol.gif);
 background-repeat: no-repeat;
@@ -657,22 +638,193 @@ width: 16px;
 outline: none
 }
 
-div#controls a#slide-previous {
+#controls #slide-previous, #cboxPrevious {
 background-position: 0 0;
 margin-right: 4px
 }
 
-div#controls a#slide-next {
+#controls #slide-next, #cboxNext {
 background-position: -16px 0;
 margin-left: 4px
 }
 
-div#controls a#slide-previous:hover, div#controls a#slide-previous:focus {
+#controls #slide-previous:hover, #controls #slide-previous:focus, #cboxPrevious:hover, #cboxPrevious:focus {
 background-position: 0 -16px;
 }
-div#controls a#slide-next:hover, div#controls a#slide-next:focus {
+#controls #slide-next:hover, #controls #slide-next:focus, #cboxNext:hover, cboxNext:focus {
 background-position: -16px -16px;
 }
+
+
+/* $Id: colorbox_default_style.css,v 1.1.4.1 2010/11/29 09:42:07 frjo Exp $  */
+
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+#cboxOverlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#cboxMiddleLeft, #cboxBottomLeft {
+  clear: left;
+}
+#cboxContent {
+  position: relative;
+  overflow: hidden;
+}
+#cboxLoadedContent {
+  color: #000;
+  overflow: auto;
+}
+#cboxLoadedContent iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#cboxTitle {
+  margin: 0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+  cursor: pointer;
+}
+
+
+/* ----------------- Colorbox ----------------- */
+#cboxOverlay {
+  background: #000;
+}
+
+#cboxWrapper {
+background: #fff;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+#cboxTopLeft {
+width: 15px;
+height: 15px;
+}
+#cboxTopCenter {
+height: 15px;
+}
+#cboxTopRight {
+width: 15px;
+height: 15px;
+}
+#cboxBottomLeft {
+width: 15px;
+height: 10px;
+}
+#cboxBottomCenter {
+height: 10px;
+}
+#cboxBottomRight {
+width: 15px;
+height: 10px;
+}
+#cboxMiddleLeft {
+width: 15px;
+}
+#cboxMiddleRight {
+width: 15px;
+}
+#cboxContent {
+background: #fff;
+font: 12px Verdana, Arial, sans-serif;
+}
+#cboxLoadedContent {
+margin-bottom: 28px;
+}
+#cboxTitle {
+position: absolute;
+background: rgba(255, 255, 255, 0.7);
+bottom: 28px;
+left: 0;
+color: #474740;
+width: 100%;
+padding: 4px;
+}
+#cboxCurrent {
+position: absolute;
+bottom: 0px;
+left: 55px;
+color: #474740;
+}
+.cboxSlideshow_on #cboxSlideshow {
+position: absolute;
+bottom: 0px;
+right: 30px;
+background: url(../images/colorbox/controls.png) -75px -50px no-repeat;
+width: 25px;
+height: 25px;
+text-indent: -9999px;
+}
+.cboxSlideshow_on #cboxSlideshow.hover {
+background-position: -101px -50px;
+}
+.cboxSlideshow_off #cboxSlideshow {
+position: absolute;
+bottom: 0px;
+right: 30px;
+background: url(../images/colorbox/controls.png) -49px -50px no-repeat;
+width: 25px;
+height: 25px;
+text-indent: -9999px;
+}
+.cboxSlideshow_off #cboxSlideshow.hover {
+background-position: -25px -50px;
+}
+#cboxPrevious {
+position: absolute;
+bottom: 0;
+left: 0;
+}
+#cboxNext {
+position: absolute;
+bottom: 0;
+left: 20px;
+}
+#cboxLoadingOverlay {
+background: #fff;
+}
+#cboxLoadingGraphic {
+background: url(../images/colorbox/loading_animation.gif) center center no-repeat;
+}
+#cboxClose {
+position: absolute;
+bottom: 0;
+right: 0;
+background: url(../images/colorbox/controls.png) -25px 0px no-repeat;
+width: 25px;
+height: 25px;
+text-indent: -9999px;
+}
+#cboxClose.hover {
+background-position: -25px -25px;
+}
+
+/* The following are fixes for IE. */
+.cboxIE #cboxTitle {
+  background: #fff;
+}
+
 
 /* ----------------- Homepage ----------------- */
 #homefeature {
@@ -696,7 +848,6 @@ border-bottom:none!important;
 margin-top:4px
 }
 
-/* body.front #bottomrow{float:left; margin-top:16px; padding-top:16px; border-top:1px solid #D7D7CF} */
 a.feeds {
 background:transparent url(http://www.uchicago.edu/i/template/rssicon.gif) 0 0 no-repeat;
 display:block;
@@ -733,7 +884,7 @@ background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom l
 
 #block-views-homepage-feed-block h2 {
 display:block;
-font-family:"myriad-pro-1","myriad-pro-2",verdana,sans-serif;
+font-family:"MuseoSans300",verdana,sans-serif;
 color:#155F83;
 font-size:1.5em;
 letter-spacing:1px;
@@ -813,7 +964,7 @@ letter-spacing:-.2px;
 position:absolute;
 width:354px;
 font-size:16px;
-font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+font-family: "MuseoSans100",sans-serif;
 font-weight:400
 }
 
@@ -858,7 +1009,7 @@ margin-bottom:-25px /*Because sidebar blocks have padding (for the background im
 
 .view-mini-features h3 {
 color:#155F83;
-font-family:"myriad-pro-1","myriad-pro-2",helvetica,sans-serif;
+font-family:"MuseoSans300",helvetica,sans-serif;
 font-size:17px;
 margin:8px 0 4px
 }
@@ -879,7 +1030,6 @@ margin: 0
 
 #block-events {
 border-top:5px solid #8f3931;
-/* padding:10px 10px 0; */
 margin-bottom:24px;
 background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x;
 }
@@ -889,7 +1039,7 @@ margin:0 0 5px;
 letter-spacing:1px;
 color:#800000 !important;
 font-size:1.5em !important;
-font-family:"myriad-pro-1","myriad-pro-2",verdana,sans-serif;
+font-family:"MuseoSans300",verdana,sans-serif;
 font-weight:400 !important;
 padding:6px 10px;
 text-transform:uppercase;
@@ -959,7 +1109,6 @@ margin-bottom:1em
 
 .comment div.user-picture img {
 margin-left:0
-/* LTR */
 }
 
 .comment {
@@ -971,7 +1120,6 @@ vertical-align:top
 .comment .attribution {
 display:table-cell;
 padding:0 30px 0 0;
-/* LTR */
 vertical-align:top;
 overflow:hidden
 }
@@ -1008,12 +1156,10 @@ line-height:1.6
 
 .comment .comment-arrow {
 background:url(../images/comment-arrow.gif) no-repeat 0 center transparent;
-/* LTR */
 border-left:1px solid;
 border-right:1px solid;
 height:40px;
 margin-left:-47px;
-/* LTR */
 margin-top:10px;
 position:absolute;
 width:20px
@@ -1030,7 +1176,6 @@ width:100%
 
 .comment .indented {
 margin-left:40px
-/* LTR */
 }
 
 .comment ul.links {
@@ -1039,14 +1184,11 @@ padding:0 0 .25em
 
 .comment ul.links li {
 padding:0 .5em 0 0
-/* LTR */
 }
 
 .comment-unpublished {
 margin-right:5px;
-/* LTR */
 padding:5px 2px 5px 5px
-/* LTR */
 }
 
 .comment-unpublished .comment-text .comment-arrow {
@@ -1067,16 +1209,9 @@ padding:0 0 15px;
 background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x
 }
 
-/*
-.sidebar .block-views {
-background:none
-}
-*/
-
 .sidebar h2 {
 background-color:#3E7C97;
-font-family:"myriad-pro-1","myriad-pro-2",verdana,sans-serif;
-font-weight:600;
+font-family:"MuseoSans500",verdana,sans-serif;
 color:#fff!important;
 display:block;
 font-size:1em!important;
@@ -1099,24 +1234,9 @@ font-size:1.1em;
 line-height:1.65em
 }
 
-.sidebar tbody {
-border:none
-}
-
-.sidebar tr.even,.sidebar tr.odd {
-background:none;
-border-bottom:1px solid #d6d6d6
-}
-
 .sidebar .block .content {
 padding:0 10px
 }
-
-/*
-.sidebar .block-views .content {
-padding:0
-}
-*/
 
 .sidebar .block ul {
 margin:0;
@@ -1182,10 +1302,8 @@ background:transparent url(../images/tabs-border.png) repeat-x left bottom
 .tabs ul.primary li {
 display:block;
 float:left;
-/* LTR */
 vertical-align:bottom;
 margin:0 5px 0 0
-/* LTR */
 }
 
 .tabs ul.primary li.active a {
@@ -1200,7 +1318,6 @@ line-height:1.9;
 display:block;
 font-size:.929em;
 float:left;
-/* not LTR */
 padding:0 10px 3px;
 margin:0;
 text-shadow:0 1px 0 #fff;
@@ -1226,17 +1343,14 @@ padding:.5em 0
 .tabs ul.secondary li {
 display:block;
 float:left
-/* LTR */
 }
 
 .tabs ul.secondary li:last-child {
 border-right:none
-/* LTR */
 }
 
 .tabs ul.secondary li:first-child {
 padding-left:0
-/* LTR */
 }
 
 .tabs ul.secondary li a {
@@ -1282,16 +1396,6 @@ background:rgba(30,50,10,0.08)
 
 div.messages {
 margin:8px 15px
-}
-
-/* -------------- Breadcrumbs   -------------- */
-.breadcrumb {
-font-size:.929em
-}
-
-/* -------------- User Profile   -------------- */
-.profile .user-picture {
-float:none
 }
 
 /* -------------- Password Meter  ------------- */
@@ -1408,7 +1512,6 @@ color:#3b3b3b;
 display:block;
 height:2em;
 left:-1px;
-/* LTR */
 font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 line-height:2;
 padding:0;
@@ -1568,18 +1671,15 @@ color:#717171
 /* Animated throbber */
 html.js input.form-autocomplete {
 background-position:100% 4px
-/* LTR */
 }
 
 html.js input.throbbing {
 background-position:100% -16px
-/* LTR */
 }
 
 /* Comment form */
 .comment-form label {
 float:left;
-/* LTR */
 font-size:.929em;
 width:120px
 }
@@ -1615,23 +1715,10 @@ margin-top:0
 width:auto
 }
 
-.no-sidebars .comment-form .form-text {
-width:800px
-}
-
-.one-sidebar .comment-form .form-text {
-width:500px
-}
-
-.two-sidebars .comment-form .form-text {
-width:320px
-}
-
 .comment-form .form-item .description {
 font-size:.786em;
 line-height:1.2;
 margin-left:120px
-/* LTR */
 }
 
 #content h2.comment-form {
@@ -1673,7 +1760,6 @@ margin-bottom:.4em
 
 #edit-actions input {
 margin-right:.6em
-/* LTR */
 }
 
 /* -------------- Other Overrides ------------- */
@@ -1711,26 +1797,25 @@ padding-bottom:7px
 margin-top:0
 }
 
+#block-search-form .form-item, #block-search-form .form-actions {
+margin:0;
+padding:0
+}
+
 #search-form input#edit-keys,#block-search-form .form-item-search-block-form input {
-float:left;
-/* LTR */
-font-size:1em;
-height:1.143em;
-margin-right:5px;
-width:9em
+width:150px
 }
 
 #search-block-form input.form-submit,#search-form input.form-submit {
-margin-left:0;
-margin-right:0;
-height:25px;
-width:34px;
+margin:0;
+height:24px;
+width:29px;
 padding:0;
 cursor:pointer;
 text-indent:-9999px;
-border-color:#e4e4e4 #d2d2d2 #b4b4b4;
 background:url(../images/search-button.png) no-repeat center top;
-overflow:hidden
+overflow:hidden;
+border:none
 }
 
 #search-block-form input.form-submit:hover,#search-block-form input.form-submit:focus,#search-form input.form-submit:hover,#search-form input.form-submit:focus {
@@ -1746,10 +1831,10 @@ ol.search-results {
 padding-left:0
 }
 
-.search-results li {
-border-bottom:1px solid #d3d7d9;
-padding-bottom:.4285em;
-margin-bottom:.5em
+.region-content .search-results li {
+border-bottom:1px solid #D7D7CF;
+padding-bottom:16px;
+margin-bottom:16px
 }
 
 .search-results li:last-child {
@@ -1762,6 +1847,14 @@ margin-bottom:1em
 padding-left:0
 }
 
+.search-results p {
+margin:0.5em 0
+}
+
+fieldset.search-advanced {
+display:none
+}
+
 /* -------------- Shortcut Links -------------- */
 .shortcut-wrapper {
 margin:2.2em 0 1.1em
@@ -1770,7 +1863,6 @@ margin:2.2em 0 1.1em
 
 .shortcut-wrapper h1#page-title {
 float:left;
-/* LTR */
 margin:0
 }
 
@@ -1785,7 +1877,6 @@ padding-top:.8em
 /* ---------- Admin-specific Theming ---------- */
 .page-admin #content img {
 margin-right:15px
-/* LTR */
 }
 
 .page-admin #content .simpletest-image img {
@@ -1913,7 +2004,6 @@ margin-right:2.25em
 font-size:.929em;
 font-style:italic;
 text-align:right;
-/* LTR */
 clear:both
 }
 

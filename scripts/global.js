@@ -8,6 +8,3 @@ jQuery(document).ready(function () {
   	jQuery('div.slideshow div.field-items').cycle({fx:'scrollLeft',speed:300,timeout:0,next:'#slide-next',prev:'#slide-previous'});
 	}	
 });
-
-// Load typekit
-try{Typekit.load();}catch(e){}
