@@ -43,23 +43,21 @@
  */
 ?>
 <div class="<?php print $classes; ?> clearfix <?php if (count($items)>1) { print 'slideshow'; } ?>"<?php print $attributes; ?>>
-  <?php if (!$label_hidden) : ?>
-    <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
-  <?php endif; ?>
-  <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
-      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
+    <?php $imgarray = image_get_info($item['#item']['uri']); ?>
+      <div>
+        <div style="height:<?php print($imgarray['height'] + 8); ?>px">
       	<?php print render($item); ?>
+      	</div>
 				<?php if ($item['#item']['title']): ?>
 				<div class="caption"><?php print($item['#item']['title']); ?></div>
 				<?php endif; ?>
       </div>
 		<?php endforeach; ?>
-  </div>
+</div>
   <?php if (count($items)>1): ?>
 		<div id="controls">
 			<a href="#" id="slide-next">Next</a>
 			<a href="#" id="slide-previous">Previous</a>
 		</div>
 	<?php endif; ?>
-</div>

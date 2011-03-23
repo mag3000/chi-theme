@@ -1,0 +1,164 @@
+/*
+Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+body
+{
+font-family: Verdana, sans-serif;
+font-size: 10px;
+color: #474740;
+background-color: #f7f6ee;
+line-height: 1.5;
+font-weight:400;
+width:452px
+}
+
+/* preserved spaces for rtl list item bullets. (#6249)*/
+ol,ul,dl
+{
+    padding-right:40px;
+}
+
+html
+{
+	/* #3658: [IE6] Editor document has horizontal scrollbar on long lines
+	To prevent this misbehavior, we show the scrollbar always */
+	_overflow-y: scroll;
+	/* #6341: The text cursor must be set on the editor area. */
+	cursor: text;
+	/* #6632: Avoid having "text" shape of cursor in IE7 scrollbars.*/
+	*cursor:auto;
+}
+
+img:-moz-broken
+{
+	-moz-force-broken-image-icon : 1;
+	width : 24px;
+	height : 24px;
+}
+img, input, textarea
+{
+	cursor: default;
+}
+
+p {
+font-size: 1.1em;
+line-height: 1.65em;
+margin: 0 0 1.15em;
+}
+
+h2,h3,h4,h5,h6 {
+font-weight:inherit
+}
+h2 {
+font-size:1.143em
+}
+
+a {
+color: #155f83;
+}
+
+a:hover,
+a:focus {
+color: #20364c;
+text-decoration: underline;
+}
+
+ul {
+margin:0;
+padding:0
+}
+
+ul li, ol li {
+font-size:1.1em;
+line-height:1.5em;
+margin:0 0 .7em
+}
+
+ul li {
+list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
+margin-left:24px
+}
+
+ul li ul li {
+font-size:1em
+}
+
+h2 {
+color:#740000;
+font-size:1.4em;
+line-height:1.142em;
+margin:0 0 .5em
+}
+
+h3 {
+color:#3d3d2f;
+font-weight:700;
+font-size:1.1em;
+line-height:1.333em;
+margin:.5em 0 .45em;
+letter-spacing:1px;
+text-transform:uppercase
+}
+
+h4 {
+color:#5b5b4f;
+font-weight:700;
+font-size:1.1em;
+line-height:1.333em;
+margin:1.3em 0 .45em
+}
+
+hr {
+border:none 0;
+border-top:1px solid #D7D7CF;
+background:#f7f6ee;
+width:100%;
+clear:both;
+height:1px;
+margin:0 0 16px
+}
+
+table {
+border:0;
+border-spacing:0;
+font-size:1em;
+margin:10px 0;
+width:100%
+}
+
+table table {
+font-size:1em
+}
+
+table tr th {
+background:#757575;
+background:rgba(0,0,0,0.51);
+border-bottom-style:none
+}
+
+table tr th,table tr th a,table tr th a:hover {
+color:#FFF;
+font-weight:bold
+}
+
+table tbody tr th {
+vertical-align:top
+}
+
+tr td,tr th {
+padding:4px 9px;
+border:1px solid #fff;
+text-align:left
+}
+
+tr.odd {
+background:#e4e4e4;
+background:rgba(0,0,0,0.105)
+}
+
+tr,tr.even {
+background:#efefef;
+background:rgba(0,0,0,0.063)
+}

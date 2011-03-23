@@ -42,7 +42,7 @@
  * @see template_process()
  */
 ?>
-<?php if ($block->module == 'block'): ?>
+<?php if ($block->module == 'block' && $block->subject): ?>
 	<?php $new_block_id = str_replace(" ","",$block->subject); ?>
 	<div id="block-<?php print strtolower($new_block_id); ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 <?php else: ?>

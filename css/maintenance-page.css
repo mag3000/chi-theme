@@ -13,7 +13,7 @@ body.maintenance-page {
   margin-top: 40px;
 }
 .maintenance-page #page {
-  margin: 20px 40px 40px;
+  margin: 0;
 }
 .maintenance-page #main-wrapper {
   min-height: inherit;
@@ -32,23 +32,10 @@ body.maintenance-page {
   margin: 0;
 }
 .maintenance-page #content .section {
-  padding: 0 0 0 10px;
+  padding: 20px;
 }
 .maintenance-page #header {
-  background-color: #fff;
-  background-image: none;
-}
-.maintenance-page #name-and-slogan {
-  margin-bottom: 50px;
-  margin-left: 0;
-  padding-top: 20px;
-  font-size: 90%;
-}
-.maintenance-page #name-and-slogan,
-.maintenance-page #name-and-slogan a,
-.maintenance-page #name-and-slogan a:hover,
-.maintenance-page #name-and-slogan a:hover {
-  color: #777;
+	padding: 0 20px;
 }
 .maintenance-page  h1#page-title {
   line-height: 1em;

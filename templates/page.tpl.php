@@ -87,129 +87,125 @@
 <?php $toggle_simplehomepage = theme_get_setting('toggle_simplehomepage'); ?>
 <div id="page-wrapper"><div id="page">
 
-  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix container_12">
+  <div id="header"><div class="clearfix container_12">
 
     <?php if ($site_name): ?>
-      <div id="name-and-slogan"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-
+      <div id="name-and-slogan">
         <?php if ($site_name): ?>
           <?php if ($title): ?>
-            <div id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8" id="dept-title"><span><?php print $site_name; ?></span></a>
+            <div id="site-name">
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8" id="dept-title"><?php print $site_name; ?></a>
                 <a href="http://www.uchicago.edu/" title="University of Chicago Home" id="wordmark" class="grid_4">The University of Chicago</a>
             </div>
           <?php else: /* Use h1 when the content title is empty */ ?>
-          <div id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8" id="dept-title"><span><?php print $site_name; ?></span></a>
+          <div id="site-name">
+                <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8" id="dept-title"><?php print $site_name; ?></a></h1>
                 <a href="http://www.uchicago.edu/" title="University of Chicago Home" id="wordmark" class="grid_4">The University of Chicago</a>
           </div>
-      <!--      <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-      -->
           <?php endif; ?>
         <?php endif; ?>
-
-      </div> <!-- /#name-and-slogan -->
+      </div> <!-- /#name -->
     <?php endif; ?>
 
-  </div></div> <!-- /.section, /#header -->
+  </div></div> <!-- /#header -->
 
+	<div id="main-wrapper" class="clearfix">
+		<div id="main" class="clearfix container_12">
 
-
-  <?php if ($page['featured']): ?>
-    <div id="featured"><div class="section clearfix container_12">
-      <?php print render($page['featured']); ?>
-    </div></div> <!-- /.section, /#featured -->
-  <?php endif; ?>
-
-	<div id="main-wrapper" class="clearfix"><div id="main" class="clearfix container_12">
-		<?php if ($messages): ?>
-			<div id="messages"><div class="section clearfix container_12">
-				<?php print $messages; ?>
-			</div></div> <!-- /.section, /#messages -->
-		<?php endif; ?>
-		<div id="sidebar-first" class="column sidebar grid_3"><div class="section"> 
-			 
-			<?php if($page['sidebar_first']): ?>
-				<?php print render($page['sidebar_first']); ?>
+			<?php if ($messages): ?>
+				<div id="messages">
+						<?php print $messages; ?>
+				</div> <!-- /#messages -->
 			<?php endif; ?>
 			
-		</div></div> <!-- /.section, /#sidebar-first -->
-
-    <div id="content" class="column grid_9 <?php if ($toggle_simplehomepage) { print 'notfancy'; } ?>"><div class="section">
-      <a id="main-content"></a>
-			<?php if (!$toggle_simplehomepage): ?>
-				<?php if ($page['home_features']): ?>
-					<div id="mainfeature" class="clearfix">    
-							<?php print render($page['home_features']); ?>
-					</div>
+			<div id="sidebar-first" class="column sidebar grid_3"> 
+				<?php if($page['sidebar_first']): ?>
+					<?php print render($page['sidebar_first']); ?>
 				<?php endif; ?>
-			<?php endif; ?>
-			<?php if (!empty($node) || !$is_front): ?>
-				<?php print render($title_prefix); ?>
-					<?php if ($title): ?>
-						<h1 class="title" id="page-title">
-							<?php print $title; ?>
-						</h1>
-					<?php endif; ?>
-				<?php print render($title_suffix); ?>
-			<?php endif; ?>
-			<?php if ($tabs): ?>
-				<div class="tabs">
-					<?php print render($tabs); ?>
-				</div>
-			<?php endif; ?>
-			<div id="bottomrow" class="clearfix">
-				<div class="grid_6 alpha">
-					<?php if ($page['highlighted']): ?>
-						<?php print render($page['highlighted']); ?>
-					<?php endif; ?>
-					<?php if (!$toggle_simplehomepage): ?>
-						<?php if ($page['home_center']): ?>
-								<?php print render($page['home_center']); ?>
-						<?php endif; ?>
-					<?php endif; ?>
-					<?php print render($page['help']); ?>
-					<?php if ($action_links): ?>
-						<ul class="action-links">
-							<?php print render($action_links); ?>
-						</ul>
-					<?php endif; ?>
-				</div>
-				
-				<?php if(!$is_front || $toggle_simplehomepage): ?>
-					<?php if (!empty($node)): ?>
-						<?php print render($page['content']); ?>
-					<?php else: ?>
-						<div class="grid_6 alpha">
-							<?php print render($page['content']); ?>
-							<?php print $feed_icons; ?>
+			</div> <!-- /#sidebar-first -->
+	
+			<div id="content" class="column grid_9 <?php if ($toggle_simplehomepage) { print 'notfancy'; } ?>">
+				<a id="main-content"></a>
+				<?php if (!$toggle_simplehomepage): ?>
+					<?php if ($page['home_features']): ?>
+						<div id="mainfeature" class="clearfix">    
+								<?php print render($page['home_features']); ?>
 						</div>
 					<?php endif; ?>
 				<?php endif; ?>
-				
-				<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')): ?>
-					<div id="sidebar-second" class="column sidebar grid_3 omega"><div class="section">
-						<?php print render($page['sidebar_second']); ?>
-					</div></div> <!-- /.section, /#sidebar-second -->
+				<?php if (!empty($node) || !$is_front): ?>
+					<?php print render($title_prefix); ?>
+						<?php if ($title): ?>
+							<h1 class="title" id="page-title">
+								<?php print $title; ?>
+							</h1>
+						<?php endif; ?>
+					<?php print render($title_suffix); ?>
 				<?php endif; ?>
-				
-			</div> <!-- bottomrow -->
-
-    </div></div> <!-- /.section, /#content -->
+				<?php if ($tabs): ?>
+					<div class="tabs">
+						<?php print render($tabs); ?>
+					</div>
+				<?php endif; ?>
+				<div id="bottomrow" class="clearfix">
+					<?php if ($page['highlighted'] || $page['home_center'] || $page['help'] || $action_links): ?>
+						<div class="grid_6 alpha">
+							<?php if ($page['highlighted']): ?>
+								<?php print render($page['highlighted']); ?>
+							<?php endif; ?>
+							<?php if (!$toggle_simplehomepage): ?>
+								<?php if ($page['home_center']): ?>
+										<?php print render($page['home_center']); ?>
+								<?php endif; ?>
+							<?php endif; ?>
+							<?php print render($page['help']); ?>
+							<?php if ($action_links): ?>
+								<ul class="action-links">
+									<?php print render($action_links); ?>
+								</ul>
+							<?php endif; ?>
+						</div>
+					<?php endif; ?>
+					
+					<?php if(!$is_front || $toggle_simplehomepage): ?>
+						<?php if (!empty($node)): ?>
+							<?php print render($page['content']); ?>
+						<?php else: ?>
+							<div class="grid_6 alpha">
+								<?php print render($page['content']); ?>
+								<?php print $feed_icons; ?>
+							</div>
+						<?php endif; ?>
+					<?php endif; ?>
+					
+					<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')): ?>
+						<div id="sidebar-second" class="column sidebar grid_3 omega">
+							<?php print render($page['sidebar_second']); ?>
+						</div> <!-- /#sidebar-second -->
+					<?php endif; ?>
+					
+				</div> <!-- bottomrow -->
+	
+			</div> <!-- /#content -->
 		
-  </div></div> <!-- /#main, /#main-wrapper -->
+  	</div>
+  </div> <!-- /#main, /#main-wrapper -->
 <div id="clearfoot">&nbsp;</div>
 </div></div> <!-- /#page, /#page-wrapper -->
 
-  <div id="footer-wrapper"><div class="section container_12">
+  <div id="footer-wrapper"><div class="container_12">
       <div id="footer" class="clearfix">
       	<div class="grid_3">
-	        <p>&copy; 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br /><a href="/"><?php print $site_name; ?></a></p>
+	        <p><a href="/user/" id="loginlink">&copy;</a> 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br /><a href="/"><?php print $site_name; ?></a></p>
 	      </div>
       	<div class="grid_3">
-	        <p>6045 S. Kenwood Ave.<br />Chicago, IL 60637</p>
+	        <?php print render($page['footer_secondcolumn']); ?>
 	      </div>
-      </div> <!-- /#footer-columns -->
-  </div></div> <!-- /.section, /#footer-wrapper -->
+      	<div class="grid_3">
+	        <?php print render($page['footer_thirdcolumn']); ?>
+	      </div>
+      	<div class="grid_3">
+	        <?php print render($page['footer_fourthcolumn']); ?>
+	      </div>
+      </div> <!-- /#footer -->
+  </div></div> <!-- /#footer-wrapper -->

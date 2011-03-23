@@ -4,16 +4,6 @@
  * Add body classes if certain regions have content.
  */
 function uchicago_preprocess_html(&$variables) {
-  if (!empty($variables['page']['featured'])) {
-    $variables['classes_array'][] = 'featured';
-  }
-
-  if (!empty($variables['page']['footer_firstcolumn'])
-    || !empty($variables['page']['footer_secondcolumn'])
-    || !empty($variables['page']['footer_thirdcolumn'])
-    || !empty($variables['page']['footer_fourthcolumn'])) {
-    $variables['classes_array'][] = 'footer-columns';
-  }
 
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
@@ -21,35 +11,9 @@ function uchicago_preprocess_html(&$variables) {
 }
 
 /**
- * Override or insert variables into the page template for HTML output.
- */
-function uchicago_process_html(&$variables) {
-  // Hook into color.module.
-  if (module_exists('color')) {
-    _color_html_alter($variables);
-  }
-}
-
-/**
  * Override or insert variables into the page template.
  */
 function uchicago_process_page(&$variables) {
-  // Hook into color.module.
-  if (module_exists('color')) {
-    _color_page_alter($variables);
-  }
-  // Always print the site name and slogan, but if they are toggled off, we'll
-  // just hide them visually.
-  $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
-  $variables['hide_site_slogan'] = theme_get_setting('toggle_slogan') ? FALSE : TRUE;
-  if ($variables['hide_site_name']) {
-    // If toggle_name is FALSE, the site_name will be empty, so we rebuild it.
-    $variables['site_name'] = filter_xss_admin(variable_get('site_name', 'Drupal'));
-  }
-  if ($variables['hide_site_slogan']) {
-    // If toggle_site_slogan is FALSE, the site_slogan will be empty, so we rebuild it.
-    $variables['site_slogan'] = filter_xss_admin(variable_get('site_slogan', ''));
-  }
   // Since the title and the shortcut link are both block level elements,
   // positioning them next to each other is much simpler with a wrapper div.
   if (!empty($variables['title_suffix']['add_or_remove_shortcut']) && $variables['title']) {
@@ -65,6 +29,10 @@ function uchicago_process_page(&$variables) {
     // Make sure the shortcut link is the first item in title_suffix.
     $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
   }
+  // Change the title of the contact form
+  if (module_exists('contact')) {
+	  if ( arg(0) == 'contact' ) { $variables['title'] = t('Contact Us'); }
+	}
 }
 
 /**
@@ -75,24 +43,6 @@ function uchicago_preprocess_maintenance_page(&$variables) {
     unset($variables['site_name']);
   }
   drupal_add_css(drupal_get_path('theme', 'uchicago') . '/css/maintenance-page.css');
-}
-
-/**
- * Override or insert variables into the maintenance page template.
- */
-function uchicago_process_maintenance_page(&$variables) {
-  // Always print the site name and slogan, but if they are toggled off, we'll
-  // just hide them visually.
-  $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
-  $variables['hide_site_slogan'] = theme_get_setting('toggle_slogan') ? FALSE : TRUE;
-  if ($variables['hide_site_name']) {
-    // If toggle_name is FALSE, the site_name will be empty, so we rebuild it.
-    $variables['site_name'] = filter_xss_admin(variable_get('site_name', 'Drupal'));
-  }
-  if ($variables['hide_site_slogan']) {
-    // If toggle_site_slogan is FALSE, the site_slogan will be empty, so we rebuild it.
-    $variables['site_slogan'] = filter_xss_admin(variable_get('site_slogan', ''));
-  }
 }
 
 /**
@@ -145,5 +95,3 @@ function uchicago_field__taxonomy_term_reference($variables) {
 
   return $output;
 }
-
-drupal_add_js('http://use.typekit.com/nfj1avq.js', 'external');

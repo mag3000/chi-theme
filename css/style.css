@@ -133,6 +133,52 @@ blockquote :first-child {
 display:inline
 }
 
+/* ------------------ Colors ------------------ */
+
+body,
+body.overlay {
+	color:#474740;
+	background:#eae9e1;
+}
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+#page-wrapper {
+	background:#eae9e1 url(/sites/all/themes/uchicago/images/maincontentbg.gif) top center no-repeat;
+}
+.tabs ul.primary li a.active {
+  background-color: #ffffff;
+}
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+#header {
+	background:#770000;
+	background-image:-moz-linear-gradient(center top , #800000, #770000 88px, #9f2425 88px, #9f2425 89px, #971e21 89px, #971e21 96px); /* FF3.6 */
+  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(0.92, #770000), color-stop(0.92, #9f2425), color-stop(0.93, #9f2425), color-stop(0.93, #971e21), color-stop(1.0, #971e21));
+  background-image:gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(0.92, #770000), color-stop(0.92, #9f2425), color-stop(0.93, #9f2425), color-stop(0.93, #971e21), color-stop(1.0, #971e21));
+}
+a {
+  color: #155f83;
+}
+a:hover,
+a:focus {
+  color: #20364c;
+  text-decoration: underline;
+}
+a:active, .block li a.active {
+  color: #155f83;
+}
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}
+
 /* ------------------ Table Styles ------------------ */
 table {
 border:0;
@@ -277,6 +323,10 @@ padding:22px 0 0;
 text-indent:-9999px
 }
 
+#site-name h1 {
+margin:0
+}
+
 /* --------------- Main Menu ------------ */
 #block-system-main-menu {
 margin-top:42px;
@@ -297,7 +347,7 @@ padding:0
 #block-system-main-menu .content ul li {
 background:#eaeae1;
 display:block;
-font-size:1.2em;
+font-size:1.1em;
 line-height:1.4em;
 font-weight:400;
 padding:0;
@@ -314,15 +364,16 @@ padding-bottom:0
 #block-system-main-menu .content ul li ul li {
 background:url(http://www.uchicago.edu/i/template/greybullet.gif) no-repeat scroll 10px 10px #EAEAE1;
 display:block;
-font-size:1.1em;
 font-weight:400;
+font-size:1em;
 line-height:1.4em;
 padding:4px 8px 4px 22px;
 margin-bottom:0!important
 }
 
 #block-system-main-menu .content ul li ul li ul li {
-padding-bottom:0
+padding-bottom:0;
+font-size:1em
 }
 
 #block-system-main-menu .content ul li ul li a {
@@ -412,6 +463,10 @@ line-height:1.142em;
 margin:0 0 .5em
 }
 
+body.front .region-home-center .block-block {
+margin-bottom:24px
+}
+
 h1#page-title {
 color:#7f3735;
 letter-spacing:1px;
@@ -498,18 +553,18 @@ height:1px;
 margin:0 0 16px
 }
 
-.region-content ul li,.region-content ol li {
+.region-home-center ul li, .region-content ul li, .region-home-center ol li, .region-content ol li {
 font-size:1.1em;
 line-height:1.5em;
 margin:0 0 .7em
 }
 
-.region-content ul li {
+.region-home-center ul li, .region-content ul li {
 list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
 margin-left:24px
 }
 
-.region-content ul li ul li {
+.region-home-center ul li ul li, .region-content ul li ul li {
 font-size:1em
 }
 
@@ -827,17 +882,13 @@ background-position: -25px -25px;
 
 
 /* ----------------- Homepage ----------------- */
-#homefeature {
+.homefeature {
 margin-right:-156px
 }
 
-#homeimage div.field-item { /* To get rid of some weird extra pixels added to bottom of image */
+.homeimage div.field-item { /* To get rid of some weird extra pixels added to bottom of image */
 line-height:0
 } 
-
-body.front .sidebar .section {
-padding-top:0
-}
 
 body.front #block-system-main-menu {
 margin-top:0
@@ -982,7 +1033,7 @@ display:inline
 content:' »';
 }
 
-#mainfeature #homefeature .field-items, #mainfeature #homefeature .field-item {
+#mainfeature .homefeature .field-items, #mainfeature .homefeature .field-item {
 display:inline
 }
 
@@ -992,39 +1043,39 @@ padding:0;
 height:200px
 }
 
-#block-views-mini-features-block {
+#block-views-homepage-mini-features-block {
 background-image:none;
 background-color:#f7f6ee
 }
 
-#block-views-mini-features-block .content {
+#block-views-homepage-mini-features-block .content {
 padding:0
 }
 
-.view-mini-features {
+.view-homepage-mini-features {
 border-top:5px solid #266178;
 padding-bottom:0;
 margin-bottom:-25px /*Because sidebar blocks have padding (for the background image) and margin but smallfeature doesn't need the extra padding */
 }
 
-.view-mini-features h3 {
+.view-homepage-mini-features h3 {
 color:#155F83;
 font-family:"MuseoSans300",helvetica,sans-serif;
 font-size:17px;
 margin:8px 0 4px
 }
 
-.view-mini-features p {
+.view-homepage-mini-features p {
 font-size:1em;
 line-height:1.6em;
 margin:0 4px .6em
 }
 
-.view-mini-features .field-type-image .field-item {
+.view-homepage-mini-features .field-type-image .field-item {
 line-height:0 /* To get rid of extra 2px padding */
 }
 
-.view-mini-features img {
+.view-homepage-mini-features img {
 margin: 0
 }
 
@@ -1102,100 +1153,6 @@ float:right;
 width:132px
 }
 
-/* ----------------- Comments ----------------- */
-.comment h2.title {
-margin-bottom:1em
-}
-
-.comment div.user-picture img {
-margin-left:0
-}
-
-.comment {
-margin-bottom:20px;
-display:table;
-vertical-align:top
-}
-
-.comment .attribution {
-display:table-cell;
-padding:0 30px 0 0;
-vertical-align:top;
-overflow:hidden
-}
-
-.comment .attribution img {
-margin:0;
-border:1px solid #d3d7d9
-}
-
-.comment .attribution .username {
-white-space:nowrap
-}
-
-.comment .submitted p {
-margin:4px 0;
-font-size:1.071em;
-line-height:1.2
-}
-
-.comment .submitted .comment-time {
-font-size:.786em;
-color:#68696b
-}
-
-.comment .submitted .comment-permalink {
-font-size:.786em;
-text-transform:lowercase
-}
-
-.comment .content {
-font-size:.929em;
-line-height:1.6
-}
-
-.comment .comment-arrow {
-background:url(../images/comment-arrow.gif) no-repeat 0 center transparent;
-border-left:1px solid;
-border-right:1px solid;
-height:40px;
-margin-left:-47px;
-margin-top:10px;
-position:absolute;
-width:20px
-}
-
-.comment .comment-text {
-padding:10px 25px;
-border:1px solid #d3d7d9;
-display:table-cell;
-vertical-align:top;
-position:relative;
-width:100%
-}
-
-.comment .indented {
-margin-left:40px
-}
-
-.comment ul.links {
-padding:0 0 .25em
-}
-
-.comment ul.links li {
-padding:0 .5em 0 0
-}
-
-.comment-unpublished {
-margin-right:5px;
-padding:5px 2px 5px 5px
-}
-
-.comment-unpublished .comment-text .comment-arrow {
-border-left:1px solid #fff4f4;
-border-right:1px solid #fff4f4
-}
-
 /* ------------------ Sidebar ----------------- */
 
 #sidebar-second {
@@ -1243,7 +1200,7 @@ margin:0;
 padding:0 10px 10px 0
 }
 
-.sidebar .block ul li,.region-sidebar-first .block ul {
+.sidebar .block ul li {
 font-size:.9em;
 list-style-type:none;
 list-style-image:none;
@@ -1280,6 +1237,12 @@ text-decoration: underline;
 }
 #footer a:hover {
 color: #FFFFFF;
+}
+#footer a#loginlink {
+text-decoration:none;
+}
+#footer a#loginlink:hover {
+color:#BEBEB6
 }
 #clearfoot {
 clear:both;
@@ -2035,4 +1998,20 @@ background-color:#ddd
 #preview-wrapper {
 height: auto !important;
 overflow: auto;
+}
+
+/* Override Messages styles */
+div.status {
+background-image:none;
+border-color:#c3908b;
+background-color:#eae9e1
+}
+
+div.messages {
+padding:10px;
+margin:8px
+}
+
+div.error {
+background-image:none
 }
