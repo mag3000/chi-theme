@@ -25,9 +25,9 @@ regions[footer_thirdcolumn] = Footer third column
 regions[footer_fourthcolumn] = Footer fourth column
 regions_hidden[] = footer_thirdcolumn
 regions_hidden[] = footer_fourthcolumn
-regions_hidden[] = home_features
-regions_hidden[] = help
-regions_hidden[] = content
+; regions_hidden[] = home_features
+; regions_hidden[] = help
+; regions_hidden[] = content
 
 scripts[] = scripts/jquery.cycle/jquery.cycle.all.min.js
 scripts[] = scripts/global.js

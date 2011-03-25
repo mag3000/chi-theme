@@ -135,8 +135,7 @@ display:inline
 
 /* ------------------ Colors ------------------ */
 
-body,
-body.overlay {
+body,body.overlay {
 	color:#474740;
 	background:#eae9e1;
 }
@@ -162,12 +161,10 @@ body.overlay {
 a {
   color: #155f83;
 }
-a:hover,
-a:focus {
+a:hover,a:focus {
   color: #20364c;
-  text-decoration: underline;
 }
-a:active, .block li a.active {
+a:active,.block li a.active {
   color: #155f83;
 }
 .region-header,
@@ -198,7 +195,7 @@ background:rgba(0,0,0,0.51);
 border-bottom-style:none
 }
 
-table tr th,table tr th a,table tr th a:hover {
+table tr th,table tr th a,table tr th a:hover,table tr th a:focus {
 color:#FFF;
 font-weight:bold
 }
@@ -831,7 +828,7 @@ width: 25px;
 height: 25px;
 text-indent: -9999px;
 }
-.cboxSlideshow_on #cboxSlideshow.hover {
+.cboxSlideshow_on #cboxSlideshow.hover,.cboxSlideshow_on #cboxSlideshow:focus {
 background-position: -101px -50px;
 }
 .cboxSlideshow_off #cboxSlideshow {
@@ -843,7 +840,7 @@ width: 25px;
 height: 25px;
 text-indent: -9999px;
 }
-.cboxSlideshow_off #cboxSlideshow.hover {
+.cboxSlideshow_off #cboxSlideshow.hover,.cboxSlideshow_off #cboxSlideshow:focus {
 background-position: -25px -50px;
 }
 #cboxPrevious {
@@ -871,8 +868,12 @@ width: 25px;
 height: 25px;
 text-indent: -9999px;
 }
-#cboxClose.hover {
+#cboxClose.hover,#cboxClose:focus {
 background-position: -25px -25px;
+}
+a.colorbox:focus img {
+border:1px dotted black;
+padding:3px
 }
 
 /* The following are fixes for IE. */
@@ -910,7 +911,7 @@ text-indent:-9999px;
 width:14px
 }
 
-a.feeds:hover {
+a.feeds:hover,a.feeds:focus {
 background:transparent url(http://www.uchicago.edu/i/template/rssicon.gif) 0 -14px no-repeat;
 text-decoration:none
 }
@@ -1235,13 +1236,13 @@ margin: 10px 0 0 0;
 color: #BEBEB6;
 text-decoration: underline;
 }
-#footer a:hover {
+#footer a:hover,#footer a:focus {
 color: #FFFFFF;
 }
 #footer a#loginlink {
 text-decoration:none;
 }
-#footer a#loginlink:hover {
+#footer a#loginlink:hover,#footer a#loginlink:focus {
 color:#BEBEB6
 }
 #clearfoot {
@@ -1397,7 +1398,7 @@ padding:4px 17px;
 -khtml-border-radius:4px;
 -moz-border-radius:4px;
 -webkit-border-radius:4px;
-border-radius:15px
+border-radius:4px
 }
 
 a.button:link,a.button:visited,a.button:hover,a.button:focus,a.button:active {
@@ -2004,7 +2005,8 @@ overflow: auto;
 div.status {
 background-image:none;
 border-color:#c3908b;
-background-color:#eae9e1
+background-color:#eae9e1;
+color:#474740
 }
 
 div.messages {
