@@ -20,11 +20,10 @@ regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
-regions[footer_secondcolumn] = Footer second column
-regions[footer_thirdcolumn] = Footer third column
-regions[footer_fourthcolumn] = Footer fourth column
-regions_hidden[] = footer_thirdcolumn
-regions_hidden[] = footer_fourthcolumn
+regions[footer_column1] = Footer first column
+regions[footer_column2] = Footer second column
+regions[footer_column3] = Footer third column
+regions[footer_column4] = Footer fourth column
 ; regions_hidden[] = home_features
 ; regions_hidden[] = help
 ; regions_hidden[] = content

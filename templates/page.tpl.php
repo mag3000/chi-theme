@@ -185,27 +185,28 @@
 					<?php endif; ?>
 					
 				</div> <!-- bottomrow -->
-	
 			</div> <!-- /#content -->
-		
-  	</div>
-  </div> <!-- /#main, /#main-wrapper -->
+  	</div> <!-- /#main -->
+	</div> <!-- /#main-wrapper -->
 <div id="clearfoot">&nbsp;</div>
 </div></div> <!-- /#page, /#page-wrapper -->
 
-  <div id="footer-wrapper"><div class="container_12">
-      <div id="footer" class="clearfix">
-      	<div class="grid_3">
-	        <p><a href="/user/" id="loginlink">&copy;</a> 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br /><a href="/"><?php print $site_name; ?></a></p>
-	      </div>
-      	<div class="grid_3">
-	        <?php print render($page['footer_secondcolumn']); ?>
-	      </div>
-      	<div class="grid_3">
-	        <?php print render($page['footer_thirdcolumn']); ?>
-	      </div>
-      	<div class="grid_3">
-	        <?php print render($page['footer_fourthcolumn']); ?>
-	      </div>
-      </div> <!-- /#footer -->
-  </div></div> <!-- /#footer-wrapper -->
+<div id="footer-wrapper"><div class="container_12">
+	<div id="footer" class="clearfix">
+		<div class="grid_3">
+			<p><a href="/user/" id="loginlink">&copy;</a> 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br /><a href="/"><?php print $site_name; ?></a></p>
+			<div class="social clearfix">
+				<?php print render($page['footer_column1']); ?>
+			</div>
+		</div>
+		<div class="grid_3">	
+			<?php print render($page['footer_column2']); ?>
+		</div>
+		<div class="grid_3">
+			<?php print render($page['footer_column3']); ?>
+		</div>
+		<div class="grid_3">
+			<?php print render($page['footer_column4']); ?>
+		</div>
+	</div> <!-- /#footer -->
+</div></div> <!-- /#footer-wrapper -->

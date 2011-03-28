@@ -1224,10 +1224,10 @@ background: url("http://www.uchicago.edu/i/template/insidefooterbg.gif") repeat-
 height: 105px;
 margin: 0 -8px
 }
-#footer p, #footer li {
+#footer p,#footer li,#footer div.field-items {
 color: #BEBEB6;
 }
-#footer p, #footer ul {
+#footer p,#footer ul,#footer div.field-items {
 font-size: 1em;
 line-height: 200%;
 margin: 10px 0 0 0;
@@ -1249,6 +1249,47 @@ color:#BEBEB6
 clear:both;
 height:120px
 }
+#footer div.social {
+margin-top:10px
+}
+#footer div.social div {
+display:inline
+}
+#footer div.social div.field-item a {
+background-image: url("../images/socialsprite.gif");
+background-repeat: no-repeat;
+display:block;
+float:left;
+margin-right:10px;
+height: 16px;
+overflow: hidden;
+text-indent: -9999px;
+width: 16px;
+}
+#footer a.facebook {
+background-position: -16px 0;
+}
+#footer a.youtube {
+background-position: 0 0;
+}
+#footer a.twitter {
+background-position: -32px 0;
+}
+#footer a.youtube:hover,#footer a.youtube:focus {
+background-position: 0 -16px;
+}
+#footer a.facebook:hover, #footer a.facebook:focus {
+background-position: -16px -16px;
+}
+#footer a.twitter:hover,#footer a.twitter:focus {
+background-position: -32px -16px;
+}
+#footer div.edit {
+position:absolute;
+right:0;
+top:-12px
+}
+
 /* --------------- System Tabs  --------------- */
 .tabs {
 font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
