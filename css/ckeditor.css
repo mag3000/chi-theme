@@ -123,8 +123,8 @@ margin:0 0 16px
 table {
 border:0;
 border-spacing:0;
-font-size:1em;
-margin:10px 0;
+font-size:1.1em;
+margin:0 0 10px;
 width:100%
 }
 
@@ -133,32 +133,33 @@ font-size:1em
 }
 
 table tr th {
-background:#757575;
-background:rgba(0,0,0,0.51);
+background:#eae9e1;
 border-bottom-style:none
 }
 
-table tr th,table tr th a,table tr th a:hover {
-color:#FFF;
+table tr th,table tr th a,table tr th a:hover,table tr th a:focus {
 font-weight:bold
 }
 
 table tbody tr th {
-vertical-align:top
+vertical-align:middle
+}
+
+tr {
+border-bottom:1px solid #eae9e1
 }
 
 tr td,tr th {
-padding:4px 9px;
-border:1px solid #fff;
+padding:10px;
 text-align:left
 }
 
-tr.odd {
-background:#e4e4e4;
-background:rgba(0,0,0,0.105)
+table ul.links {
+margin:0;
+padding:0;
+font-size:1em
 }
 
-tr,tr.even {
-background:#efefef;
-background:rgba(0,0,0,0.063)
+table ul.links li {
+padding:0 1em 0 0
 }

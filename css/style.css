@@ -180,8 +180,8 @@ a:active,.block li a.active {
 table {
 border:0;
 border-spacing:0;
-font-size:1em;
-margin:10px 0;
+font-size:1.1em;
+margin:0 0 10px;
 width:100%
 }
 
@@ -190,34 +190,25 @@ font-size:1em
 }
 
 table tr th {
-background:#757575;
-background:rgba(0,0,0,0.51);
+background:#eae9e1;
 border-bottom-style:none
 }
 
 table tr th,table tr th a,table tr th a:hover,table tr th a:focus {
-color:#FFF;
 font-weight:bold
 }
 
 table tbody tr th {
-vertical-align:top
+vertical-align:middle
+}
+
+tr {
+border-bottom:1px solid #eae9e1
 }
 
 tr td,tr th {
-padding:4px 9px;
-border:1px solid #fff;
+padding:10px;
 text-align:left
-}
-
-tr.odd {
-background:#e4e4e4;
-background:rgba(0,0,0,0.105)
-}
-
-tr,tr.even {
-background:#efefef;
-background:rgba(0,0,0,0.063)
 }
 
 table ul.links {
@@ -404,7 +395,7 @@ color:#1B4B61;
 text-decoration:underline
 }
 
-#block-system-main-menu .content li a.active-trail {
+#block-system-main-menu .content li a.active-trail,#block-system-main-menu .content li a.active {
 font-weight:700
 }
 
@@ -548,6 +539,10 @@ width:100%;
 clear:both;
 height:1px;
 margin:0 0 16px
+}
+
+.region-content ul,.region-content ol {
+margin-bottom:1.15em
 }
 
 .region-home-center ul li, .region-content ul li, .region-home-center ol li, .region-content ol li {
@@ -992,7 +987,23 @@ margin-left:24px
 #block-views-homepage-feed-block div.feed-icon {
 float:right;
 position:relative;
-top:-25px
+top:-27px
+}
+
+#block-views-homepage-feed-block div.feed-icon a {
+display:block;
+background:url(../images/feed.png) no-repeat scroll 0 -15px transparent;
+height:15px;
+width:15px;
+text-indent:-9999px
+}
+
+#block-views-homepage-feed-block div.feed-icon a:hover,#block-views-homepage-feed-block div.feed-icon a:focus {
+background:url(../images/feed.png) no-repeat scroll 0 0 transparent
+}
+
+#block-views-homepage-feed-block div.feed-icon a img {
+display:none
 }
 
 #mainfeature {

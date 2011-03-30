@@ -49,7 +49,8 @@ function uchicago_preprocess_maintenance_page(&$variables) {
  * Override or insert variables into the node template.
  */
 function uchicago_preprocess_node(&$variables) {
-  $variables['submitted'] = t('published by !username on !datetime', array('!username' => $variables['name'], '!datetime' => $variables['date']));
+	$formatted_date = format_date($variables['created'], 'custom', 'M j, Y');
+  $variables['submitted'] = t('Published on !datetime', array('!username' => $variables['name'], '!datetime' => $formatted_date));
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
