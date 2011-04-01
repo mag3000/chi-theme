@@ -191,15 +191,16 @@ font-size:1em
 
 table tr th {
 background:#eae9e1;
-border-bottom-style:none
+border-bottom-style:none;
+vertical-align:middle
+}
+
+table tr td {
+vertical-align:top
 }
 
 table tr th,table tr th a,table tr th a:hover,table tr th a:focus {
 font-weight:bold
-}
-
-table tbody tr th {
-vertical-align:middle
 }
 
 tr {
@@ -229,6 +230,10 @@ padding:0
 
 .contextual-links-wrapper {
 font-size:small!important
+}
+
+html.js div.block-views div.contextual-links-wrapper {
+display:none /* Hide contextual links for view blocks because they're confusing */
 }
 
 ul.contextual-links {
@@ -395,7 +400,7 @@ color:#1B4B61;
 text-decoration:underline
 }
 
-#block-system-main-menu .content li a.active-trail,#block-system-main-menu .content li a.active {
+#block-system-main-menu .content li a.active {
 font-weight:700
 }
 
@@ -541,22 +546,22 @@ height:1px;
 margin:0 0 16px
 }
 
-.region-content ul,.region-content ol {
+.region-content .content ul,.region-content .content ol {
 margin-bottom:1.15em
 }
 
-.region-home-center ul li, .region-content ul li, .region-home-center ol li, .region-content ol li {
+.region-home-center .content ul li, .region-content .content ul li, .region-home-center .content ol li, .region-content .content ol li {
 font-size:1.1em;
 line-height:1.5em;
 margin:0 0 .7em
 }
 
-.region-home-center ul li, .region-content ul li {
+.region-home-center .content ul li, .region-content .content ul li {
 list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
 margin-left:24px
 }
 
-.region-home-center ul li ul li, .region-content ul li ul li {
+.region-home-center .content ul li ul li, .region-content .content ul li ul li {
 font-size:1em
 }
 
@@ -649,14 +654,16 @@ color:#68696b;
 font-size:.821em
 }
 
-.node-unpublished {
-margin:-20px -15px 0;
-padding:20px 15px 0
-}
-
-.node-unpublished .comment-text .comment-arrow {
-border-left:1px solid #fff4f4;
-border-right:1px solid #fff4f4
+div.node-unpublished div.content:before {
+content:"This content is unpublished and is not viewable by visitors.";
+/*white-space:pre; */
+display:block;
+border:2px solid #800000;
+background-color:#ededed;
+padding:10px;
+color:#800000;
+font-size:1.2em;
+margin-bottom:10px
 }
 
 .not-front .views-row-first h2, .not-front .views-row-first h3, .not-front .views-row-first h4, .not-front .views-row-first h5, .not-front .views-row-first h6 {
@@ -1135,7 +1142,7 @@ margin-top:27px;
 margin-left:0
 }
 
-#block-events dd.date span, #block-events a {
+#block-events dd.date span, #block-events .content a {
 font-weight:bold
 }
 
@@ -1151,7 +1158,7 @@ padding-top:0;
 margin-left:0
 }
 
-#block-events ul li {
+#block-events .content ul li {
 font-size:1em;
 font-weight:700;
 margin-left:66px;
@@ -1213,7 +1220,7 @@ padding:0 10px 10px 0
 }
 
 .sidebar .block ul li {
-font-size:.9em;
+font-size:1em;
 list-style-type:none;
 list-style-image:none;
 background-image:none

@@ -7,6 +7,8 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
  WARNING: clear browser's cache after you modify this file.
  If you don't do this, you may notice that browser is ignoring all your changes.
  */
+ 
+ 
 CKEDITOR.editorConfig = function(config) {
     config.indentClasses = [ 'rteindent1', 'rteindent2', 'rteindent3', 'rteindent4' ];
 
@@ -80,14 +82,37 @@ CKEDITOR.editorConfig = function(config) {
 	// 'IMCE' plugin. If IMCE module is enabled, you may uncomment lines below and add an 'IMCE' button to selected toolbar. 
 	config.extraPlugins += (config.extraPlugins ? ',imce' : 'imce' );
 	CKEDITOR.plugins.addExternal('imce', Drupal.settings.ckeditor.module_path + '/plugins/imce/');
-	
-  config.filebrowserWindowWidth = 850;
-  
+	  
   config.extraPlugins += (config.extraPlugins ? ',video_filter' : 'video_filter' );
   CKEDITOR.plugins.addExternal('video_filter', Drupal.settings.basePath + Drupal.settings.video_filter.modulepath + '/editors/ckeditor/');	
   
-  config.resize_enabled = false;
-  
+  config.filebrowserWindowWidth = 850;  
+  config.startupOutlineBlocks = true;
   config.width = 600;
+  config.resize_minWidth = 600;
 
 };
+
+CKEDITOR.on( 'dialogDefinition', function( ev ) {
+		// Take the dialog name and its definition from the event
+		// data.
+		var dialogName = ev.data.name;
+		var dialogDefinition = ev.data.definition;
+
+		// Check if the definition is from the dialog we're
+		// interested on (the "Link" dialog).
+		if ( dialogName == 'image' )
+		{
+			// Get a reference to the "Link Info" tab.
+			var infoTab = dialogDefinition.getContents( 'info' );
+
+			// Remove the "Link Type" combo and the "Browser
+			// Server" button from the "info" tab.
+			infoTab.remove( 'txtBorder' );
+			infoTab.remove( 'txtHSpace' );
+			infoTab.remove( 'txtVSpace' );
+			infoTab.remove( 'lockRatio' );
+		}
+		
+});
+
