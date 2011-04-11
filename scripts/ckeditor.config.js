@@ -106,12 +106,33 @@ CKEDITOR.on( 'dialogDefinition', function( ev ) {
 			// Get a reference to the "Link Info" tab.
 			var infoTab = dialogDefinition.getContents( 'info' );
 
-			// Remove the "Link Type" combo and the "Browser
-			// Server" button from the "info" tab.
+			// Remove some of the fields we don't want
 			infoTab.remove( 'txtBorder' );
 			infoTab.remove( 'txtHSpace' );
 			infoTab.remove( 'txtVSpace' );
 			infoTab.remove( 'lockRatio' );
+		}
+		
+		if ( dialogName == 'link' )
+		{
+			// Hide the advanced tab.
+			dialogDefinition.removeContents( 'advanced' );
+		}
+		
+		if ( dialogName == 'table' )
+		{
+			// Get a reference to the "Link Info" tab.
+			var infoTab = dialogDefinition.getContents( 'info' );
+
+			// Remove some of the fields we don't want
+			infoTab.remove( 'txtWidth' );
+			infoTab.remove( 'cmbWidthType' );
+			infoTab.remove( 'txtHeight' );
+			infoTab.remove( 'htmlHeightType' );
+			infoTab.remove( 'txtCellSpace' );
+			infoTab.remove( 'txtCellPad' );
+			infoTab.remove( 'txtBorder' );
+			infoTab.remove( 'cmbAlign' );
 		}
 		
 });

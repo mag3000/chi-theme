@@ -267,7 +267,7 @@ padding:0
 
 /* ------------------ Header ------------------ */
 #wordmark {
-background:transparent url(http://www.uchicago.edu/i/template_sites/uc_wordmark.gif) top right no-repeat;
+background:transparent url(../images/uc_wordmark.gif) top right no-repeat;
 display:block;
 height:53px;
 text-decoration:none
@@ -355,7 +355,7 @@ padding-bottom:0
 }
 
 #block-system-main-menu .content ul li ul li {
-background:url(http://www.uchicago.edu/i/template/greybullet.gif) no-repeat scroll 10px 10px #EAEAE1;
+background:url(../images/greybullet.gif) no-repeat scroll 10px 10px #EAEAE1;
 display:block;
 font-weight:400;
 font-size:1em;
@@ -557,7 +557,7 @@ margin:0 0 .7em
 }
 
 .region-home-center .content ul li, .region-content .content ul li {
-list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
+list-style-image:url(../images/greybullet.gif);
 margin-left:24px
 }
 
@@ -874,8 +874,7 @@ text-indent: -9999px;
 background-position: -25px -25px;
 }
 a.colorbox:focus img {
-border:1px dotted black;
-padding:3px
+outline:1px dashed black
 }
 
 /* The following are fixes for IE. */
@@ -902,22 +901,6 @@ border-bottom:none!important;
 margin-top:4px
 }
 
-a.feeds {
-background:transparent url(http://www.uchicago.edu/i/template/rssicon.gif) 0 0 no-repeat;
-display:block;
-float:right;
-height:14px;
-margin:0;
-padding:0;
-text-indent:-9999px;
-width:14px
-}
-
-a.feeds:hover,a.feeds:focus {
-background:transparent url(http://www.uchicago.edu/i/template/rssicon.gif) 0 -14px no-repeat;
-text-decoration:none
-}
-
 body.front .region-highlighted div.block-block {
 margin-bottom:24px
 }
@@ -933,7 +916,7 @@ margin:0 0 .5em
 border-top:5px solid #3E7C97;
 padding:6px 10px;
 margin-bottom:16px;
-background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x
+background:#eaeae2 url(../images/modulebg.gif) bottom left repeat-x
 }
 
 #block-views-homepage-feed-block h2 {
@@ -947,17 +930,25 @@ text-transform:uppercase;
 padding:0
 }
 
-#block-views-homepage-feed-block h3 {
+#block-views-homepage-feed-block h3, #block-views-homepage-feed-block h4, #block-views-homepage-feed-block h5 {
 margin:0;
 padding:0;
 display:block;
 width:auto;
 font-weight:700;
-font-size:1.1em;
 line-height:1.65em;
 letter-spacing:normal;
 text-transform:none;
 padding:0
+}
+
+#block-views-homepage-feed-block h3 {
+font-size:1.2em
+}
+
+#block-views-homepage-feed-block h4 {
+font-size:1.1em;
+margin-top:5px
 }
 
 #block-views-homepage-feed-block h4 a {
@@ -987,7 +978,7 @@ display:none
 }
 
 #block-views-homepage-feed-block ul li {
-list-style-image:url(http://www.uchicago.edu/i/template/greybullet.gif);
+list-style-image:url(../images/greybullet.gif);
 margin-left:24px
 }
 
@@ -1019,23 +1010,28 @@ padding-bottom:16px;
 border-bottom:1px solid #D7D7CF
 }
 
-#mainfeature br {
-display:none
+#mainfeature .views-row {
+display:none /* hide all but the first so they don't all show up on load before jQuery kicks in */
+}
+
+#mainfeature .views-row-first {
+display:block
 }
 
 #mainfeature h3 {
 background:#155f83;
 color:#ffffff;
 text-indent:0;
-padding:6px 10px 4px;
-height:18px;
-line-height:1em;
+padding:0 10px;
+height:28px;
+line-height:28px;
 letter-spacing:-.2px;
 position:absolute;
 width:354px;
 font-size:16px;
 font-family: "MuseoSans300",Verdana,sans-serif;
-font-weight:400
+font-weight:400;
+overflow:hidden
 }
 
 #mainfeature .field {
@@ -1101,7 +1097,7 @@ margin: 0
 #block-events {
 border-top:5px solid #8f3931;
 margin-bottom:24px;
-background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x;
+background:#eaeae2 url(../images/modulebg.gif) bottom left repeat-x;
 }
 
 #block-events h2 {
@@ -1182,7 +1178,7 @@ clear:right
 .sidebar .block {
 margin-bottom:16px;
 padding:0 0 15px;
-background:#eaeae2 url(http://www.uchicago.edu/i/template/modulebg.gif) bottom left repeat-x
+background:#eaeae2 url(../images/modulebg.gif) bottom left repeat-x
 }
 
 .sidebar h2 {
@@ -1232,13 +1228,13 @@ margin-bottom:8px!important
 
 /* ------------------ Footer ------------------ */
 #footer-wrapper {
-background: url("http://www.uchicago.edu/i/template/outsidefooterbg.gif") repeat-x scroll 0 0 #5A5952;
+background: url(../images/outsidefooterbg.gif) repeat-x scroll 0 0 #5A5952;
 margin-top:-115px;
 height:115px
 }
 #footer {
 padding:10px 8px 0;
-background: url("http://www.uchicago.edu/i/template/insidefooterbg.gif") repeat-x scroll 0 0 #5E5D56;
+background: url(../images/insidefooterbg.gif) repeat-x scroll 0 0 #5E5D56;
 height: 105px;
 margin: 0 -8px
 }
@@ -1274,7 +1270,7 @@ margin-top:10px
 display:inline
 }
 #footer div.social div.field-item a {
-background-image: url("../images/socialsprite.gif");
+background-image: url(../images/socialsprite.gif);
 background-repeat: no-repeat;
 display:block;
 float:left;
@@ -2075,4 +2071,25 @@ margin:8px
 
 div.error {
 background-image:none
+}
+
+/* Toolbar styles */
+div#toolbar div.toolbar-drawer p {
+float:left;
+height:28px;
+line-height:24px;
+margin-left:5px;
+padding:5px 0 2px;
+font-size:0.864em
+}
+
+/* Misc styles */
+p.url {
+display:block;
+border:1px solid #474740;
+background-color:#ededed;
+padding:8px;
+font-size:1.1em;
+margin-bottom:10px;
+clear:both
 }

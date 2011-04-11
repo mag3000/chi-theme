@@ -104,6 +104,10 @@
 			print render($content);
 		?>
 		
+		<?php if ($logged_in): 		// If user is logged in, print the node URL ?>
+			<p class="url">To create a link to this page, copy the text below into any URL field:<br /> <?php print ($node_url); ?></p>
+		<?php endif; ?>
+		
 		<?php
 			// Remove the "Add new comment" link on the teaser page or if the comment
 			// form is being displayed on the same page.
