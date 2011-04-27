@@ -143,7 +143,7 @@ body,body.overlay {
   border-color: #ffffff;
 }
 #page-wrapper {
-	background:#eae9e1 url(/sites/all/themes/uchicago/images/maincontentbg.gif) top center no-repeat;
+	background:#eae9e1 url(/sites/all/themes/uchicago/images/maincontentbg.png) top center no-repeat;
 }
 .tabs ul.primary li a.active {
   background-color: #ffffff;
@@ -1034,7 +1034,7 @@ font-weight:400;
 overflow:hidden
 }
 
-#mainfeature .field {
+#mainfeature p {
 color:#636363;
 font-weight:lighter;
 letter-spacing:1px;
@@ -1044,11 +1044,11 @@ font-size:1.1em;
 display:inline
 }
 
-#mainfeature a:after {
+#mainfeature p a:after {
 content:' »';
 }
 
-#mainfeature .homefeature .field-items, #mainfeature .homefeature .field-item {
+#mainfeature .homefeature p, #mainfeature .homefeature p, #mainfeature .views-field, #mainfeature .field-content {
 display:inline
 }
 
@@ -1238,10 +1238,10 @@ background: url(../images/insidefooterbg.gif) repeat-x scroll 0 0 #5E5D56;
 height: 105px;
 margin: 0 -8px
 }
-#footer p,#footer li,#footer div.field-items {
+#footer p,#footer li,#footer div.field-content {
 color: #BEBEB6;
 }
-#footer p,#footer ul,#footer div.field-items {
+#footer p,#footer ul,#footer div.view-footer {
 font-size: 1em;
 line-height: 200%;
 margin: 10px 0 0 0;
@@ -1269,7 +1269,7 @@ margin-top:10px
 #footer div.social div {
 display:inline
 }
-#footer div.social div.field-item a {
+#footer div.social div.field-content a {
 background-image: url(../images/socialsprite.gif);
 background-repeat: no-repeat;
 display:block;
