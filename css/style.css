@@ -143,7 +143,7 @@ body,body.overlay {
   border-color: #ffffff;
 }
 #page-wrapper {
-	background:#eae9e1 url(/sites/all/themes/uchicago/images/maincontentbg.png) top center no-repeat;
+	background:#fff;
 }
 .tabs ul.primary li a.active {
   background-color: #ffffff;
@@ -154,18 +154,35 @@ body,body.overlay {
 }
 #header {
 	background:#770000;
-	background-image:-moz-linear-gradient(center top , #800000, #770000 88px, #9f2425 88px, #9f2425 89px, #971e21 89px, #971e21 96px); /* FF3.6 */
-  background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(0.92, #770000), color-stop(0.92, #9f2425), color-stop(0.93, #9f2425), color-stop(0.93, #971e21), color-stop(1.0, #971e21));
-  background-image:gradient(linear, left top, left bottom, color-stop(0, #800000), color-stop(0.92, #770000), color-stop(0.92, #9f2425), color-stop(0.93, #9f2425), color-stop(0.93, #971e21), color-stop(1.0, #971e21));
+	background-image:-moz-linear-gradient(center top, 	#333, 
+														#333 88px, 
+														#333 88px, 
+														#333 89px, 
+														#333 89px, 
+														#333 96px); /* FF3.6 */
+														
+	background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #333), 
+																		color-stop(0.92, #333), 
+																		color-stop(0.92, #333), 
+																		color-stop(0.93, #333), 
+																		color-stop(0.93, #333), 
+																		color-stop(1.0, #333));
+																		
+	background-image:gradient(linear, left top, left bottom, 	color-stop(0, #333), 
+																color-stop(0.92, #333), 
+																color-stop(0.92, #333), 
+																color-stop(0.93, #333), 
+																color-stop(0.93, #333), 
+																color-stop(1.0, #333));
 }
 a {
-  color: #155f83;
+  color: #444;
 }
 a:hover,a:focus {
-  color: #20364c;
+  color: #000;
 }
 a:active,.block li a.active {
-  color: #155f83;
+  color: #000;
 }
 .region-header,
 .region-header a,
@@ -173,7 +190,7 @@ a:active,.block li a.active {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {
-  color: #fffeff;
+  color: #444;
 }
 
 /* ------------------ Table Styles ------------------ */
@@ -190,7 +207,7 @@ font-size:1em
 }
 
 table tr th {
-background:#eae9e1;
+background:#ddd;
 border-bottom-style:none;
 vertical-align:middle
 }
@@ -267,14 +284,14 @@ padding:0
 
 /* ------------------ Header ------------------ */
 #wordmark {
-background:transparent url(../images/uc_wordmark.gif) top right no-repeat;
+background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark.png") top right no-repeat;
 display:block;
 height:53px;
 text-decoration:none
 }
 
 #dept-title {
-background:url(../images/masthead.gif) no-repeat scroll 0 0 transparent;
+background:url("/sites/all/themes/uchicago/images/masthead.png") no-repeat scroll 0 0 transparent;
 display:block;
 height:53px;
 text-decoration:none
@@ -355,7 +372,7 @@ padding-bottom:0
 }
 
 #block-system-main-menu .content ul li ul li {
-background:url(../images/greybullet.gif) no-repeat scroll 10px 10px #EAEAE1;
+background:url(../images/greybullet.gif) no-repeat scroll 10px 10px #eee;
 display:block;
 font-weight:400;
 font-size:1em;
@@ -370,7 +387,7 @@ font-size:1em
 }
 
 #block-system-main-menu .content ul li ul li a {
-color:#1B4B61;
+color:#444;
 display:block;
 font-weight:400;
 background:none;
@@ -379,8 +396,8 @@ padding:0
 }
 
 #block-system-main-menu .content a {
-background:#d6d6ce;
-color:#184154;
+background:#ddd;
+color:#333;
 display:block;
 font-weight:400;
 border-top:1px solid #fff;
@@ -390,13 +407,13 @@ text-decoration:none
 }
 
 #block-system-main-menu .content ul li a:hover,#block-system-main-menu .content ul li a:focus {
-background:#969693;
+background:#333;
 color:#fff
 }
 
 #block-system-main-menu .content ul li ul li a:hover,#block-system-main-menu .content ul li ul li a:focus {
-background:#EAEAE1;
-color:#1B4B61;
+background:#ddd;
+color:#000;
 text-decoration:underline
 }
 
@@ -450,7 +467,7 @@ margin-bottom:30px
 /* ----------------- Content ------------------ */
 
 body.front .region-home-center .block-block h2 {
-color:#740000;
+color:#333;
 font-size:1.4em;
 line-height:1.142em;
 margin:0 0 .5em
@@ -461,7 +478,7 @@ margin-bottom:24px
 }
 
 h1#page-title {
-color:#7f3735;
+color:#333;
 letter-spacing:1px;
 font-size:32px;
 font-family:"MuseoSans100",helvetica,sans-serif;
@@ -477,14 +494,14 @@ margin-top:0
 }
 
 .region-content h2 {
-color:#740000;
+color:#333;
 font-size:1.4em;
 line-height:1.142em;
 margin:0 0 .5em
 }
 
 .region-content h3 {
-color:#3d3d2f;
+color:#333;
 font-weight:700;
 font-size:1.1em;
 line-height:1.333em;
@@ -501,34 +518,55 @@ line-height:1.333em;
 margin:1.3em 0 .45em
 }
 
+.maincontentimage.image-narrow {
+float: left;
+margin-right: 10px
+}
+
+.region-content p {
+overflow: hidden /* for clearing floats */
+}
+
 .imgrt {
 float:right;
 margin:0 0 16px
 }
 
-.imglt {
-float:left;
-margin:8px 16px 16px 0;
-border-bottom:1px solid #d7d7cf
-}
-
-.imgrt .field-type-text,.imglt .field-type-text {
+.imgrt .field-type-text {
 font-size:1em;
 line-height:1.65em;
 margin:0 0 9px;
 color:#65655e
 }
 
-.imgrt img,.imglt img {
-border-top:5px solid #8f3931;
+.imgrt img {
+border-top:5px solid #333;
 margin:0
 }
 
 .imgrt .caption {
 margin-bottom:9px;
+padding-bottom:9px;
 color: #65655E;
 font-size: 1em;
-line-height: 1.65em
+line-height: 1.65em;
+border-bottom:1px solid #D7D7CF;
+}
+
+.imgrt .slideshow .caption {
+padding-bottom:0;
+border-bottom:none
+}
+
+.field-name-field-galleryimage {
+border: 1px solid #bebeb6;
+background: #eae9e1;
+overflow:hidden;
+padding:10px;
+margin-bottom:10px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
 }
 
 a.colorbox img {
@@ -658,7 +696,7 @@ div.node-unpublished div.content:before {
 content:"This content is unpublished and is not viewable by visitors.";
 /*white-space:pre; */
 display:block;
-border:2px solid #800000;
+border:1px solid #800000;
 background-color:#ededed;
 padding:10px;
 color:#800000;
@@ -812,8 +850,8 @@ background: rgba(255, 255, 255, 0.7);
 bottom: 28px;
 left: 0;
 color: #474740;
-width: 100%;
-padding: 4px;
+/* width: 100%; */
+padding: 8px;
 }
 #cboxCurrent {
 position: absolute;
@@ -913,16 +951,16 @@ margin:0 0 .5em
 }
 
 #block-views-homepage-feed-block {
-border-top:5px solid #3E7C97;
+border-top:5px solid #333;
 padding:6px 10px;
 margin-bottom:16px;
-background:#eaeae2 url(../images/modulebg.gif) bottom left repeat-x
+background:#eee;
 }
 
 #block-views-homepage-feed-block h2 {
 display:block;
 font-family:"MuseoSans300",verdana,sans-serif;
-color:#155F83;
+color:#333;
 font-size:1.5em;
 letter-spacing:1px;
 margin:0 0 8px;
@@ -940,6 +978,7 @@ line-height:1.65em;
 letter-spacing:normal;
 text-transform:none;
 padding:0
+color: #333;
 }
 
 #block-views-homepage-feed-block h3 {
@@ -1007,7 +1046,7 @@ display:none
 #mainfeature {
 margin-bottom:16px;
 padding-bottom:16px;
-border-bottom:1px solid #D7D7CF
+border-bottom:1px solid #ccc;
 }
 
 #mainfeature .views-row {
@@ -1019,7 +1058,7 @@ display:block
 }
 
 #mainfeature h3 {
-background:#155f83;
+background:#333;
 color:#ffffff;
 text-indent:0;
 padding:0 10px;
@@ -1060,7 +1099,7 @@ height:200px
 
 #block-views-homepage-mini-features-block {
 background-image:none;
-background-color:#f7f6ee
+background-color:#fff;
 }
 
 #block-views-homepage-mini-features-block .content {
@@ -1068,13 +1107,13 @@ padding:0
 }
 
 .view-homepage-mini-features {
-border-top:5px solid #266178;
+border-top:5px solid #333;
 padding-bottom:0;
 margin-bottom:-25px /*Because sidebar blocks have padding (for the background image) and margin but smallfeature doesn't need the extra padding */
 }
 
 .view-homepage-mini-features h3 {
-color:#155F83;
+color:#333;
 font-family:"MuseoSans300",helvetica,sans-serif;
 font-size:17px;
 margin:8px 0 4px
@@ -1095,15 +1134,15 @@ margin: 0
 }
 
 #block-events {
-border-top:5px solid #8f3931;
+border-top:5px solid #333;
 margin-bottom:24px;
-background:#eaeae2 url(../images/modulebg.gif) bottom left repeat-x;
+background:#eee;
 }
 
 #block-events h2 {
 margin:0 0 5px;
 letter-spacing:1px;
-color:#800000 !important;
+color:#333 !important;
 font-size:1.5em !important;
 font-family:"MuseoSans300",verdana,sans-serif;
 font-weight:400 !important;
@@ -1178,11 +1217,11 @@ clear:right
 .sidebar .block {
 margin-bottom:16px;
 padding:0 0 15px;
-background:#eaeae2 url(../images/modulebg.gif) bottom left repeat-x
+background:#eee;
 }
 
 .sidebar h2 {
-background-color:#3E7C97;
+background-color:#333;
 font-family:"MuseoSans500",verdana,sans-serif;
 color:#fff!important;
 display:block;
@@ -1228,30 +1267,31 @@ margin-bottom:8px!important
 
 /* ------------------ Footer ------------------ */
 #footer-wrapper {
-background: url(../images/outsidefooterbg.gif) repeat-x scroll 0 0 #5A5952;
+background: #fff;
+border-top: 5px solid #333;
 margin-top:-115px;
 height:115px
 }
 #footer {
-padding:10px 8px 0;
-background: url(../images/insidefooterbg.gif) repeat-x scroll 0 0 #5E5D56;
-height: 105px;
+padding:20px 8px 0;
+background: #fff;
+height: 95px;
 margin: 0 -8px
 }
 #footer p,#footer li,#footer div.field-content {
-color: #BEBEB6;
+color: #444;
 }
 #footer p,#footer ul,#footer div.view-footer {
 font-size: 1em;
 line-height: 200%;
-margin: 10px 0 0 0;
+margin: 0;
 }
 #footer a {
-color: #BEBEB6;
+color: #444;
 text-decoration: underline;
 }
 #footer a:hover,#footer a:focus {
-color: #FFFFFF;
+color: #000;
 }
 #footer a#loginlink {
 text-decoration:none;

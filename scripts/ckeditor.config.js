@@ -74,6 +74,10 @@ CKEDITOR.editorConfig = function(config) {
         config.extraPlugins += (config.extraPlugins) ? ',drupal_path' : 'drupal_path';
         CKEDITOR.plugins.addExternal('drupal_path', Drupal.settings.ckeditor_link.module_path + '/plugins/link/');
     }
+		if (Drupal.settings.video_filter) {	  
+				config.extraPlugins += (config.extraPlugins) ? ',video_filter' : 'video_filter';
+				CKEDITOR.plugins.addExternal('video_filter', Drupal.settings.basePath + Drupal.settings.video_filter.modulepath + '/editors/ckeditor/');	
+		}
 
 	// 'MediaEmbed' plugin. To enable it, uncomment lines below and add 'MediaEmbed' button to selected toolbars.
 	config.extraPlugins += (config.extraPlugins ? ',mediaembed' : 'mediaembed' );
@@ -82,14 +86,15 @@ CKEDITOR.editorConfig = function(config) {
 	// 'IMCE' plugin. If IMCE module is enabled, you may uncomment lines below and add an 'IMCE' button to selected toolbar. 
 	config.extraPlugins += (config.extraPlugins ? ',imce' : 'imce' );
 	CKEDITOR.plugins.addExternal('imce', Drupal.settings.ckeditor.module_path + '/plugins/imce/');
-	  
-  config.extraPlugins += (config.extraPlugins ? ',video_filter' : 'video_filter' );
-  CKEDITOR.plugins.addExternal('video_filter', Drupal.settings.basePath + Drupal.settings.video_filter.modulepath + '/editors/ckeditor/');	
-  
+
+		
   config.filebrowserWindowWidth = 850;  
   config.startupOutlineBlocks = true;
+  config.disableObjectResizing = true;
   config.width = 600;
   config.resize_minWidth = 600;
+  config.removePlugins = 'image,forms';
+  config.height = 450;
 
 };
 
