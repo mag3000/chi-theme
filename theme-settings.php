@@ -1,12 +1,12 @@
 <?php
 function uchicago_form_system_theme_settings_alter(&$form, &$form_state) {
   // Add a checkbox to toggle the breadcrumb trail.
-  $form['toggle_simplehomepage'] = array(
-    '#type' => 'checkbox', 
-    '#title' => t('Simple homepage'), 
-    '#default_value' => theme_get_setting('toggle_simplehomepage'), 
-    '#description' => t('Check this box if you would like to have a simple homepage.'),
-  );
+//  $form['toggle_simplehomepage'] = array(
+//    '#type' => 'checkbox', 
+//    '#title' => t('Simple homepage'), 
+//    '#default_value' => theme_get_setting('toggle_simplehomepage'), 
+//    '#description' => t('Check this box if you would like to have a simple homepage.'),
+//  );
   // Allow user to select color scheme
 	$form['colorscheme'] = array(
 		'#type' => 'select',
@@ -14,11 +14,26 @@ function uchicago_form_system_theme_settings_alter(&$form, &$form_state) {
 		'#default_value' => theme_get_setting('colorscheme'),
 		'#options' => array(
 			'phoenix' => t('Phoenix'),
-			'plumbtree' => t('Plumbtree'),
+			'plumbtree' => t('Plumb Tree'),
 			'reflectionpool' => t('Reflection Pool'),
-			'autumnleaves' => t('Autumn leaves')
+			'autumnleaves' => t('Autumn Leaves')
 		),
-		'#description' => t('Your color scheme will be applied when you click Save.'),
+		'#weight' => -10
 	);
+	
+	$form['screenshots'] = array(
+		'#markup' => '<table><tr><th>Phoenix:</th><th>Plumb Tree:</th></tr><tr><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/phoenix.png" alt="Phoenix theme" /></td><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/plumbtree.png" alt="Plumb Tree theme" /></td></tr><tr><th>Reflection Pool:</th><th>Autumn Leaves:</th></tr><tr><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/reflectionpool.png" alt="Reflection Pool theme" /></td><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/autumnleaves.png" alt="Autumn Leaves theme" /></td></tr></table>',
+		'#weight' => -9
+	);
+	
+	$form['theme_settings'] = array(
+		'#disabled' => TRUE,
+	);
+	
+	$form['favicon'] = array(
+		'#disabled' => TRUE,
+	);
+		
+	
 }
 ?>

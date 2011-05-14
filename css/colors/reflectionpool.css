@@ -1,0 +1,149 @@
+/*
+Override Theme Name: Reflection Pool
+*/
+
+/* ------------------ Header Styles ------------------ */
+
+#wordmark {
+	background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark_reflectionpool.png") top right no-repeat;
+	display:block;
+	height:53px;
+	text-decoration:none
+}
+
+#dept-title {
+	background:url("/sites/all/themes/uchicago/images/masthead.png") no-repeat scroll 0 0 transparent;
+	display:block;
+	height:53px;
+	text-decoration:none
+}
+
+#page-wrapper {
+	background:#ffffff url("/sites/all/themes/uchicago/images/maincontentbg_reflectionpool.gif") top center no-repeat;
+}
+
+#header {
+	background:#770000;
+	background-image:-moz-linear-gradient(center top, 	#45778e, 
+														#51859D 88px, 
+														#305e73 88px, 
+														#305e73 89px, 
+														#305e73 89px, 
+														#305e73 96px); /* FF3.6 */
+														
+	background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #45778e), 
+																		color-stop(0.92, #51859D), 
+																		color-stop(0.92, #305e73), 
+																		color-stop(0.93, #305e73), 
+																		color-stop(0.93, #305e73), 
+																		color-stop(1.0, #305e73));
+																		
+	background-image:gradient(linear, left top, left bottom, 	color-stop(0, #45778e), 
+																color-stop(0.92, #51859D), 
+																color-stop(0.92, #305e73), 
+																color-stop(0.93, #305e73), 
+																color-stop(0.93, #305e73), 
+																color-stop(1.0, #305e73));
+}
+
+/* ------------------ Typeography and Link Styles ------------------ */
+
+/* - h1s - */
+
+h1#page-title { color: #276b8b; }
+
+/* - h2s - */
+
+.sidebar h2 { background-color: #3E7C97; }
+body.front .region-home-center .block-block h2 { color: #276b8b; }
+.region-content h2 { color: #276b8b; }
+#block-events h2 { color: #276b8b !important; }
+
+/* - h3s - */
+
+.region-content h3 { color: #51859D; }
+#block-views-homepage-feed-block h3 { color: #276b8b; }
+.view-homepage-mini-features h3 {
+    color: #155F83;
+    margin: 4px 0 2px;
+}
+
+/* - links - */
+
+#block-views-homepage-feed-block div.feed-icon a { background: url("/sites/all/themes/uchicago/images/feed_reflectionpool.png") no-repeat scroll 0 -15px transparent; }
+#block-views-homepage-feed-block div.feed-icon a:hover { background: url("/sites/all/themes/uchicago/images/feed_reflectionpool.png") no-repeat scroll 0 0 transparent; }
+
+a {
+  color: #155f83;
+}
+a:hover,a:focus {
+  color: #20364c;
+}
+a:active,.block li a.active {
+  color: #155f83;
+}
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}
+
+
+/* ------------------ Blocks, Features, Table Styles ------------------ */
+
+#mainfeature h3 { background: none repeat scroll 0 0 #51859D; }
+#mainfeature { border-bottom: 1px solid #d7d7cf; }
+#block-system-main-menu .content a {
+    background-color: #c5c3c3;
+    border-top: 1px solid #dedddd;
+}
+#block-system-main-menu .content a:hover {
+    background-color: #9c9c9c;
+}
+.view-homepage-mini-features { border-top: 5px solid #333; }
+#block-views-homepage-mini-features-block { background-color: #f7f7f7; }
+li ul li { background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #d7d5d5; }
+#block-system-main-menu .content ul li ul li {
+    background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #e6e5e5;
+}
+#block-system-main-menu .content ul li ul li a:hover { background: #d7d5d5; }
+.sidebar .block { background: url("/sites/all/themes/uchicago/images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff; }
+textarea, input.form-select { border: 1px solid #CCCCCC;}
+input, textarea { background: #e6e5e5; }
+#block-views-homepage-feed-block {
+    background: url("/sites/all/themes/uchicago/images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
+    border-top: 5px solid #3E7C97;
+}
+#block-events {
+    background: url("/sites/all/themes/uchicago/images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
+    border-top: 5px solid #3E7C97;
+}
+table tr th { background: none repeat scroll 0 0 #e6e5e5; }
+.imgrt img, .imglt img { border-color: #333; }
+hr { border-color: #CCCCCC;}
+
+
+/* ------------------ Footer Styles ------------------ */
+
+#footer-wrapper {
+    background: #e2e2e1;
+    border-top: solid 5px #666;
+    height: 115px;
+    margin-top: -115px;
+}
+
+#footer {
+    background: #fafafa;
+    height: 105px;
+    margin: 0 -8px;
+    padding: 10px 8px 0;
+}
+
+#footer p, #footer li, #footer div.field-content { color: #333; }
+#footer a, #footer p { color: #333;}
+#footer a:hover { color: #51859D; }
+
+

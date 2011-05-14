@@ -1310,7 +1310,7 @@ margin-top:10px
 display:inline
 }
 #footer div.social div.field-content a {
-background-image: url(../images/socialsprite.gif);
+background-image: url(../images/socialsprite.png);
 background-repeat: no-repeat;
 display:block;
 float:left;
@@ -1329,21 +1329,74 @@ background-position: 0 0;
 #footer a.twitter {
 background-position: -32px 0;
 }
+#footer a.flickr {
+background-position: -48px 0;
+}
 #footer a.youtube:hover,#footer a.youtube:focus {
 background-position: 0 -16px;
 }
-#footer a.facebook:hover, #footer a.facebook:focus {
+#footer a.facebook:hover,#footer a.facebook:focus {
 background-position: -16px -16px;
 }
 #footer a.twitter:hover,#footer a.twitter:focus {
 background-position: -32px -16px;
 }
-#footer div.edit {
-position:absolute;
-right:0;
-top:-12px
+#footer a.flickr:hover,#footer a.flickr:focus {
+background-position: -48px -16px;
+}
+#footer div.edit div {
+clear:left;
+display:block;
+font-weight:700;
+/* position:absolute;
+width:100%;
+top:-7px */
 }
 
+/* --------------- Social Blocks  --------------- */
+
+.block .socialblock {
+padding-top: 9px
+}
+
+.block .socialblock div.field-content a {
+background-image: url(../images/socialsprite.png);
+background-repeat: no-repeat;
+display:block;
+float:left;
+margin-right:10px;
+height: 32px;
+overflow: hidden;
+text-indent: -9999px;
+width: 32px;
+}
+.socialblock a.facebook {
+background-position: -32px -32px;
+}
+.socialblock a.youtube {
+background-position: 0 -32px;
+}
+.socialblock a.twitter {
+background-position: -64px -32px;
+}
+.socialblock a.flickr {
+background-position: -96px -32px;
+}
+.socialblock a.youtube:hover,.socialblock a.youtube:focus {
+background-position: 0 -64px;
+}
+.socialblock a.facebook:hover,.socialblock a.facebook:focus {
+background-position: -32px -64px;
+}
+.socialblock a.twitter:hover,.socialblock a.twitter:focus {
+background-position: -64px -64px;
+}
+.socialblock a.flickr:hover,.socialblock a.flickr:focus {
+background-position: -96px -64px;
+}
+.addthis_toolbox {
+padding-top:9px
+}
 /* --------------- System Tabs  --------------- */
 .tabs {
 font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;

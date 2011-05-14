@@ -6,12 +6,12 @@
 function uchicago_preprocess_html(&$variables) {
 
   // Add conditional stylesheets for IE
-  drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
   // Add the selected theme stylesheets
 	$colorscheme =  theme_get_setting('colorscheme');
-  drupal_add_css(drupal_get_path('theme', 'uchicago') . '/css/' . $colorscheme. '.css', array('group' => CSS_THEME, 'every_page' => TRUE));
+  drupal_add_css(path_to_theme() . '/css/colors/' . $colorscheme. '.css', array('group' => CSS_THEME, 'every_page' => TRUE));
+  drupal_add_css(path_to_theme() . '/css/colors/' . $colorscheme. '_ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
 }
 
 /**
@@ -99,4 +99,16 @@ function uchicago_field__taxonomy_term_reference($variables) {
   $output = '<div class="' . $variables['classes'] . (!in_array('clearfix', $variables['classes_array']) ? ' clearfix' : '') . '">' . $output . '</div>';
 
   return $output;
+}
+
+function uchicago_addthis_button() {
+	$output = '<div class="addthis_toolbox addthis_default_style">
+  <a class="addthis_button_print"></a>
+  <a class="addthis_button_facebook"></a>
+  <a class="addthis_button_compact"></a>
+  <a class="addthis_button_tweet"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=webserv"></script>';
+	return $output;
 }

@@ -1,0 +1,148 @@
+/*
+Override Theme Name: Poenix
+*/
+
+/* ------------------ Header Styles ------------------ */
+
+#wordmark {	background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark_phoenix.png") top right no-repeat; }
+#dept-title { background:url("/sites/all/themes/uchicago/images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
+#page-wrapper { background:#eae9e1 url("/sites/all/themes/uchicago/images/maincontentbg.png") top center repeat-y; }
+#header {
+	background:#770000;
+	background-image:-moz-linear-gradient(center top, 	#800000, 
+														#770000 88px, 
+														#9f2425 88px, 
+														#9f2425 89px, 
+														#971e21 89px, 
+														#971e21 96px); /* FF3.6 */
+														
+	background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #800000), 
+																		color-stop(0.92, #770000), 
+																		color-stop(0.92, #9f2425), 
+																		color-stop(0.93, #9f2425), 
+																		color-stop(0.93, #971e21), 
+																		color-stop(1.0, #971e21));
+																		
+	background-image:gradient(linear, left top, left bottom, 	color-stop(0, #800000), 
+																color-stop(0.92, #770000), 
+																color-stop(0.92, #9f2425), 
+																color-stop(0.93, #9f2425), 
+																color-stop(0.93, #971e21), 
+																color-stop(1.0, #971e21));
+}
+
+/* ------------------ Typeography and Link Styles ------------------ */
+
+/* - h1s - */
+
+h1#page-title { color: #7f3735; }
+
+/* - h2s - */
+
+.sidebar h2 { background-color: #3E7C97; }
+body.front .region-home-center .block-block h2 { color: #740000; }
+#block-views-homepage-feed-block h2 { color: #155F83; }
+.region-content h2 { color: #740000; }
+#block-events h2 { color: #800000 !important; }
+
+/* - h3s- */
+
+.region-content h3 { color: #3d3d2f; }
+#block-views-homepage-feed-block h3 { color: #3d3d2f; }
+#mainfeature h3 { 
+	background:#155f83;
+	color:#ffffff; 
+}
+.view-homepage-mini-features h3 {
+    color: #155F83;
+    margin: 4px 0 2px;
+}
+
+/* - links- */
+
+a {
+  color: #155f83;
+}
+a:hover,a:focus {
+  color: #20364c;
+}
+a:active,.block li a.active {
+  color: #155f83;
+}
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}
+
+/* ------------------ Blocks, Features, Table Styles ------------------ */
+
+
+/* - menu - */
+
+#block-system-main-menu .content a {
+	background:#d6d6ce;
+	color:#184154;
+	border-top:1px solid #fff;
+}
+#block-system-main-menu .content ul li a { 
+	background:#d6d6ce;
+}
+#block-system-main-menu .content ul li a:hover { 	
+	background:#969693;
+	color:#fff  
+}
+#block-system-main-menu .content ul li ul li a { color: #155f83; }
+#block-system-main-menu .content ul li ul li a:hover { 
+	background:#EAEAE1;
+	color:#1B4B61;
+}
+#block-system-main-menu .content ul li ul li {
+    background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #eaeae1;
+}
+
+/* - blocks and tops - */
+
+#block-views-homepage-mini-features-block { background-color:#f7f6ee; }
+.sidebar .block { background:#eaeae2 url("/sites/all/themes/uchicago/images/modulebg.gif") bottom left repeat-x }
+#block-views-homepage-feed-block {
+    background:#eaeae2 url("/sites/all/themes/uchicago/images/modulebg.gif") bottom left repeat-x;
+    border-top:5px solid #3E7C97;
+}
+#block-events {
+	border-top:5px solid #8f3931;
+	background:#eaeae2 url("/sites/all/themes/uchicago/images/modulebg.gif") bottom left repeat-x;
+}
+.view-homepage-mini-features { border-top:5px solid #266178; }
+.imgrt img, .imglt img { border-color: #266178; }
+
+/* - rss icon - */
+
+#block-views-homepage-feed-block div.feed-icon a { background: url("/sites/all/themes/uchicago/images/feed.png") no-repeat scroll 0 -15px transparent; }
+#block-views-homepage-feed-block div.feed-icon a:hover { background: url("/sites/all/themes/uchicago/images/feed.png") no-repeat scroll 0 0 transparent; }
+
+/* - misc. - */
+
+hr { border-color: #CCCCCC;}
+#mainfeature { border-bottom: 1px solid #d7d7cf; }
+table tr th { background: none repeat scroll 0 0 #eae9e1; }
+textarea, input.form-select { border: 1px solid #fff;}
+input, textarea { background: #fff; }
+.imgrt img { border-top: 5px solid #8F3931; }
+
+/* ------------------ Footer Styles ------------------ */
+
+#footer-wrapper {
+	background: url("/sites/all/themes/uchicago/images/outsidefooterbg.gif") repeat-x scroll 0 0 #5A5952;
+	border:none;
+}
+#footer { background: url("/sites/all/themes/uchicago/images/insidefooterbg.gif") repeat-x scroll 0 0 #5E5D56; }
+
+#footer p, #footer li, #footer div.field-content { color: #BEBEB6; }
+#footer a, #footer p { color: #BEBEB6; }
+#footer a:hover { color: #fff; }
+
+
