@@ -42,13 +42,12 @@
  * @see theme_field()
  */
 ?>
-<div class="<?php print $classes; ?> clearfix <?php if (count($items)>1) { print 'slideshow'; } ?>"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> clearfix imgrt <?php if (count($items)>1) { print 'slideshow'; } ?>"<?php print $attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
     <?php $imgarray = image_get_info($item['#item']['uri']); ?>
       <div>
-        <div style="height:<?php print($imgarray['height'] + 8); ?>px">
+      	<div class="magnify">Magnify the image</div>
       	<?php print render($item); ?>
-      	</div>
 				<?php if ($item['#item']['title']): ?>
 				<div class="caption"><?php print($item['#item']['title']); ?></div>
 				<?php endif; ?>

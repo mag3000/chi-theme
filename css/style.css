@@ -249,8 +249,8 @@ padding:0
 font-size:small!important
 }
 
-html.js div.block-views div.contextual-links-wrapper {
-display:none /* Hide contextual links for view blocks because they're confusing */
+html.js div.block-views div.contextual-links-wrapper, html.js div.block-cck-blocks div.contextual-links-wrapper  {
+display:none /* Hide contextual links for view and cck blocks because they're confusing */
 }
 
 ul.contextual-links {
@@ -527,10 +527,10 @@ margin-right: 10px
 overflow: hidden /* for clearing floats */
 }
 
-.imgrt {
+/* .imgrt {
 float:right;
 margin:0 0 16px
-}
+} */
 
 .imgrt .field-type-text {
 font-size:1em;
@@ -551,11 +551,24 @@ color: #65655E;
 font-size: 1em;
 line-height: 1.65em;
 border-bottom:1px solid #D7D7CF;
+clear:left
 }
 
-.imgrt .slideshow .caption {
+.imgrt.slideshow .caption {
 padding-bottom:0;
 border-bottom:none
+}
+
+.magnify {
+display:block;
+height:22px;
+width:100%;
+background:url("../images/magnify.png") no-repeat scroll 192px 0px transparent;
+opacity:0.65;
+filter:alpha(opacity=65);
+position:absolute;
+top:8px;
+text-indent:-9999px
 }
 
 .field-name-field-galleryimage {
@@ -569,7 +582,7 @@ border-radius: 5px;
 -webkit-border-radius: 5px;
 }
 
-a.colorbox img {
+.node-type-image-gallery a.colorbox img {
 float: left;
 margin-right:10px
 }
@@ -1209,10 +1222,12 @@ width:132px
 
 /* ------------------ Sidebar ----------------- */
 
+/*
 #sidebar-second {
 float:right;
 clear:right
 }
+*/
 
 .sidebar .block {
 margin-bottom:16px;
@@ -1249,6 +1264,15 @@ line-height:1.65em
 padding:0 10px
 }
 
+.sidebar .block-cck-blocks .content {
+padding:0px /* for right column images */
+}
+
+.sidebar .block-cck-blocks { /* for right column images */
+background:none !important;
+padding-bottom:0 
+}
+
 .sidebar .block ul {
 margin:0;
 padding:0 10px 10px 0
@@ -1274,9 +1298,10 @@ height:115px
 }
 #footer {
 padding:20px 8px 0;
-background: #fff;
-height: 95px;
-margin: 0 -8px
+background:#fff;
+height:95px;
+margin:0 -8px;
+overflow:hidden
 }
 #footer p,#footer li,#footer div.field-content {
 color: #444;

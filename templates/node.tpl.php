@@ -78,7 +78,7 @@
  * @see template_process()
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if ($page) { print 'grid_6 alpha'; } ?>"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix <?php if ($page) { print ''; } ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
@@ -128,13 +128,3 @@
 	</div>
 
 </div>
-
-<?php
-	if (!empty($content['field_rightimage'][0])):
-	?>
-	<div class="imgrt grid_3 omega">
-			<?php print render($content['field_rightimage']); ?>
-	</div>
-	<?php
-	endif;
-?>

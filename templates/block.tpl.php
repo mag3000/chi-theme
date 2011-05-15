@@ -44,9 +44,9 @@
 ?>
 <?php if ($block->module == 'block' && $block->subject): ?>
 	<?php $new_block_id = str_replace(" ","",$block->subject); ?>
-	<div id="block-<?php print strtolower($new_block_id); ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+	<div id="block-<?php print strtolower($new_block_id); ?>" class="clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
 <?php else: ?>
-	<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+	<div id="<?php print $block_html_id; ?>" class="clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
 <?php endif; ?>
 
   <?php print render($title_prefix); ?>

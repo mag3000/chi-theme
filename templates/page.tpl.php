@@ -1,8 +1,6 @@
 <?php
 
 /**
- * @file
- * Bartik's theme implementation to display a single Drupal page.
  *
  * The doctype, html, head and body tags are not in this template. Instead they
  * can be found in the html.tpl.php template normally located in the
@@ -148,36 +146,34 @@
 					</div>
 				<?php endif; ?>
 				<div id="bottomrow" class="clearfix">
-					<?php if ($page['highlighted'] || $page['home_center'] || $page['help'] || $action_links): ?>
-						<div class="grid_6 alpha">
-							<?php if ($page['highlighted']): ?>
-								<?php print render($page['highlighted']); ?>
-							<?php endif; ?>
-							<?php if (!$toggle_simplehomepage): ?>
-								<?php if ($page['home_center']): ?>
-										<?php print render($page['home_center']); ?>
+					<div class="<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')) { print 'grid_6 alpha'; } ?>">
+					
+						<?php if ($page['highlighted'] || $page['home_center'] || $page['help'] || $action_links): ?>
+								<?php if ($page['highlighted']): ?>
+									<?php print render($page['highlighted']); ?>
 								<?php endif; ?>
-							<?php endif; ?>
-							<?php print render($page['help']); ?>
-							<?php if ($action_links): ?>
-								<ul class="action-links">
-									<?php print render($action_links); ?>
-								</ul>
-							<?php endif; ?>
-						</div>
-					<?php endif; ?>
-					
-					<?php if(!$is_front || $toggle_simplehomepage): ?>
-						<?php if (!empty($node)): ?>
-							<?php print render($page['content']); ?>
-						<?php else: ?>
-							<div class="grid_6 alpha">
-								<?php print render($page['content']); ?>
-								<?php print $feed_icons; ?>
-							</div>
+								<?php if (!$toggle_simplehomepage): ?>
+									<?php if ($page['home_center']): ?>
+											<?php print render($page['home_center']); ?>
+									<?php endif; ?>
+								<?php endif; ?>
+								<?php print render($page['help']); ?>
+								<?php if ($action_links): ?>
+									<ul class="action-links">
+										<?php print render($action_links); ?>
+									</ul>
+								<?php endif; ?>
 						<?php endif; ?>
-					<?php endif; ?>
 					
+						<?php if(!$is_front || $toggle_simplehomepage): ?>
+							<?php //if (!empty($node)): ?>
+									<?php print render($page['content']); ?>
+									<?php print $feed_icons; ?>
+							<?php //endif; ?>
+						<?php endif; ?>
+						
+					</div>
+
 					<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')): ?>
 						<div id="sidebar-second" class="column sidebar grid_3 omega">
 							<?php print render($page['sidebar_second']); ?>
