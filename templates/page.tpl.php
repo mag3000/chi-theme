@@ -115,14 +115,8 @@
 						<?php print $messages; ?>
 				</div> <!-- /#messages -->
 			<?php endif; ?>
-			
-			<div id="sidebar-first" class="column sidebar grid_3"> 
-				<?php if($page['sidebar_first']): ?>
-					<?php print render($page['sidebar_first']); ?>
-				<?php endif; ?>
-			</div> <!-- /#sidebar-first -->
-	
-			<div id="content" class="column grid_9 <?php if ($toggle_simplehomepage) { print 'notfancy'; } ?>">
+
+			<div id="content" class="column grid_9 push_3 <?php if ($toggle_simplehomepage) { print 'notfancy'; } ?>">
 				<a id="main-content"></a>
 				<?php if (!$toggle_simplehomepage): ?>
 					<?php if ($page['home_features']): ?>
@@ -182,6 +176,13 @@
 					
 				</div> <!-- bottomrow -->
 			</div> <!-- /#content -->
+			
+			<div id="sidebar-first" class="column sidebar grid_3 pull_9"> 
+				<?php if($page['sidebar_first']): ?>
+					<?php print render($page['sidebar_first']); ?>
+				<?php endif; ?>
+			</div> <!-- /#sidebar-first -->
+	
   	</div> <!-- /#main -->
 	</div> <!-- /#main-wrapper -->
 <div id="clearfoot">&nbsp;</div>

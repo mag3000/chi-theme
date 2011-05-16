@@ -564,8 +564,6 @@ display:block;
 height:22px;
 width:100%;
 background:url("../images/magnify.png") no-repeat scroll 192px 0px transparent;
-opacity:0.65;
-filter:alpha(opacity=65);
 position:absolute;
 top:8px;
 text-indent:-9999px
