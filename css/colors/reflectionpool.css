@@ -5,21 +5,21 @@ Override Theme Name: Reflection Pool
 /* ------------------ Header Styles ------------------ */
 
 #wordmark {
-	background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark_reflectionpool.png") top right no-repeat;
+	background:transparent url("../../images/uc_wordmark_reflectionpool.png") top right no-repeat;
 	display:block;
 	height:53px;
 	text-decoration:none
 }
 
 #dept-title {
-	background:url("/sites/all/themes/uchicago/images/masthead.png") no-repeat scroll 0 0 transparent;
+	background:url("../../images/masthead.png") no-repeat scroll 0 0 transparent;
 	display:block;
 	height:53px;
 	text-decoration:none
 }
 
 #page-wrapper {
-	background:#ffffff url("/sites/all/themes/uchicago/images/maincontentbg_reflectionpool.gif") top center no-repeat;
+	background:#ffffff url("../../images/maincontentbg_reflectionpool.gif") top center repeat-y;
 }
 
 #header {
@@ -70,8 +70,8 @@ body.front .region-home-center .block-block h2 { color: #276b8b; }
 
 /* - links - */
 
-#block-views-homepage-feed-block div.feed-icon a { background: url("/sites/all/themes/uchicago/images/feed_reflectionpool.png") no-repeat scroll 0 -15px transparent; }
-#block-views-homepage-feed-block div.feed-icon a:hover { background: url("/sites/all/themes/uchicago/images/feed_reflectionpool.png") no-repeat scroll 0 0 transparent; }
+#block-views-homepage-feed-block div.feed-icon a { background: url("../../images/feed_reflectionpool.png") no-repeat scroll 0 -15px transparent; }
+#block-views-homepage-feed-block div.feed-icon a:hover { background: url("../../images/feed_reflectionpool.png") no-repeat scroll 0 0 transparent; }
 
 a {
   color: #155f83;
@@ -105,20 +105,20 @@ a:active,.block li a.active {
 }
 .view-homepage-mini-features { border-top: 5px solid #333; }
 #block-views-homepage-mini-features-block { background-color: #f7f7f7; }
-li ul li { background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #d7d5d5; }
+li ul li { background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #d7d5d5; }
 #block-system-main-menu .content ul li ul li {
-    background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #e6e5e5;
+    background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #e6e5e5;
 }
-#block-system-main-menu .content ul li ul li a:hover { background: #d7d5d5; }
-.sidebar .block { background: url("/sites/all/themes/uchicago/images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff; }
+#block-system-main-menu .content ul li ul li a:hover { background: none; }
+.sidebar .block { background: url("../../images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff; }
 textarea, input.form-select { border: 1px solid #CCCCCC;}
 input, textarea { background: #e6e5e5; }
 #block-views-homepage-feed-block {
-    background: url("/sites/all/themes/uchicago/images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
+    background: url("../../images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
     border-top: 5px solid #3E7C97;
 }
 #block-events {
-    background: url("/sites/all/themes/uchicago/images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
+    background: url("../../images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
     border-top: 5px solid #3E7C97;
 }
 table tr th { background: none repeat scroll 0 0 #e6e5e5; }

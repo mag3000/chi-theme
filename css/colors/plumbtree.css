@@ -4,8 +4,8 @@ Override Theme Name: Plum Tree
 
 /* ------------------ Header Styles ------------------ */
 
-#wordmark {	background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark_plumbtree.png") top right no-repeat; }
-#dept-title { background:url("/sites/all/themes/uchicago/images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
+#wordmark {	background:transparent url("../../images/uc_wordmark_plumbtree.png") top right no-repeat; }
+#dept-title { background:url("../../images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
 #page-wrapper { background: #eae9e1; }
 #header {
 	background:#770000;
@@ -89,7 +89,7 @@ a:active,.block li a.active {
 #block-system-main-menu .content ul li ul li a { color: #341824; }
 #block-system-main-menu .content ul li ul li a:hover { color: #341824; background-color: #fcfcf3 !important; }
 #block-system-main-menu .content ul li ul li {
-    background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #fcfcf3;
+    background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #fcfcf3;
 }
 
 /* - blocks and tops - */
@@ -109,8 +109,8 @@ a:active,.block li a.active {
 
 /* - rss icon - */
 
-#block-views-homepage-feed-block div.feed-icon a { background: url("/sites/all/themes/uchicago/images/feed_plumbtree.png") no-repeat scroll 0 -15px transparent; }
-#block-views-homepage-feed-block div.feed-icon a:hover { background: url("/sites/all/themes/uchicago/images/feed_plumbtree.png") no-repeat scroll 0 0 transparent; }
+#block-views-homepage-feed-block div.feed-icon a { background: url("../../images/feed_plumbtree.png") no-repeat scroll 0 -15px transparent; }
+#block-views-homepage-feed-block div.feed-icon a:hover { background: url("../../images/feed_plumbtree.png") no-repeat scroll 0 0 transparent; }
 
 /* - misc. - */
 
@@ -123,10 +123,10 @@ input, textarea { background: #fff; }
 /* ------------------ Footer Styles ------------------ */
 
 #footer-wrapper {
-	background: url("/sites/all/themes/uchicago/images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9;
+	background: url("../../images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9;
 	border:none;
 }
-#footer { background: url("/sites/all/themes/uchicago/images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9; }
+#footer { background: url("../../images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9; }
 
 #footer p, #footer li, #footer div.field-content { color: #333; }
 #footer a, #footer p { color: #333;}

@@ -6,7 +6,7 @@ Override Theme Name: Autumn Leaves
 
 #wordmark {	background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark_autumnleaves.png") top right no-repeat; }
 #dept-title { background:url("/sites/all/themes/uchicago/images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
-#page-wrapper { background:#eae9e1 url("/sites/all/themes/uchicago/images/maincontentbg_autumnleaves.gif") top center no-repeat; }
+#page-wrapper { background:#eae9e1 url("/sites/all/themes/uchicago/images/maincontentbg_autumnleaves.gif") top center repeat-y; }
 #header {
 	background:#770000;
 	background-image:-moz-linear-gradient(center top, 	#6d5e4e, 

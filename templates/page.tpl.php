@@ -104,8 +104,11 @@
         <?php endif; ?>
       </div> <!-- /#name -->
     <?php endif; ?>
-
+    
   </div></div> <!-- /#header -->
+
+  <div id="toggle-nav"><a href="#">Show Menu</a></div>
+
 
 	<div id="main-wrapper" class="clearfix">
 		<div id="main" class="clearfix container_12">

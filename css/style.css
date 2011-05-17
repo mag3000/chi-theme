@@ -153,37 +153,39 @@ body,body.overlay {
   border-bottom: 1px solid #ffffff;
 }
 #header {
-	background:#770000;
-	background-image:-moz-linear-gradient(center top, 	#333, 
-														#333 88px, 
-														#333 88px, 
-														#333 89px, 
-														#333 89px, 
-														#333 96px); /* FF3.6 */
-														
-	background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #333), 
-																		color-stop(0.92, #333), 
-																		color-stop(0.92, #333), 
-																		color-stop(0.93, #333), 
-																		color-stop(0.93, #333), 
-																		color-stop(1.0, #333));
-																		
-	background-image:gradient(linear, left top, left bottom, 	color-stop(0, #333), 
-																color-stop(0.92, #333), 
-																color-stop(0.92, #333), 
-																color-stop(0.93, #333), 
-																color-stop(0.93, #333), 
-																color-stop(1.0, #333));
+background:#770000;
+background-image:-moz-linear-gradient(center top, 	#333, 
+#333 88px, 
+#333 88px, 
+#333 89px, 
+#333 89px, 
+#333 96px); /* FF3.6 */
+background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #333), 
+color-stop(0.92, #333), 
+color-stop(0.92, #333), 
+color-stop(0.93, #333), 
+color-stop(0.93, #333), 
+color-stop(1.0, #333));
+background-image:gradient(linear, left top, left bottom, 	color-stop(0, #333), 
+color-stop(0.92, #333), 
+color-stop(0.92, #333), 
+color-stop(0.93, #333), 
+color-stop(0.93, #333), 
+color-stop(1.0, #333));
 }
+
 a {
   color: #444;
 }
+
 a:hover,a:focus {
   color: #000;
 }
+
 a:active,.block li a.active {
   color: #000;
 }
+
 .region-header,
 .region-header a,
 .region-header li a.active,
@@ -284,14 +286,14 @@ padding:0
 
 /* ------------------ Header ------------------ */
 #wordmark {
-background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark.png") top right no-repeat;
+background:transparent url("../../images/uc_wordmark.png") top right no-repeat;
 display:block;
 height:53px;
 text-decoration:none
 }
 
 #dept-title {
-background:url("/sites/all/themes/uchicago/images/masthead.png") no-repeat scroll 0 0 transparent;
+background:url("../../images/masthead.png") no-repeat scroll 0 0 transparent;
 display:block;
 height:53px;
 text-decoration:none
@@ -335,6 +337,10 @@ text-indent:-9999px
 
 #site-name h1 {
 margin:0
+}
+
+#toggle-nav {
+display:none /* Hide by default; enabled by small.css */
 }
 
 /* --------------- Main Menu ------------ */
@@ -2209,3 +2215,4 @@ font-size:1.1em;
 margin-bottom:10px;
 clear:both
 }
+
