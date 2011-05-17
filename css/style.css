@@ -2209,3 +2209,21 @@ font-size:1.1em;
 margin-bottom:10px;
 clear:both
 }
+
+/* Responsive design */
+
+@media screen and (max-width: 600px) {
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {margin:0; width:auto !important; float:none; display:block; position:static}
+#main{width:100%;}
+#sidebar-first{padding:0 8px}
+#content{width:auto; padding:0 8px}
+#footer-wrapper{display:none}
+#header{width:100%}
+#header .container_12{width:auto; padding:0 8px}
+#site-name{text-indent:0; padding-top: 10px}
+#dept-title, #wordmark{background-image:none !important; font-size:2em; height:auto; margin-bottom:10px}
+.container_12 .push_3{left:0}
+.imgrt{display:none}
+#block-system-main-menu{margin:0 0 16px}
+img{max-width:100%}
+}

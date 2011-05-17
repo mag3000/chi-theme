@@ -13,4 +13,8 @@ jQuery(document).ready(function () {
   if (jQuery('#toolbar-menu').length) {
 		jQuery("#toolbar-menu li.last a").click(function() { window.open(this.href); return false; });
 	}
+	if (document.documentElement.clientWidth < 600) {
+		// for small screens, move the nav to the top of the DOM
+		jQuery('#content').prepend(jQuery('#block-system-main-menu'));
+	}
 });
