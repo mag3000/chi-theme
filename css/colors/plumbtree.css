@@ -8,27 +8,27 @@ Override Theme Name: Plum Tree
 #dept-title { background:url("../../images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
 #page-wrapper { background: #eae9e1; }
 #header {
-	background:#770000;
-	background-image:-moz-linear-gradient(center top, 	#3e1d2b, 
-														#341824 88px, 
-														#6f505d 88px, 
-														#6f505d 89px, 
-														#6f505d 89px, 
-														#6f505d 96px); /* FF3.6 */
-														
-	background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #3e1d2b), 
-																		color-stop(0.92, #341824), 
-																		color-stop(0.92, #6f505d), 
-																		color-stop(0.93, #6f505d), 
-																		color-stop(0.93, #6f505d), 
-																		color-stop(1.0, #6f505d));
-																		
-	background-image:gradient(linear, left top, left bottom, 	color-stop(0, #3e1d2b), 
-																color-stop(0.92, #341824), 
-																color-stop(0.92, #6f505d), 
-																color-stop(0.93, #6f505d), 
-																color-stop(0.93, #6f505d), 
-																color-stop(1.0, #6f505d));
+background:#3e1d2b;
+background-image:-moz-linear-gradient(center top, #3e1d2b, 
+#341824 88px, 
+#6f505d 88px, 
+#6f505d 89px, 
+#6f505d 89px, 
+#6f505d 96px); /* FF3.6 */
+
+background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3e1d2b), 
+color-stop(0.92, #341824), 
+color-stop(0.92, #6f505d), 
+color-stop(0.93, #6f505d), 
+color-stop(0.93, #6f505d), 
+color-stop(1.0, #6f505d));
+
+background-image:gradient(linear, left top, left bottom, color-stop(0, #3e1d2b), 
+color-stop(0.92, #341824), 
+color-stop(0.92, #6f505d), 
+color-stop(0.93, #6f505d), 
+color-stop(0.93, #6f505d), 
+color-stop(1.0, #6f505d));
 }
 
 /* ------------------ Typeography and Link Styles ------------------ */
@@ -95,7 +95,7 @@ a:active,.block li a.active {
 /* - blocks and tops - */
 
 #block-views-homepage-mini-features-block { background-color: #eae9e1; }
-.sidebar .block { background: #fcfcf3; }
+.sidebar .block, .rightcolimage-outerwrapper { background: #fcfcf3; }
 #block-views-homepage-feed-block {
     background: #fcfcf3;
     border-top: 5px solid #72754e;

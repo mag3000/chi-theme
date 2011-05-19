@@ -42,10 +42,16 @@
  * @see theme_field()
  */
 ?>
+
+<?php if (count($items)>1):?>
+<h2>Slideshow</h2>
+<div class="rightcolimage-outerwrapper clearfix">
+<?php endif; ?>
+
 <div class="<?php print $classes; ?> clearfix imgrt <?php if (count($items)>1) { print 'slideshow'; } ?>"<?php print $attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
     <?php $imgarray = image_get_info($item['#item']['uri']); ?>
-      <div>
+      <div class="slideshow-wrapper">
       	<div class="magnify">Magnify the image</div>
       	<?php print render($item); ?>
 				<?php if ($item['#item']['title']): ?>
@@ -54,9 +60,13 @@
       </div>
 		<?php endforeach; ?>
 </div>
-  <?php if (count($items)>1): ?>
-		<div id="controls">
-			<a href="#" id="slide-next">Next</a>
-			<a href="#" id="slide-previous">Previous</a>
-		</div>
-	<?php endif; ?>
+<?php if (count($items)>1): ?>
+	<div id="controls" class="clearfix">
+		<a href="#" id="slide-next">Next</a>
+		<a href="#" id="slide-previous">Previous</a>
+	</div>
+<?php endif; ?>
+	
+<?php if (count($items)>1):?>
+</div> <!-- /slideshow-outer-wrapper -->
+<?php endif; ?>

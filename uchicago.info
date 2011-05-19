@@ -31,7 +31,7 @@ regions[footer_column4] = Footer fourth column
 scripts[] = scripts/jquery.cycle/jquery.cycle.all.min.js
 scripts[] = scripts/global.js
 
-; features[] = logo
+features[] = logo
 features[] = name
 ; features[] = slogan
 ; features[] = node_user_picture

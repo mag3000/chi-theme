@@ -8,27 +8,27 @@ Override Theme Name: Autumn Leaves
 #dept-title { background:url("/sites/all/themes/uchicago/images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
 #page-wrapper { background:#eae9e1 url("/sites/all/themes/uchicago/images/maincontentbg_autumnleaves.gif") top center repeat-y; }
 #header {
-	background:#770000;
-	background-image:-moz-linear-gradient(center top, 	#6d5e4e, 
-														#6d5e4e 88px, 
-														#8f7b66 88px, 
-														#8f7b66 89px, 
-														#8f7b66 89px, 
-														#8f7b66 96px); /* FF3.6 */
-														
-	background-image:-webkit-gradient(linear, left top, left bottom, 	color-stop(0, #6d5e4e), 
-																		color-stop(0.92, #6d5e4e), 
-																		color-stop(0.92, #8f7b66), 
-																		color-stop(0.93, #8f7b66), 
-																		color-stop(0.93, #8f7b66), 
-																		color-stop(1.0, #8f7b66));
-																		
-	background-image:gradient(linear, left top, left bottom, 	color-stop(0, #6d5e4e), 
-																color-stop(0.92, #6d5e4e), 
-																color-stop(0.92, #8f7b66), 
-																color-stop(0.93, #8f7b66), 
-																color-stop(0.93, #8f7b66), 
-																color-stop(1.0, #8f7b66));
+background:#6d5e4e;
+background-image:-moz-linear-gradient(center top, #6d5e4e, 
+#6d5e4e 88px, 
+#8f7b66 88px, 
+#8f7b66 89px, 
+#8f7b66 89px, 
+#8f7b66 96px); /* FF3.6 */
+
+background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #6d5e4e), 
+color-stop(0.92, #6d5e4e), 
+color-stop(0.92, #8f7b66), 
+color-stop(0.93, #8f7b66), 
+color-stop(0.93, #8f7b66), 
+color-stop(1.0, #8f7b66));
+
+background-image:gradient(linear, left top, left bottom, color-stop(0, #6d5e4e), 
+color-stop(0.92, #6d5e4e), 
+color-stop(0.92, #8f7b66), 
+color-stop(0.93, #8f7b66), 
+color-stop(0.93, #8f7b66), 
+color-stop(1.0, #8f7b66));
 }
 
 /* ------------------ Typeography and Link Styles ------------------ */
@@ -106,7 +106,7 @@ a:active,.block li a.active {
 /* - blocks and tops - */
 
 #block-views-homepage-mini-features-block { background-color: #fff; }
-.sidebar .block { background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6; }
+.sidebar .block, .rightcolimage-outerwrapper { background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6; }
 #block-views-homepage-feed-block {
     background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6;
     border-top: none;

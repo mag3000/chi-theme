@@ -107,7 +107,7 @@
     
   </div></div> <!-- /#header -->
 
-  <div id="toggle-nav"><a href="#">Show Menu</a></div>
+  <div id="toggle-nav"><a href="#">Toggle Menu &darr;</a></div>
 
 
 	<div id="main-wrapper" class="clearfix">
@@ -181,6 +181,18 @@
 			</div> <!-- /#content -->
 			
 			<div id="sidebar-first" class="column sidebar grid_3 pull_9"> 
+
+				<div id="block-system-main-menu"><div class="content">
+					<?php
+						$block = module_invoke('system', 'block_view', 'main-menu');
+						print render($block);
+					?>
+				</div></div>
+
+				<?php if (($logo) && $is_front): ?>
+						<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo" />
+				<?php endif; ?>
+
 				<?php if($page['sidebar_first']): ?>
 					<?php print render($page['sidebar_first']); ?>
 				<?php endif; ?>

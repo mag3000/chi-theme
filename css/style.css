@@ -346,7 +346,8 @@ display:none /* Hide by default; enabled by small.css */
 /* --------------- Main Menu ------------ */
 #block-system-main-menu {
 margin-top:42px;
-background:none
+background:none;
+margin-bottom:16px
 }
 
 #block-system-main-menu .content {
@@ -532,11 +533,6 @@ margin-right: 10px
 .region-content p {
 overflow: hidden /* for clearing floats */
 }
-
-/* .imgrt {
-float:right;
-margin:0 0 16px
-} */
 
 .imgrt .field-type-text {
 font-size:1em;
@@ -728,12 +724,10 @@ margin-top:0
 #controls {
 height: 16px;
 width:100%;
-float:right;
-border-bottom:1px solid #D7D7CF;
-padding-bottom:9px
+float:right
 }
 
-#controls #slide-previous, #controls #slide-next, #cboxNext, #cboxPrevious {
+#controls #slide-previous, #controls #slide-next, #cboxNext, #cboxPrevious, #cboxClose {
 background-color: transparent;
 background-image: url(../images/slidecontrol.gif);
 background-repeat: no-repeat;
@@ -757,11 +751,19 @@ background-position: -16px 0;
 margin-left: 4px
 }
 
+#cboxClose {
+background-position: -32px 0;
+}
+
 #controls #slide-previous:hover, #controls #slide-previous:focus, #cboxPrevious:hover, #cboxPrevious:focus {
 background-position: 0 -16px;
 }
 #controls #slide-next:hover, #controls #slide-next:focus, #cboxNext:hover, cboxNext:focus {
 background-position: -16px -16px;
+}
+
+#cboxClose:hover, #cboxClose:focus {
+background-position: -32px -16px;
 }
 
 
@@ -920,13 +922,7 @@ background: url(../images/colorbox/loading_animation.gif) center center no-repea
 position: absolute;
 bottom: 0;
 right: 0;
-background: url(../images/colorbox/controls.png) -25px 0px no-repeat;
-width: 25px;
-height: 25px;
 text-indent: -9999px;
-}
-#cboxClose.hover,#cboxClose:focus {
-background-position: -25px -25px;
 }
 a.colorbox:focus img {
 outline:1px dashed black
@@ -937,6 +933,74 @@ outline:1px dashed black
   background: #fff;
 }
 
+
+/* -------- Slideshow Gallery -------- */
+.field-name-field-galleryimage {
+padding:0
+}
+.field-slideshow-wrapper {
+background-color:black;
+padding:10px
+}
+.field-slideshow {
+width:auto !important
+}
+.field-slideshow-slide {
+text-align:center;
+width:100% !important
+}
+.field-slideshow-slide a {
+display: block;
+}
+.field-slideshow-pager a img {
+margin: 0 10px 0 0;
+width:87px;
+height:87px
+}
+.field-slideshow-caption {
+display:block;
+color:#ffffff;
+padding:0 30px
+}
+.field-slideshow-pager li {
+list-style: none !important;
+margin:0 !important;
+}
+.node-type-image-gallery a.colorbox img {
+float:none;
+margin:0;
+}
+a.carousel-prev, a.carousel-next {
+display:block;
+float:left;
+background-color: transparent;
+background-image: url("../images/slidecontrol_gallery.gif");
+background-repeat: no-repeat;
+height: 16px;
+outline: medium none;
+text-indent: -9999px;
+width: 16px;
+margin-top:40px;
+}
+a.carousel-next:hover{
+background-position: -16px -16px;
+}
+a.carousel-prev:hover {
+background-position: 0 -16px;
+}
+a.carousel-prev{
+margin-right:10px;
+}
+a.carousel-next{
+    background-position: -16px 0;
+}
+.field-slideshow-carousel-wrapper {
+height:94px;
+margin-top:10px
+}
+.field-slideshow-carousel {
+float:left
+}
 
 /* ----------------- Homepage ----------------- */
 .homefeature {
@@ -1011,16 +1075,6 @@ margin-top:5px
 font-weight:700;
 margin:0
 }
-
-/*
-#block-views-homepage-feed-block img {
-float:left;
-height:68px;
-width:58px;
-padding-bottom:5px;
-margin-right:16px
-}
-*/
 
 #block-views-homepage-feed-block hr {
 border:1px solid #d0cbc4;
@@ -1224,14 +1278,13 @@ float:right;
 width:132px
 }
 
-/* ------------------ Sidebar ----------------- */
-
-/*
-#sidebar-second {
-float:right;
-clear:right
+#logo {
+text-align:center;
+max-width:218px;
+margin-bottom:16px
 }
-*/
+
+/* ------------------ Sidebar ----------------- */
 
 .sidebar .block {
 margin-bottom:16px;
@@ -1291,6 +1344,34 @@ background-image:none
 
 .sidebar .block ul li {
 margin-bottom:8px!important
+}
+
+/* ------ Right column slideshow ------ */
+
+.rightcolimage-outerwrapper {
+padding:10px;
+background-color:#cccccc
+}
+.slideshow a.colorbox {
+width:100%;
+display:block;
+text-align:center
+}
+.slideshow img {
+max-width:198px;
+border:none
+}
+.slideshow-wrapper {
+width:100%
+}
+.slideshow .magnify {
+background-position: 172px 0
+}
+.sidebar .block-cck-blocks h2 {
+margin-bottom:0 !important
+}
+.magnify.skinny {
+background-position: 172px 0
 }
 
 /* ------------------ Footer ------------------ */
@@ -2215,4 +2296,5 @@ font-size:1.1em;
 margin-bottom:10px;
 clear:both
 }
+
 
