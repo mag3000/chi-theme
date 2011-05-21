@@ -1298,7 +1298,7 @@ font-family:"MuseoSans500",verdana,sans-serif;
 color:#fff!important;
 display:block;
 font-size:1em!important;
-margin:0 0 6px!important;
+margin:0 0 6px; /* this was set to important, not sure why */
 padding:5px 10px;
 letter-spacing:1px;
 text-transform:uppercase
@@ -1350,7 +1350,8 @@ margin-bottom:8px!important
 
 .rightcolimage-outerwrapper {
 padding:10px;
-background-color:#cccccc
+background-color:#cccccc;
+display:none /*make them invisible initially so that the user doesn't see all the images before they load */
 }
 .slideshow a.colorbox {
 width:100%;
@@ -1362,16 +1363,13 @@ max-width:198px;
 border:none
 }
 .slideshow-wrapper {
-width:100%
+width:100%;
 }
 .slideshow .magnify {
 background-position: 172px 0
 }
 .sidebar .block-cck-blocks h2 {
 margin-bottom:0 !important
-}
-.magnify.skinny {
-background-position: 172px 0
 }
 
 /* ------------------ Footer ------------------ */
@@ -1468,7 +1466,6 @@ top:-7px */
 .block .socialblock {
 padding-top: 9px
 }
-
 .block .socialblock div.field-content a {
 background-image: url(../images/socialsprite.png);
 background-repeat: no-repeat;
@@ -1506,6 +1503,19 @@ background-position: -96px -64px;
 }
 .addthis_toolbox {
 padding-top:9px
+}
+.sidebar .block-ucaddthis {
+background:none !important;
+padding-bottom:0
+}
+.sidebar .block-ucaddthis .content {
+padding:0
+}
+.sidebar .block-ucaddthis h2 {
+text-indent:-9999px;
+height:0;
+padding:0;
+margin:0
 }
 /* --------------- System Tabs  --------------- */
 .tabs {

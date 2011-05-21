@@ -48,7 +48,7 @@
 <div class="rightcolimage-outerwrapper clearfix">
 <?php endif; ?>
 
-<div class="<?php print $classes; ?> clearfix imgrt <?php if (count($items)>1) { print 'slideshow'; } ?>"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?> clearfix imgrt <?php if (count($items)==1) { print 'no-'; } ?>slideshow"<?php print $attributes; ?>>
     <?php foreach ($items as $delta => $item) : ?>
     <?php $imgarray = image_get_info($item['#item']['uri']); ?>
       <div class="slideshow-wrapper">

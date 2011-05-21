@@ -104,7 +104,7 @@
 			print render($content);
 		?>
 		
-		<?php if ($logged_in): 		// If user is logged in, print the node URL ?>
+		<?php if ($logged_in && ($view_mode == 'full')): 		// If user is logged in, print the node URL ?>
 			<p class="url">To create a link to this page, copy the text below into any URL field:<br /> <?php print ($node_url); ?></p>
 		<?php endif; ?>
 		
