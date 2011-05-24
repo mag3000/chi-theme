@@ -981,6 +981,14 @@ outline: medium none;
 text-indent: -9999px;
 width: 16px;
 margin-top:40px;
+-webkit-transition: height 500ms ease-in-out;
+-moz-transition: height 500ms ease-in-out;
+-o-transition: height 500ms ease-in-out;
+-ms-transition: height 500ms ease-in-out;
+transition: height 500ms ease-in-out;
+}
+a.carousel-prev.disabled, a.carousel-next.disabled {
+height:0;
 }
 a.carousel-next:hover{
 background-position: -16px -16px;
@@ -1363,10 +1371,11 @@ max-width:198px;
 border:none
 }
 .slideshow-wrapper {
-width:100%;
+width:100%
 }
 .slideshow .magnify {
-background-position: 172px 0
+background-position:172px 0;
+top:4px
 }
 .sidebar .block-cck-blocks h2 {
 margin-bottom:0 !important

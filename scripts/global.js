@@ -14,10 +14,18 @@ jQuery(document).ready(function () {
 					jQuery('div.slideshow').cycle({fx:'scrollLeft',speed:300,timeout:0,next:'#slide-next',prev:'#slide-previous',cleartypeNoBg:true});
 				});
 		}
+		if (jQuery('.field-name-field-rightimage a.colorbox').length) {
+			var magnify = '<div class="magnify">Magnify the image</div>';
+			jQuery('.field-name-field-rightimage a.colorbox').prepend(magnify);
+		}
+		// hide the carousel-prev button on load initially because it just shouldn't be there
+		if (jQuery('.carousel-prev').length) {
+			jQuery('.carousel-prev').addClass('disabled');
+		}
 	}
 	// The last menu item in the toolbar is the feedback link which goes to a Wufoo form. Open it a new window so users don't get confused:
-  if (jQuery('#toolbar-menu').length) {
-		jQuery("#toolbar-menu li.last a").click(function() { window.open(this.href); return false; });
+  if (jQuery('#support-link').length) {
+		jQuery("#support-link a").click(function() { window.open(this.href); return false; });
 	}
 	// This is an ugly hack to remove the magnify glass above the right column image when it's only 198px wide (lots of old images are this width)
   if (jQuery('.field-name-field-rightimage.no-slideshow img').length) {	

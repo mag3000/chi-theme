@@ -23,8 +23,18 @@ function uchicago_form_system_theme_settings_alter(&$form, &$form_state) {
 	
 	$form['screenshots'] = array(
 		'#markup' => '<table><tr><th>Phoenix:</th><th>Plumb Tree:</th></tr><tr><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/phoenix.png" alt="Phoenix theme" /></td><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/plumbtree.png" alt="Plumb Tree theme" /></td></tr><tr><th>Reflection Pool:</th><th>Autumn Leaves:</th></tr><tr><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/reflectionpool.png" alt="Reflection Pool theme" /></td><td><img src="/' . drupal_get_path('theme', 'uchicago') . '/images/screenshots/autumnleaves.png" alt="Autumn Leaves theme" /></td></tr></table>',
-		'#weight' => -9
+		'#weight' => -9,
 	);
+	
+	$form['calendar_id'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Events calendar ID'),
+		'#default_value' => theme_get_setting('calendar_id'),
+		'#size' => 10,
+		'#maxlength' => 128,
+		'#required' => FALSE,
+		'#weight' => -8,
+	);	
 	
 	$form['theme_settings'] = array(
 		'#disabled' => TRUE,

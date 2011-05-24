@@ -144,7 +144,6 @@
 				<?php endif; ?>
 				<div id="bottomrow" class="clearfix">
 					<div class="<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')) { print 'grid_6 alpha'; } ?>">
-					
 						<?php if ($page['highlighted'] || $page['home_center'] || $page['help'] || $action_links): ?>
 								<?php if ($page['highlighted']): ?>
 									<?php print render($page['highlighted']); ?>
@@ -161,7 +160,7 @@
 									</ul>
 								<?php endif; ?>
 						<?php endif; ?>
-					
+						
 						<?php if(!$is_front || $toggle_simplehomepage): ?>
 							<?php //if (!empty($node)): ?>
 									<?php print render($page['content']); ?>

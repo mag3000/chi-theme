@@ -52,7 +52,6 @@
     <?php foreach ($items as $delta => $item) : ?>
     <?php $imgarray = image_get_info($item['#item']['uri']); ?>
       <div class="slideshow-wrapper">
-      	<div class="magnify">Magnify the image</div>
       	<?php print render($item); ?>
 				<?php if ($item['#item']['title']): ?>
 				<div class="caption"><?php print($item['#item']['title']); ?></div>
