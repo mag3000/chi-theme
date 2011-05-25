@@ -58,15 +58,12 @@ h1#page-title { color: #276b8b; }
 body.front .region-home-center .block-block h2 { color: #276b8b; }
 .region-content h2 { color: #276b8b; }
 #block-events h2 { color: #276b8b !important; }
+.sidebar .view-homepage-mini-features h2 { color: #155F83; }
 
 /* - h3s - */
 
 .region-content h3 { color: #51859D; }
 #block-views-homepage-feed-block h3 { color: #276b8b; }
-.view-homepage-mini-features h3 {
-    color: #155F83;
-    margin: 4px 0 2px;
-}
 
 /* - links - */
 
@@ -104,7 +101,6 @@ a:active,.block li a.active {
     background-color: #9c9c9c;
 }
 .view-homepage-mini-features { border-top: 5px solid #333; }
-#block-views-homepage-mini-features-block { background-color: #f7f7f7; }
 li ul li { background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #d7d5d5; }
 #block-system-main-menu .content ul li ul li {
     background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #e6e5e5;

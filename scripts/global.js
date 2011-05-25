@@ -40,5 +40,15 @@ jQuery(document).ready(function () {
 		jQuery('#toggle-nav').click(function () {
 			jQuery('#block-system-main-menu').slideToggle('slow');
 		});
+		// Make mini features look just like regular sidebar blocks
+		jQuery('#block-views-homepage-mini-features-block img').remove();
+		jQuery('#block-views-homepage-mini-features-block h2').addClass('mini-feature-smallscreen');
+		jQuery('.view-homepage-mini-features').removeClass('view-homepage-mini-features');
+		jQuery('#block-views-homepage-mini-features-block').removeAttr('id');
+		// Remove some items from the DOM to clean up the mobile view
+		jQuery('.region-footer-column2').remove();
+		jQuery('.region-footer-column3').remove();
+		jQuery('.region-footer-column4').remove();
+		jQuery('#block-cck-blocks-field-rightimage').remove();
 	}
 });

@@ -44,6 +44,7 @@ body.front .region-home-center .block-block h2 { color: #740000; }
 #block-views-homepage-feed-block h2 { color: #155F83; }
 .region-content h2 { color: #740000; }
 #block-events h2 { color: #800000 !important; }
+.sidebar .view-homepage-mini-features h2 { color: #155F83; }
 
 /* - h3s- */
 
@@ -53,10 +54,7 @@ body.front .region-home-center .block-block h2 { color: #740000; }
 	background:#155f83;
 	color:#ffffff; 
 }
-.view-homepage-mini-features h3 {
-    color: #155F83;
-    margin: 4px 0 2px;
-}
+
 
 /* - links- */
 
@@ -106,7 +104,6 @@ a:active,.block li a.active {
 
 /* - blocks and tops - */
 
-#block-views-homepage-mini-features-block { background-color:#f7f6ee; }
 .sidebar .block, .rightcolimage-outerwrapper { background:#eaeae2 url("../../images/modulebg.gif") bottom left repeat-x }
 #block-views-homepage-feed-block {
     background:#eaeae2 url("../../images/modulebg.gif") bottom left repeat-x;
@@ -117,7 +114,7 @@ a:active,.block li a.active {
 	background:#eaeae2 url("../../images/modulebg.gif") bottom left repeat-x;
 }
 .view-homepage-mini-features { border-top:5px solid #266178; }
-.imgrt img, .imglt img { border-color: #266178; }
+.imgrt img { border-color: #266178; }
 
 /* - rss icon - */
 
@@ -131,7 +128,6 @@ hr { border-color: #CCCCCC;}
 table tr th { background: none repeat scroll 0 0 #eae9e1; }
 textarea, input.form-select { border: 1px solid #fff;}
 input, textarea { background: #fff; }
-.imgrt img { border-top: 5px solid #8F3931; }
 
 /* ------------------ Footer Styles ------------------ */
 

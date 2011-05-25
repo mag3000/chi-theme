@@ -44,16 +44,13 @@ body.front .region-home-center .block-block h2 { color: #3e1d2b; }
 #block-views-homepage-feed-block h2 { color: #72754e; }
 .region-content h2 { color: #72754e; }
 #block-events h2 { color: #72754e !important; }
+.sidebar .view-homepage-mini-features h2 { color: #3e1d2b; }
 
 /* - h3s- */
 
 .region-content h3 { color: #3e1d2b; }
 #block-views-homepage-feed-block h3 { color: #3e1d2b; }
 #mainfeature h3 { background: none repeat scroll 0 0 #72754e; }
-.view-homepage-mini-features h3 {
-    color: #3e1d2b;
-    margin: 4px 0 2px;
-}
 
 /* - links- */
 
@@ -94,7 +91,6 @@ a:active,.block li a.active {
 
 /* - blocks and tops - */
 
-#block-views-homepage-mini-features-block { background-color: #eae9e1; }
 .sidebar .block, .rightcolimage-outerwrapper { background: #fcfcf3; }
 #block-views-homepage-feed-block {
     background: #fcfcf3;

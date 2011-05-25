@@ -55,16 +55,13 @@ body.front .region-home-center .block-block h2 { color: #334602; }
 	color: #fff !important;
 	background-color: #c16622;
 }
+.sidebar .view-homepage-mini-features h2 { color: #334602; }
 
 /* - h3s - */
 
 .region-content h3 { color: #334602; }
 #block-views-homepage-feed-block h3 { color: #c16622; }
 #mainfeature h3 { background: none repeat scroll 0 0 #c16622; }
-.view-homepage-mini-features h3 {
-    color: #334602;
-    margin: 4px 0 2px;
-}
 
 /* - links - */
 
@@ -105,7 +102,6 @@ a:active,.block li a.active {
 
 /* - blocks and tops - */
 
-#block-views-homepage-mini-features-block { background-color: #fff; }
 .sidebar .block, .rightcolimage-outerwrapper { background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6; }
 #block-views-homepage-feed-block {
     background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6;

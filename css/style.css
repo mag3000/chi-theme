@@ -294,6 +294,7 @@ text-decoration:none
 
 #dept-title {
 background:url("../../images/masthead.png") no-repeat scroll 0 0 transparent;
+font-family:"MuseoSans300",helvetica,sans-serif;
 display:block;
 height:53px;
 text-decoration:none
@@ -1177,8 +1178,7 @@ height:200px
 }
 
 #block-views-homepage-mini-features-block {
-background-image:none;
-background-color:#fff;
+background:transparent
 }
 
 #block-views-homepage-mini-features-block .content {
@@ -1191,11 +1191,14 @@ padding-bottom:0;
 margin-bottom:-25px /*Because sidebar blocks have padding (for the background image) and margin but smallfeature doesn't need the extra padding */
 }
 
-.view-homepage-mini-features h3 {
-color:#333;
+.sidebar .view-homepage-mini-features h2 {
 font-family:"MuseoSans300",helvetica,sans-serif;
 font-size:17px;
-margin:8px 0 4px
+margin:4px 0 0;
+text-transform:none;
+background:none;
+padding:0;
+letter-spacing:.5px
 }
 
 .view-homepage-mini-features p {
@@ -1303,10 +1306,10 @@ background:#eee;
 .sidebar h2 {
 background-color:#333;
 font-family:"MuseoSans500",verdana,sans-serif;
-color:#fff!important;
+color:#fff;
 display:block;
-font-size:1em!important;
-margin:0 0 6px; /* this was set to important, not sure why */
+font-size:1em;
+margin:0 0 6px;
 padding:5px 10px;
 letter-spacing:1px;
 text-transform:uppercase
@@ -1513,6 +1516,23 @@ background-position: -96px -64px;
 .addthis_toolbox {
 padding-top:9px
 }
+.addthis_button_compact {
+padding-left:0 !important;
+padding-right:0 !important;
+padding-top: 2px !important
+}
+.addthis_button_tweet {
+padding-left:0 !important;
+padding-right:0 !important
+}
+.addthis_button_tweet iframe {
+width:105px !important
+}
+.addthis_button_facebook_like {
+padding-left:0 !important;
+padding-right:0 !important
+}
+
 .sidebar .block-ucaddthis {
 background:none !important;
 padding-bottom:0
