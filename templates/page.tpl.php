@@ -143,7 +143,7 @@
 					</div>
 				<?php endif; ?>
 				<div id="bottomrow" class="clearfix">
-					<div class="<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')) { print 'grid_6 alpha'; } ?>">
+					<div class="<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page') && !($fullwidth)) { print 'grid_6 alpha'; } ?>">
 						<?php if ($page['highlighted'] || $page['home_center'] || $page['help'] || $action_links): ?>
 								<?php if ($page['highlighted']): ?>
 									<?php print render($page['highlighted']); ?>
@@ -170,7 +170,7 @@
 						
 					</div>
 
-					<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page')): ?>
+					<?php if (!(!empty($node) && $node->type == 'multi_column_basic_page') && !($fullwidth)): ?>
 						<div id="sidebar-second" class="column sidebar grid_3 omega">
 							<?php print render($page['sidebar_second']); ?>
 						</div> <!-- /#sidebar-second -->
