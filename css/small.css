@@ -10,8 +10,8 @@
 #header{width:100%; background-image:none; height:auto}
 #header .container_12{padding:0 8px}
 #site-name{padding-top: 10px}
-#dept-title{text-indent:0; background-image:none !important; font-size:1.8em; line-height:1em; height:auto; margin-bottom:10px}
-#dept-title {color:#ffffff !important}
+#dept-title{text-indent:0; background-image:none !important; font-size:2.4em; line-height:1em; height:auto; margin-bottom:10px; color:#ffffff !important}
+h1 #dept-title{font-size:1.768em;}
 #wordmark{height:30px; width:137px; padding-bottom:10px}
 #wordmark{text-indent:-9999px; background-size:137px 30px; -webkit-background-size:137px 30px; -o-background-size:137px 30px; background-position:top left}
 
