@@ -12,6 +12,7 @@ function uchicago_preprocess_html(&$variables) {
   drupal_add_css(path_to_theme() . '/css/colors/' . $colorscheme. '.css', array('group' => CSS_THEME, 'every_page' => TRUE));
   drupal_add_css(path_to_theme() . '/css/colors/' . $colorscheme. '_ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/small.css', array('group' => CSS_THEME, 'every_page' => TRUE));
+  drupal_add_css((variable_get('file_public_path', conf_path() . '/files') . '/template/background.css'), array('group' => CSS_THEME, 'every_page' => TRUE));
 }
 
 /**

@@ -92,12 +92,12 @@
         <?php if ($site_name): ?>
           <?php if ($title): ?>
             <div id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8" id="dept-title"><?php print $site_name; ?></a>
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8 unitPng" id="dept-title"><?php print $site_name; ?></a>
                 <a href="http://www.uchicago.edu/" title="University of Chicago Home" id="wordmark" class="grid_4">The University of Chicago</a>
             </div>
           <?php else: /* Use h1 when the content title is empty */ ?>
           <div id="site-name">
-                <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8" id="dept-title"><?php print $site_name; ?></a></h1>
+                <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="grid_8 unitPng" id="dept-title"><?php print $site_name; ?></a></h1>
                 <a href="http://www.uchicago.edu/" title="University of Chicago Home" id="wordmark" class="grid_4">The University of Chicago</a>
           </div>
           <?php endif; ?>

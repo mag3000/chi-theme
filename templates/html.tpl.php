@@ -50,6 +50,9 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <!--[if lt IE 7]>
+  <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/scripts/ie6.js"></script>
+  <![endif]--> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

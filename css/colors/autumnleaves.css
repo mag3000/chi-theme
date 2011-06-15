@@ -4,9 +4,9 @@ Override Theme Name: Autumn Leaves
 
 /* ------------------ Header Styles ------------------ */
 
-#wordmark {	background:transparent url("/sites/all/themes/uchicago/images/uc_wordmark_autumnleaves.png") top right no-repeat; }
-#dept-title { background:url("/sites/all/themes/uchicago/images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
-#page-wrapper { background:#eae9e1 url("/sites/all/themes/uchicago/images/maincontentbg_autumnleaves.gif") top center repeat-y; }
+#wordmark {	background:transparent url("../../images/uc_wordmark_autumnleaves.png") top right no-repeat; }
+/* #dept-title { background:url("/sites/all/themes/uchicago/images/masthead_cream.png") no-repeat scroll 0 0 transparent; } */
+#page-wrapper { background:#eae9e1 url("../../images/maincontentbg_autumnleaves.gif") top center repeat-y; }
 #header {
 background:#6d5e4e;
 background-image:-moz-linear-gradient(center top, #6d5e4e, 
@@ -97,19 +97,19 @@ a:active,.block li a.active {
 #block-system-main-menu .content ul li ul li a { color: #7f7263; }
 #block-system-main-menu .content ul li ul li a:hover { color: #3e3e3e; background-color: #f5f5ed !important; }
 #block-system-main-menu .content ul li ul li {
-    background: url("/sites/all/themes/uchicago/images/greybullet.gif") no-repeat scroll 10px 10px #f5f5ed;
+    background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #f5f5ed;
 }
 
 /* - blocks and tops - */
 
-.sidebar .block, .rightcolimage-outerwrapper { background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6; }
+.sidebar .block, .rightcolimage-outerwrapper { background: url("../../images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6; }
 #block-views-homepage-feed-block {
-    background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6;
+    background: url("../../images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6;
     border-top: none;
     padding: 0;
 }
 #block-events {
-    background: url("/sites/all/themes/uchicago/images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6;
+    background: url("../../images/modulebg_autumnleaves.gif") repeat-x scroll left bottom #eaeae6;
     border-top: none;
 }
 .view-homepage-mini-features { border-top: 5px solid #c16622; }
@@ -123,8 +123,8 @@ a:active,.block li a.active {
 
 /* - rss icon - */
 
-#block-views-homepage-feed-block div.feed-icon a { background: url("/sites/all/themes/uchicago/images/feed_autumnleaves2.png") no-repeat scroll 0 -15px transparent; }
-#block-views-homepage-feed-block div.feed-icon a:hover { background: url("/sites/all/themes/uchicago/images/feed_autumnleaves2.png") no-repeat scroll 0 0 transparent; }
+#block-views-homepage-feed-block div.feed-icon a { background: url("../../images/feed_autumnleaves2.png") no-repeat scroll 0 -15px transparent; }
+#block-views-homepage-feed-block div.feed-icon a:hover { background: url("../../images/feed_autumnleaves2.png") no-repeat scroll 0 0 transparent; }
 #block-views-homepage-feed-block div.feed-icon {
     float: right;
     position: relative;
@@ -149,7 +149,7 @@ input, textarea { background: #fff; }
 	border-top: solid 5px #6d5e4e;
 }
 #footer { 
-	background:#eae9e1 url("/sites/all/themes/uchicago/images/insidefooterbg_autumnleaves.gif") top center no-repeat; 
+	background:#eae9e1 url("../../images/insidefooterbg_autumnleaves.gif") top center no-repeat; 
 	width: 940px; 
 	margin: 0 -10px;
 }

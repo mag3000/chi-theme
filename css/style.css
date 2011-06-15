@@ -286,14 +286,14 @@ padding:0
 
 /* ------------------ Header ------------------ */
 #wordmark {
-background:transparent url("../../images/uc_wordmark.png") top right no-repeat;
+background:transparent url("../images/uc_wordmark.png") top right no-repeat;
 display:block;
 height:53px;
 text-decoration:none
 }
 
 #dept-title {
-background:url("../../images/masthead.png") no-repeat scroll 0 0 transparent;
+background:url("../images/masthead.png") no-repeat scroll 0 0 transparent;
 font-family:"MuseoSans300",helvetica,sans-serif;
 display:block;
 height:53px;

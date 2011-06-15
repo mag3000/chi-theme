@@ -11,12 +11,12 @@ Override Theme Name: Reflection Pool
 	text-decoration:none
 }
 
-#dept-title {
+/*#dept-title {
 	background:url("../../images/masthead.png") no-repeat scroll 0 0 transparent;
 	display:block;
 	height:53px;
 	text-decoration:none
-}
+}*/
 
 #page-wrapper {
 	background:#ffffff url("../../images/maincontentbg_reflectionpool.gif") top center repeat-y;

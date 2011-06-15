@@ -5,7 +5,7 @@ Override Theme Name: Plum Tree
 /* ------------------ Header Styles ------------------ */
 
 #wordmark {	background:transparent url("../../images/uc_wordmark_plumbtree.png") top right no-repeat; }
-#dept-title { background:url("../../images/masthead_cream.png") no-repeat scroll 0 0 transparent; }
+/* #dept-title { background:url("../../images/masthead_cream.png") no-repeat scroll 0 0 transparent; } */
 #page-wrapper { background: #eae9e1; }
 #header {
 background:#3e1d2b;
