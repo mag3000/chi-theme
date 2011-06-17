@@ -115,6 +115,9 @@ hr { border-color: #CCCCCC;}
 table tr th { background: none repeat scroll 0 0 #e6e5e5; }
 textarea, input.form-select { border: 1px solid #fff;}
 input, textarea { background: #fff; }
+input.form-submit { background: #d8d2c9; }
+input.form-submit:hover,input.form-submit:focus { background: #c9c4bb; }
+
 
 /* ------------------ Footer Styles ------------------ */
 

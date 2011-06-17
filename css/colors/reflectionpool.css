@@ -108,7 +108,8 @@ li ul li { background: url("../../images/greybullet.gif") no-repeat scroll 10px 
 #block-system-main-menu .content ul li ul li a:hover { background: none; }
 .sidebar .block, .rightcolimage-outerwrapper { background: url("../../images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff; }
 textarea, input.form-select { border: 1px solid #CCCCCC;}
-input, textarea { background: #e6e5e5; }
+input, textarea { background: #fff; }
+input.form-submit { background: #e6e5e5; }
 #block-views-homepage-feed-block {
     background: url("../../images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
     border-top: 5px solid #3E7C97;
