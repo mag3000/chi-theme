@@ -293,7 +293,6 @@ text-decoration:none
 }
 
 #dept-title {
-background:url("../images/masthead.png") no-repeat scroll 0 0 transparent;
 font-family:"MuseoSans300",helvetica,sans-serif;
 display:block;
 height:53px;
@@ -707,14 +706,13 @@ font-size:.821em
 }
 
 div.node-unpublished div.content:before {
-content:"This content is unpublished and is not viewable by visitors.";
+content:"This content will not be viewable by visitors until it is published. To publish, click the 'Publish' button at the bottom of the edit screen.";
 /*white-space:pre; */
 display:block;
-border:1px solid #800000;
-background-color:#ededed;
-padding:10px;
+background-color:#F0E1E5;
+padding:8px;
 color:#800000;
-font-size:1.2em;
+font-size:1.1em;
 margin-bottom:10px
 }
 
@@ -2279,7 +2277,6 @@ font-size:0.864em
 /* Misc styles */
 p.url {
 display:block;
-border:1px solid #474740;
 background-color:#ededed;
 padding:8px;
 font-size:1.1em;

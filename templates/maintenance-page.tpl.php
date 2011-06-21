@@ -1,5 +1,4 @@
 <?php
-// $Id: maintenance-page.tpl.php,v 1.4 2010/11/30 17:55:13 dries Exp $
 
 /**
  * @file
@@ -33,7 +32,7 @@
     	<div id="name-and-slogan">
           <?php if ($site_name): ?>
             <div id="site-name">
-                <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="dept-title"><?php print $site_name; ?></a></h1>
+                <a href="http://www.uchicago.edu/" title="University of Chicago Home" id="wordmark" class="grid_4">The University of Chicago</a>
             </div>
           <?php endif; ?>
         </div> <!-- /#name -->
