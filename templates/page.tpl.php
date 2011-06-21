@@ -107,7 +107,7 @@
     
   </div></div> <!-- /#header -->
 
-  <div id="toggle-nav"><a href="#">Toggle Menu &darr;</a></div>
+  <div id="toggle-nav"><a href="#">Menu</a></div>
 
 
 	<div id="main-wrapper" class="clearfix">

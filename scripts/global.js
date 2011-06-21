@@ -40,6 +40,10 @@ jQuery(document).ready(function () {
 		jQuery('#toggle-nav').click(function () {
 			jQuery('#block-system-main-menu').slideToggle('slow');
 		});
+		jQuery('#toggle-nav').toggle(
+			function () {jQuery(this).addClass('open');},
+			function () {jQuery(this).removeClass('open');}
+		);
 		// Make mini features look just like regular sidebar blocks
 		jQuery('#block-views-homepage-mini-features-block img').remove();
 		jQuery('#block-views-homepage-mini-features-block h2').addClass('mini-feature-smallscreen');

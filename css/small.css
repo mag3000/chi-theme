@@ -6,19 +6,23 @@
 .container_12{width:auto}
 #sidebar-second{margin:20px -8px 0}
 #content{width:auto; padding:0 8px}
+#main{margin-bottom:0}
 
 /* Collapse sidebar blocks by default */
 .sidebar .block{padding-bottom:0; margin-bottom:0; border-bottom:1px solid white}
 .sidebar .block h2{margin-bottom:0}
 .sidebar .block h2:after{content:"\00a0\203A";}
 .sidebar .block h2+.content{display:none;}
+.sidebar .block .content{margin-bottom:10px}
 .sidebar .block h2.open{margin-bottom:6px}
 /* Some exceptions */
 #block-search-form{padding-bottom:0}
 #block-search-form h2.open+.content{padding-bottom:6px;}
+#block-views-homepage-mini-features-block{margin-bottom:16px; border-bottom:none;}
 #block-views-homepage-mini-features-block h2:after,#block-events h2:after{content:"";}
 #block-views-homepage-mini-features-block .view-content{padding: 0 8px}
 .view-homepage-mini-features{margin-bottom:20px;}
+#block-events{border-bottom:none;}
 #block-events h2+.content{display:block;}
 
 #header{width:100%; background-image:none; height:auto}
@@ -35,8 +39,10 @@ h1 #dept-title{font-size:1.768em;}
 #block-system-main-menu .content ul li ul li{padding-top:8px; padding-bottom:8px; background-position:10px 14px}
 img{max-width:100%}
 .node-type-image-gallery a.colorbox img{display:block}
-#toggle-nav{display:block;float:right; position:relative; top:-25px; padding-right:8px; height:0}
-#toggle-nav a{color:#ffffff}
+
+#toggle-nav{display:block;float:right; position:relative; top:-25px; padding-right:8px; height:0;}
+#toggle-nav a{color:#ffffff; display:block; background:url(../images/mobilesprite.png) 30px 5px no-repeat; height:20px; padding-right:15px}
+#toggle-nav.open a{background-position:30px -20px}
 
 #mainfeature img{height:auto; width:100%}
 #mainfeature h3{width:100%; margin-top:0; height:auto; position:static; margin-left:-8px; margin-right:0; padding:0 8px}
