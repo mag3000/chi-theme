@@ -144,6 +144,7 @@ body,body.overlay {
 }
 #page-wrapper {
 	background:#fff;
+	min-width:936px; /* so that background images extend all the way across narrow browsers */
 }
 .tabs ul.primary li a.active {
   background-color: #ffffff;

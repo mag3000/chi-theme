@@ -7,9 +7,10 @@
 #sidebar-second{margin:20px -8px 0}
 #content{width:auto; padding:0 8px}
 #main{margin-bottom:0}
+#page-wrapper{min-width:0;}
 
 /* Collapse sidebar blocks by default */
-.sidebar .block{padding-bottom:0; margin-bottom:0; border-bottom:1px solid white}
+.sidebar .block{padding-bottom:0; margin-bottom:1px;}
 .sidebar .block h2{margin-bottom:0}
 .sidebar .block h2:after{content:"\00a0\203A";}
 .sidebar .block h2+.content{display:none;}
@@ -18,11 +19,10 @@
 /* Some exceptions */
 #block-search-form{padding-bottom:0}
 #block-search-form h2.open+.content{padding-bottom:6px;}
-#block-views-homepage-mini-features-block{margin-bottom:16px; border-bottom:none;}
+#block-views-homepage-mini-features-block{margin-bottom:16px;}
 #block-views-homepage-mini-features-block h2:after,#block-events h2:after{content:"";}
 #block-views-homepage-mini-features-block .view-content{padding: 0 8px}
 .view-homepage-mini-features{margin-bottom:20px;}
-#block-events{border-bottom:none;}
 #block-events h2+.content{display:block;}
 
 #header{width:100%; background-image:none; height:auto}
