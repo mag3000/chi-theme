@@ -11,13 +11,6 @@ Override Theme Name: Reflection Pool
 	text-decoration:none
 }
 
-/*#dept-title {
-	background:url("../../images/masthead.png") no-repeat scroll 0 0 transparent;
-	display:block;
-	height:53px;
-	text-decoration:none
-}*/
-
 #page-wrapper {
 	background:#ffffff url("../../images/maincontentbg_reflectionpool.gif") top center repeat-y;
 }
@@ -118,7 +111,8 @@ input.form-submit { background: #e6e5e5; }
     background: url("../../images/modulebg_reflectionpool.gif") repeat-x scroll left bottom #fff;
     border-top: 5px solid #3E7C97;
 }
-table tr th { background: none repeat scroll 0 0 #e6e5e5; }
+table tr th { background: none repeat scroll 0 0 #C5C3C3; }
+tr { border-bottom: 1px solid #C5C3C3; }
 .imgrt img, .imglt img { border-color: #333; }
 hr { border-color: #CCCCCC;}
 
@@ -126,7 +120,7 @@ hr { border-color: #CCCCCC;}
 /* ------------------ Footer Styles ------------------ */
 
 #footer-wrapper {
-    background: #e2e2e1;
+    background: #fafafa;
     border-top: solid 5px #666;
     height: 115px;
     margin-top: -115px;
