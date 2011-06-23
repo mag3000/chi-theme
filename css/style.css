@@ -294,7 +294,7 @@ text-decoration:none
 }
 
 #dept-title {
-font-family:"MuseoSans300",helvetica,sans-serif;
+font-family:"ProximaNova-Regular",helvetica,sans-serif;
 display:block;
 height:53px;
 text-decoration:none
@@ -489,7 +489,7 @@ h1#page-title {
 color:#333;
 letter-spacing:1px;
 font-size:32px;
-font-family:"MuseoSans100",helvetica,sans-serif;
+font-family:"ProximaNova-Light",helvetica,sans-serif;
 font-weight:300;
 height:32px;
 margin:0 0 6px;
@@ -1048,7 +1048,7 @@ background:#eee;
 
 #block-views-homepage-feed-block h2 {
 display:block;
-font-family:"MuseoSans300",verdana,sans-serif;
+font-family:"ProximaNova-Regular",verdana,sans-serif;
 color:#333;
 font-size:1.5em;
 letter-spacing:1px;
@@ -1147,7 +1147,7 @@ letter-spacing:-.2px;
 position:absolute;
 width:354px;
 font-size:16px;
-font-family: "MuseoSans300",Verdana,sans-serif;
+font-family: "ProximaNova-Regular",Verdana,sans-serif;
 font-weight:400;
 overflow:hidden
 }
@@ -1191,7 +1191,7 @@ margin-bottom:-25px /*Because sidebar blocks have padding (for the background im
 }
 
 .sidebar .view-homepage-mini-features h2 {
-font-family:"MuseoSans300",helvetica,sans-serif;
+font-family:"ProximaNova-Regular",helvetica,sans-serif;
 font-size:17px;
 margin:4px 0 0;
 text-transform:none;
@@ -1225,7 +1225,7 @@ margin:0 0 5px;
 letter-spacing:1px;
 color:#333 !important;
 font-size:1.5em !important;
-font-family:"MuseoSans300",verdana,sans-serif;
+font-family:"ProximaNova-Regular",verdana,sans-serif;
 font-weight:400 !important;
 padding:6px 10px;
 text-transform:uppercase;
@@ -1304,7 +1304,7 @@ background:#eee;
 
 .sidebar h2 {
 background-color:#333;
-font-family:"MuseoSans500",verdana,sans-serif;
+font-family:"ProximaNova-Semibold",verdana,sans-serif;
 color:#fff;
 display:block;
 font-size:1em;
