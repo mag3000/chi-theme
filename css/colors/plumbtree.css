@@ -5,40 +5,18 @@ Override Theme Name: Plum Tree
 /* ------------------ Header Styles ------------------ */
 
 #wordmark {	background:transparent url("../../images/uc_wordmark_plumbtree.png") top right no-repeat; }
-/* #dept-title { background:url("../../images/masthead_cream.png") no-repeat scroll 0 0 transparent; } */
 #page-wrapper { background: #eae9e1; }
-#header {
-background:#3e1d2b;
-background-image:-moz-linear-gradient(center top, #3e1d2b, 
-#341824 88px, 
-#6f505d 88px, 
-#6f505d 89px, 
-#6f505d 89px, 
-#6f505d 96px); /* FF3.6 */
-
-background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3e1d2b), 
-color-stop(0.92, #341824), 
-color-stop(0.92, #6f505d), 
-color-stop(0.93, #6f505d), 
-color-stop(0.93, #6f505d), 
-color-stop(1.0, #6f505d));
-
-background-image:gradient(linear, left top, left bottom, color-stop(0, #3e1d2b), 
-color-stop(0.92, #341824), 
-color-stop(0.92, #6f505d), 
-color-stop(0.93, #6f505d), 
-color-stop(0.93, #6f505d), 
-color-stop(1.0, #6f505d));
+#header { background:#3e1d2b; background-image:-moz-linear-gradient(center top, #3e1d2b, #341824 88px, #6f505d 88px, #6f505d 89px, #6f505d 89px, #6f505d 96px); /* FF3.6 */
+background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3e1d2b), color-stop(0.92, #341824), color-stop(0.92, #6f505d), color-stop(0.93, #6f505d), color-stop(0.93, #6f505d), color-stop(1.0, #6f505d));
+background-image:gradient(linear, left top, left bottom, color-stop(0, #3e1d2b), color-stop(0.92, #341824), color-stop(0.92, #6f505d), color-stop(0.93, #6f505d), color-stop(0.93, #6f505d), color-stop(1.0, #6f505d));
 }
 
 /* ------------------ Typeography and Link Styles ------------------ */
 
 /* - h1s - */
-
 h1#page-title { color: #3e1d2b; }
 
 /* - h2s - */
-
 .sidebar h2 { background-color: #72754e; }
 body.front .region-home-center .block-block h2 { color: #3e1d2b; }
 #block-views-homepage-feed-block h2 { color: #72754e; }
@@ -47,69 +25,43 @@ body.front .region-home-center .block-block h2 { color: #3e1d2b; }
 .sidebar .view-homepage-mini-features h2 { color: #3e1d2b; }
 
 /* - h3s- */
-
 .region-content h3 { color: #3e1d2b; }
 #block-views-homepage-feed-block h3 { color: #3e1d2b; }
 #mainfeature h3 { background: none repeat scroll 0 0 #72754e; }
 
 /* - links- */
-
-a {
-  color: #3e1d2b;
-}
-a:hover,a:focus {
-  color: #341824;
-}
-a:active,.block li a.active {
-  color: #341824;
-}
+a { color: #3e1d2b; }
+a:hover,a:focus { color: #341824; }
+a:active,.block li a.active { color: #341824; }
 .region-header,
 .region-header a,
 .region-header li a.active,
 #name-and-slogan,
 #name-and-slogan a,
-#secondary-menu-links li a {
-  color: #3e1d2b;
-}
+#secondary-menu-links li a { color: #3e1d2b; }
 
 /* ------------------ Blocks, Features, Table Styles ------------------ */
 
-
 /* - menu - */
-
-#block-system-main-menu .content a {
-    background-color: #d0cfc8;
-    border-top: 1px solid #fff;
-}
+#block-system-main-menu .content a { background-color: #d0cfc8; border-top: 1px solid #fff; }
 #block-system-main-menu .content ul li a { color: #341824; }
 #block-system-main-menu .content ul li a:hover { background-color: #3e1d2b !important; }
 #block-system-main-menu .content ul li ul li a { color: #341824; }
 #block-system-main-menu .content ul li ul li a:hover { color: #341824; background-color: #fcfcf3 !important; }
-#block-system-main-menu .content ul li ul li {
-    background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #fcfcf3;
-}
+#block-system-main-menu .content ul li ul li { background: url("../../images/greybullet.gif") no-repeat scroll 10px 10px #fcfcf3; }
 
 /* - blocks and tops - */
-
 .sidebar .block, .rightcolimage-outerwrapper { background: #fcfcf3; }
-#block-views-homepage-feed-block {
-    background: #fcfcf3;
-    border-top: 5px solid #72754e;
-}
-#block-events {
-    background: #fcfcf3;
-    border-top: 5px solid #72754e;
-}
+#block-views-homepage-feed-block { background: #fcfcf3; border-top: 5px solid #72754e; }
+#block-events { background: #fcfcf3; border-top: 5px solid #72754e; }
 .view-homepage-mini-features { border-top: 5px solid #72754e; }
 .imgrt img, .imglt img { border-color: #72754e; }
 
 /* - rss icon - */
-
 #block-views-homepage-feed-block div.feed-icon a { background: url("../../images/feed_plumbtree.png") no-repeat scroll 0 -15px transparent; }
 #block-views-homepage-feed-block div.feed-icon a:hover { background: url("../../images/feed_plumbtree.png") no-repeat scroll 0 0 transparent; }
 
 /* - misc. - */
-
 hr { border-color: #CCCCCC;}
 #mainfeature { border-bottom: 1px solid #d7d7cf; }
 table tr th { background: none repeat scroll 0 0 #d8d2c9; }
@@ -119,15 +71,10 @@ input, textarea { background: #fff; }
 input.form-submit { background: #d8d2c9; }
 input.form-submit:hover,input.form-submit:focus { background: #c9c4bb; }
 
-
 /* ------------------ Footer Styles ------------------ */
 
-#footer-wrapper {
-	background: url("../../images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9;
-	border:none;
-}
+#footer-wrapper { background: url("../../images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9; border:none; }
 #footer { background: url("../../images/outsidefooterbg_plumbtree.gif") repeat-x scroll 0 0 #d8d2c9; }
-
 #footer p, #footer li, #footer div.field-content { color: #333; }
 #footer a, #footer p { color: #333;}
 #footer a:hover { color: #72754e; }
