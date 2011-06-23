@@ -47,7 +47,66 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
+  <?php print $styles; ?>  
+	<!--
+	/*
+	* MyFonts webfont Build ID 828588, 2011-06-01T09:48:42-0400
+	*
+	* The fonts listed in this notice are subject to the End User License
+	* Agreement(s) entered into by the website owner. All other parties are
+	* explicitly restricted from using the Licensed webfonts(s).
+	*
+	* You may obtain a valid license at the URLs below.
+	*
+	* webfont: Proxima Nova Thin
+	* URL: http://new.myfonts.com/fonts/marksimonson/proxima-nova/thin/
+	* Foundry: Mark Simonson
+	* Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+	* License: http://www.myfonts.com/viewlicense?1056
+	* Licensed pageviews: 10,000,000/month
+	* CSS font-family: ProximaNovaT-Thin
+	* CSS font-weight: normal
+	*
+	* webfont: Proxima Nova Light
+	* URL: http://new.myfonts.com/fonts/marksimonson/proxima-nova/light/
+	* Foundry: Mark Simonson
+	* Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+	* License: http://www.myfonts.com/viewlicense?1056
+	* Licensed pageviews: 10,000,000/month
+	* CSS font-family: ProximaNova-Light
+	* CSS font-weight: normal
+	*
+	* webfont: Proxima Nova Regular
+	* URL: http://new.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+	* Foundry: Mark Simonson
+	* Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+	* License: http://www.myfonts.com/viewlicense?1056
+	* Licensed pageviews: 10,000,000/month
+	* CSS font-family: ProximaNova-Regular
+	* CSS font-weight: normal
+	*
+	* webfont: Proxima Nova Semibold
+	* URL: http://new.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+	* Foundry: Mark Simonson
+	* Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+	* License: http://www.myfonts.com/viewlicense?1056
+	* Licensed pageviews: 10,000,000/month
+	* CSS font-family: ProximaNova-Semibold
+	* CSS font-weight: norma
+	*
+	* webfont: Proxima Nova Bold
+	* URL: http://new.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+	* Foundry: Mark Simonson
+	* Copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+	* License: http://www.myfonts.com/viewlicense?1056
+	* Licensed pageviews: 10,000,000/month
+	* CSS font-family: ProximaNova-Bold
+	* CSS font-weight: normal
+	*
+	* (c) 2011 Bitstream Inc
+	*/
+	-->
+	<link rel="stylesheet" href="//identity.uchicago.edu/c/fonts/proximanova.css">
   <!--[if lt IE 7]>
   <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/scripts/ie6.js"></script>
   <![endif]--> 
