@@ -10,6 +10,9 @@ select {
 .grid_6 {
 width: auto !important;
 }
+.container_12 .push_3 {
+left: 0;
+}
 #sidebar-first,
 #sidebar-second,
 .imgrt,

@@ -1466,9 +1466,6 @@ background-position: -48px -16px;
 clear:left;
 display:block;
 font-weight:700;
-/* position:absolute;
-width:100%;
-top:-7px */
 }
 
 /* --------------- Social Blocks  --------------- */
@@ -1878,79 +1875,6 @@ border-color:#bbb
 color:#717171
 }
 
-/* Animated throbber */
-html.js input.form-autocomplete {
-background-position:100% 4px
-}
-
-html.js input.throbbing {
-background-position:100% -16px
-}
-
-/* Comment form */
-.comment-form label {
-float:left;
-font-size:.929em;
-width:120px
-}
-
-.comment-form input,.comment-form .form-select {
-margin:0;
--khtml-border-radius:4px;
--moz-border-radius:4px;
--webkit-border-radius:4px;
-border-radius:4px
-}
-
-.comment-form .form-type-textarea label {
-float:none
-}
-
-.comment-form .form-item,.comment-form .form-radios,.comment-form .form-type-checkbox,.comment-form .form-select {
-margin-bottom:10px;
-overflow:hidden
-}
-
-.comment-form .form-type-checkbox,.comment-form .form-radios {
-margin-left:120px
-/* LTR */
-}
-
-.comment-form .form-type-checkbox label,.comment-form .form-radios label {
-float:none;
-margin-top:0
-}
-
-.comment-form input.form-file {
-width:auto
-}
-
-.comment-form .form-item .description {
-font-size:.786em;
-line-height:1.2;
-margin-left:120px
-}
-
-#content h2.comment-form {
-margin-bottom:.5em
-}
-
-.comment-form .form-textarea {
--khtml-border-radius-topleft:4px;
--khtml-border-radius-topright:4px;
--moz-border-radius-topleft:4px;
--moz-border-radius-topright:4px;
--webkit-border-top-left-radius:4px;
--webkit-border-top-right-radius:4px;
-border-top-left-radius:4px;
-border-top-right-radius:4px
-}
-
-.comment-form fieldset.filter-wrapper .fieldset-wrapper,.comment-form .text-format-wrapper .form-item {
-margin-top:0;
-margin-bottom:0
-}
-
 .filter-wrapper label {
 width:auto;
 float:none
@@ -1960,16 +1884,17 @@ float:none
 min-width:120px
 }
 
-.comment-form fieldset.filter-wrapper .tips {
-font-size:.786em
-}
-
-#comment-body-add-more-wrapper .form-type-textarea label {
-margin-bottom:.4em
-}
-
 #edit-actions input {
 margin-right:.6em
+}
+
+/* Animated throbber */
+html.js input.form-autocomplete {
+background-position:100% 4px
+}
+
+html.js input.throbbing {
+background-position:100% -16px
 }
 
 /* -------------- Other Overrides ------------- */
@@ -1984,18 +1909,6 @@ opacity:0.7
 
 div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane {
 padding:1em
-}
-
-#forum tr td.forum {
-padding-left:35px
-}
-
-#forum .name {
-font-size:1.083em
-}
-
-#forum .description {
-font-size:1em
 }
 
 /* --------------- Search Form ---------------- */
@@ -2176,69 +2089,6 @@ float:none
 
 .overlay #messages {
 width:auto
-}
-
-/* ---------- Poll ----------- */
-.node .poll {
-margin:2em 0
-}
-
-.node .poll #edit-choice {
-margin:0 0 1.5em
-}
-
-.poll .vote-form {
-text-align:left
-/* LTR */
-}
-
-.poll .vote-form .choices {
-margin:0
-}
-
-.poll .percent {
-font-size:.857em;
-font-style:italic;
-margin-bottom:3em;
-margin-top:-3.2em;
-float:right;
-text-align:right
-}
-
-.poll .text {
-clear:right;
-margin-right:2.25em
-}
-
-.poll .total {
-font-size:.929em;
-font-style:italic;
-text-align:right;
-clear:both
-}
-
-.node .poll {
-margin:1.8em 0 0
-}
-
-.node .poll .text {
-margin-right:6.75em
-}
-
-.node .poll #edit-choice {
-margin:0 0 1.2em
-}
-
-.poll .bar .foreground {
-background-color:#666
-}
-
-#footer-wrapper .poll .bar {
-background-color:#666
-}
-
-#footer-wrapper .poll .bar .foreground {
-background-color:#ddd
 }
 
 /* Overridding IMCE styles */
