@@ -285,6 +285,11 @@ li.leaf {
 padding:0
 }
 
+ul li.leaf, ul li.expanded, ul li.collapsed { /* to override styles in system.css */
+list-style-type:none;
+list-style-image:none;
+}
+
 /* ------------------ Header ------------------ */
 #wordmark {
 background:transparent url("../images/uc_wordmark.png") top right no-repeat;

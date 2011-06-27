@@ -41,6 +41,9 @@ function uchicago_process_page(&$variables) {
 	// If you're on the events page, set fullwidth to true
 	$curr_uri = check_plain(request_uri());
   if (($curr_uri == '/events') || ($curr_uri == '/events/')) { $variables['fullwidth'] = TRUE; } else { $variables['fullwidth'] = FALSE; }
+  // Get the https version of the login page
+  global $base_url;
+  $variables['secure_login'] = str_replace("http:", "https:", $base_url) . "/user";
 }
 
 /**

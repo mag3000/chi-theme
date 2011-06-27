@@ -106,7 +106,7 @@
 	* (c) 2011 Bitstream Inc
 	*/
 	-->
-	<link rel="stylesheet" href="//identity.uchicago.edu/c/fonts/proximanova.css">
+	<link rel="stylesheet" href="https://identity.uchicago.edu/c/fonts/proximanova.css" />
   <!--[if lt IE 7]>
   <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/scripts/ie6.js"></script>
   <![endif]--> 

@@ -205,7 +205,7 @@
 <div id="footer-wrapper"><div class="container_12">
 	<div id="footer" class="clearfix">
 		<div class="grid_3">
-			<p><a href="/user/" id="loginlink">&copy;</a> 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br /><a href="/"><?php print $site_name; ?></a></p>
+			<p><a href="<?php print $secure_login; ?>" id="loginlink">&copy;</a> 2011 <a href="http://www.uchicago.edu/">The University of Chicago</a><br /><a href="/"><?php print $site_name; ?></a></p>
 			<div class="social clearfix">
 				<?php print render($page['footer_column1']); ?>
 			</div>
