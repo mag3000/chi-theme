@@ -4,6 +4,7 @@
 .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {margin:0; width:auto !important; float:none; display:block; position:static}
 #main{width:100%;}
 .container_12{width:auto}
+.container_12 .push_3{left:0}
 #sidebar-second{margin:20px -8px 0}
 #content{width:auto; padding:0 8px}
 #main{margin-bottom:0}
@@ -11,18 +12,20 @@
 
 /* Collapse sidebar blocks by default */
 .sidebar .block{padding-bottom:0; margin-bottom:1px;}
-.sidebar .block h2{margin-bottom:0}
+.sidebar .block h2{margin-bottom:0; padding:10px;}
 .sidebar .block h2:after{content:"\00a0\203A";}
 .sidebar .block h2+.content{display:none;}
 .sidebar .block .content{margin-bottom:10px}
 .sidebar .block h2.open{margin-bottom:6px}
 /* Some exceptions */
+.sidebar .block-ucaddthis h2{padding:0}
 #block-search-form{padding-bottom:0}
 #block-search-form h2.open+.content{padding-bottom:6px;}
 #block-views-homepage-mini-features-block{margin-bottom:16px;}
 #block-views-homepage-mini-features-block h2:after,#block-events h2:after{content:"";}
 #block-views-homepage-mini-features-block .view-content{padding: 0 8px}
 .view-homepage-mini-features{margin-bottom:20px;}
+.sidebar .view-homepage-mini-features h2{padding:5px 0;}
 #block-events h2+.content{display:block;}
 
 #header{width:100%; background-image:none; height:auto}
@@ -33,16 +36,18 @@ h1 #dept-title{font-size:1.768em;}
 #wordmark{height:30px; width:137px; padding-bottom:10px}
 #wordmark{text-indent:-9999px; background-size:137px 30px; -webkit-background-size:137px 30px; -o-background-size:137px 30px; background-position:top left}
 
-.container_12 .push_3{left:0}
-#block-system-main-menu{margin:0 -8px 16px; padding:0 -8px; display:none}
+#block-system-main-menu{margin:0 -8px 1px -8px; padding:0 -8px; display:none}
 #block-system-main-menu .content a {padding-top:8px; padding-bottom:10px}
 #block-system-main-menu .content ul li ul li{padding-top:8px; padding-bottom:8px; background-position:10px 14px}
+#block-system-main-menu .content ul li a:after{content:"\00a0\203A";}
+
 img{max-width:100%}
 .node-type-image-gallery a.colorbox img{display:block}
 
-#toggle-nav{display:block;float:right; position:relative; top:-25px; padding-right:8px; height:0;}
-#toggle-nav a{color:#ffffff; display:block; background:url(../images/mobilesprite.png) 30px 5px no-repeat; height:20px; padding-right:15px}
-#toggle-nav.open a{background-position:30px -20px}
+#toggle-nav{display:block;float:right; position:relative; top:-38px; padding-right:8px; height:0;}
+#toggle-nav a{color:#ffffff; display:block; background:url(../images/mobilesprite.png) 60px 19px no-repeat; height:20px; padding:10px 15px 8px; font-size:1.5em}
+#toggle-nav.open a{background-position:60px -9px}
+#toggle-nav a:focus, #toggle-nav a:hover{text-decoration:none;}
 
 #mainfeature img{height:auto; width:100%}
 #mainfeature h3{width:100%; margin-top:0; height:auto; position:static; margin-left:-8px; margin-right:0; padding:0 8px}
