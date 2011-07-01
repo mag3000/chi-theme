@@ -37,6 +37,7 @@ h1 #dept-title{font-size:1.768em;}
 #wordmark{text-indent:-9999px; background-size:137px 30px; -webkit-background-size:137px 30px; -o-background-size:137px 30px; background-position:top left}
 
 #block-system-main-menu{margin:0 -8px 1px -8px; padding:0 -8px; display:none}
+.not-front #block-system-main-menu{margin-bottom:16px}
 #block-system-main-menu .content a {padding-top:8px; padding-bottom:10px}
 #block-system-main-menu .content ul li ul li{padding-top:8px; padding-bottom:8px; background-position:10px 14px}
 #block-system-main-menu .content ul li a:after{content:"\00a0\203A";}
@@ -61,5 +62,16 @@ h2.mini-feature-smallscreen {margin: 0 -10px 6px}
 .region-content iframe{width:100%; max-width:100%; min-height:250px; height:auto}
 
 #footer{width:auto; margin:0; padding: 8px}
+
+/* Image gallery tweaks */
+.field-slideshow-carousel-wrapper{display:none;}
+.field-slideshow-wrapper{opacity:0.9}
+.field-slideshow-wrapper:before{content:"Click image to view slideshow";font-size:1.2em; color:white; line-height:1.5em}
+#cboxNext{top:50%;right:0;left:auto}
+#cboxPrevious{top:50%}
+#cboxCurrent{left:0}
+#cboxTopLeft, #cboxTopRight{width:5px;height:5px}
+#cboxTopCenter{height:5px}
+#cboxMiddleLeft, #cboxMiddleRight{width:5px}
 
 }
